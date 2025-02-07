@@ -1,6 +1,7 @@
 import math
 import requests
 import argparse
+import os
 
 def getMovement(src, dst):
     speed = 0.00001
@@ -48,9 +49,19 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             resp = session.post(SERVER_URL, json=drone_info)
     return drone_coords[0], drone_coords[1]
 
+def load_final_coordinates(filename):
+    with open(filename, 'r') as f:
+        data = f.read().strip()
+        if data:
+            longitude,latitude = map(float(data.split(","))
+            return longitude, latitude
+        else:
+            return None
+
 def save_final_coordinates(filename, longitude,latitude):
     with open(filename, 'w') as f:
         f.write(f"{longitude},{latitude}")
+        f.close()
    
 if __name__ == "__main__":
     # Fill in the IP address of server, in order to location of the drone to the SERVER
