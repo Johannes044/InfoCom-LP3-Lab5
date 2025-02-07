@@ -80,6 +80,9 @@ if __name__ == "__main__":
     parser.add_argument("--id", help ='drones ID' ,type=str)
     args = parser.parse_args()
 
+    # Load initial coordinates from file or use provided ones
+    initial_coords = load_initial_coordinates(COORDS_FILE)
+
     current_coords = (args.clong, args.clat)
     from_coords = (args.flong, args.flat)
     to_coords = (args.tlong, args.tlat)
