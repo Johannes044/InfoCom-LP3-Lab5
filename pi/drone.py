@@ -29,8 +29,14 @@ drone_info = {'id': myID,
 # Fill in the IP address of server, and send the initial location of the drone to the SERVER
 #===================================================================
 SERVER="http://SERVER_IP:PORT/drone"
-with requests.Session() as session:
-    resp = session.post(SERVER, json=drone_info)
+#* error handling when sending to server.
+try:
+    with requests.Session() as session:
+        resp = session.post(SERVER, json=drone_info)
+        resp.raise_for_status()
+        app.logger.info("Successfully sent initial drone location to server.")
+except requests.RequestException as e:
+    app.logger.error(f"Error sending initial location to server: {e}")
 #===================================================================
 
 @app.route('/', methods=['POST'])
@@ -38,7 +44,7 @@ def main():
     coords = request.json
     # Get current longitude and latitude of the drone 
     #===================================================================
-    current_longitude = 0
+    current_longitude = 
     current_latitude = 0
     #===================================================================
     from_coord = coords['from']

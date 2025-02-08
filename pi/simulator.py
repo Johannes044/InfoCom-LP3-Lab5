@@ -49,11 +49,11 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             resp = session.post(SERVER_URL, json=drone_info)
     return drone_coords[0], drone_coords[1]
 
-def load_final_coordinates(filename):
+def load_initial_coordinates(filename):
     with open(filename, 'r') as f:
         data = f.read().strip()
         if data:
-            longitude,latitude = map(float(data.split(","))
+            longitude,latitude = map(float(data.split(",")))
             return longitude, latitude
         else:
             return None
@@ -82,8 +82,14 @@ if __name__ == "__main__":
 
     # Load initial coordinates from file or use provided ones
     initial_coords = load_initial_coordinates(COORDS_FILE)
+    if initial_coords:
+        current_coords = initial_coords
+    else:
+        if args.clong is None or args.clat is None:
+            raise ValueError("Initial coordinates not found in file or provided as arguments.")
+        current_coords = (args.clong, args.clat)
 
-    current_coords = (args.clong, args.clat)
+
     from_coords = (args.flong, args.flat)
     to_coords = (args.tlong, args.tlat)
 
@@ -92,5 +98,6 @@ if __name__ == "__main__":
 
      # Save the final location to the file
     save_final_coordinates(COORDS_FILE, drone_long, drone_lat)
+    print(f"Drone final coordinates saved: {drone_long}, {drone_lat}")
     # drone_long and drone_lat is the final location when drlivery is completed, find a way save the value, and use it for the initial coordinates of next delivery
     #=============================================================================
