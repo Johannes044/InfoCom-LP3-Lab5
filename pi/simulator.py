@@ -50,13 +50,14 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     return drone_coords[0], drone_coords[1]
 
 def load_initial_coordinates(filename):
-    with open(filename, 'r') as f:
-        data = f.read().strip()
-        if data:
-            longitude,latitude = map(float(data.split(",")))
-            return longitude, latitude
-        else:
-            return None
+    """Load the initial coordinates from a file if it exists."""
+    if os.path.exists(filename):
+        with open(filename, 'r') as f:
+            data = f.read().strip()
+            if data:
+                longitude, latitude = map(float, data.split(','))
+                return longitude, latitude
+    return None
 
 def save_final_coordinates(filename, longitude,latitude):
     with open(filename, 'w') as f:
@@ -68,6 +69,7 @@ if __name__ == "__main__":
     #===================================================================
     SERVER_URL = "http://SERVER_IP:PORT/drone"
     #===================================================================
+    #? Ska vi ha en file eller flera filer för varje drönare?
     COORDS_FILE = "drone_coords.txt"
 
     parser = argparse.ArgumentParser()

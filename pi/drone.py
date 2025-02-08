@@ -16,15 +16,19 @@ myID = "DRONE_ID"
 
 # Get initial longitude and latitude the drone
 #===================================================================
-current_longitude = 0
-current_latitude = 0
+drone_state = {
+    "current_longitude": 0,
+    "current_latitude": 0
+}
+#longitude = 13.21008
+#latitude = 55.71106
 #===================================================================
 
 drone_info = {'id': myID,
-                'longitude': current_longitude,
-                'latitude': current_latitude,
-                'status': 'idle'
-            }
+              'longitude': drone_state['current_longitude'],
+              'latitude': drone_state['current_latitude'],
+              'status': 'idle'
+             }
 
 # Fill in the IP address of server, and send the initial location of the drone to the SERVER
 #===================================================================
@@ -42,13 +46,17 @@ except requests.RequestException as e:
 @app.route('/', methods=['POST'])
 def main():
     coords = request.json
-    # Get current longitude and latitude of the drone 
-    #===================================================================
-    current_longitude = 
-    current_latitude = 0
-    #===================================================================
+    app.logger.info(f"Received new route: {coords}")
+
     from_coord = coords['from']
     to_coord = coords['to']
+
+    # Get current longitude and latitude of the drone 
+    #===================================================================
+    current_longitude = drone_state['current_longitude']
+    current_latitude = drone_state['current_latitude']
+    #===================================================================
+    
     subprocess.Popen(["python3", "simulator.py", '--clong', str(current_longitude), '--clat', str(current_latitude),
                                                  '--flong', str(from_coord[0]), '--flat', str(from_coord[1]),
                                                  '--tlong', str(to_coord[0]), '--tlat', str(to_coord[1]),

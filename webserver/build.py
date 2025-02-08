@@ -52,6 +52,8 @@ def get_drones():
     # use function translate() to covert the coodirnates to svg coordinates
     #=============================================================================================================================================
     drone_dict = {}
+
+    
     return jsonify(drone_dict)
 
 if __name__ == "__main__":
