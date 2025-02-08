@@ -27,16 +27,18 @@ def drone():
     # =========================================================================================
 
     drone_data = {
-            "id": drone_ID,
-            "longitude": drone_longitude,
-            "latitude": drone_latitude,
-            "ip_address": drone_IP,
-            "status": drone_status
-        }
+        "id": drone_ID,
+        "longitude": drone_longitude,
+        "latitude": drone_latitude,
+        "ip_address": drone_IP,
+        "status": drone_status
+    }
+    
+    redis_server.set(drone_ID, json.dumps(drone_data))
 
 
-     # =======================================================================================
-    return 'Get data'
+    # =======================================================================================
+    return "Drone data updated successfully", 200
 
 if __name__ == "__main__":
 
