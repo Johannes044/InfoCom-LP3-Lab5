@@ -53,7 +53,16 @@ def get_drones():
     #=============================================================================================================================================
     drone_dict = {}
 
+    try:
+        drone_keys = redis_server.keys("*")
+    except redis.ConnectionError as e:
+        # Log the error and return an empty response
+        app.logger.error(f"Redis connection error: {e}")
+        return jsonify({"error": "Unable to connect to Redis server"}), 500
     
+    except Exception as e:
+        app.logger.error(f"Redis connection error: {e}")
+        return jsonify({"error": "An unexpected error occurred"}), 500
     return jsonify(drone_dict)
 
 if __name__ == "__main__":
