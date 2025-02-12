@@ -55,11 +55,30 @@ def get_drones():
 
     try:
         drone_keys = redis_server.keys("*")
+
+        for drone_id in drone_keys:
+
+            drone_data = redis_server.get(drone_id)
+
+            if drone_data:
+
+                drone_data = json.loads(drone_data)
+
+                longitude = drone_data.get('longitude')
+                latitude = drone_data.get('latitude')
+                status = drone_data.get("status", "unknown")
+
+                drone_logitude_svg, drone_latitude_svg = translate((longitude,latitude))
+
+                drone_dict[drone_id] = {
+                    'longitude': drone_logitude_svg,
+                    'latitude': drone_latitude_svg,
+                    'status': status,
+                }
     except redis.ConnectionError as e:
         # Log the error and return an empty response
         app.logger.error(f"Redis connection error: {e}")
         return jsonify({"error": "Unable to connect to Redis server"}), 500
-    
     except Exception as e:
         app.logger.error(f"Redis connection error: {e}")
         return jsonify({"error": "An unexpected error occurred"}), 500
