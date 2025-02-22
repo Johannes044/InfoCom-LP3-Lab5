@@ -47,7 +47,7 @@ def route_planner():
         # 1. Find avialable drone in the database (Hint: Check keys in RedisServer)
         # if no drone is availble:
         available_drone = None
-        for drone_key in redis_server.keys('*'):
+        for drone_key in redis_server.keys('*'): #* Tar alla drönare i databasen
             drone_data = json.loads(redis_server.get(drone_key))
             if drone_data.get('status') == 'idle':
                 available_drone = drone_data

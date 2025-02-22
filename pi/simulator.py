@@ -49,6 +49,7 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             resp = session.post(SERVER_URL, json=drone_info)
     return drone_coords[0], drone_coords[1]
 
+#=====================================================================================================
 def load_initial_coordinates(filename):
     """Load the initial coordinates from a file if it exists."""
     if os.path.exists(filename):
@@ -60,10 +61,11 @@ def load_initial_coordinates(filename):
     return None
 
 def save_final_coordinates(filename, longitude,latitude):
+    """ Save the final location to a file and if a file doesen't exist creates one """
     with open(filename, 'w') as f:
         f.write(f"{longitude},{latitude}")
         f.close()
-   
+#=================================================================================================
 if __name__ == "__main__":
     # Fill in the IP address of server, in order to location of the drone to the SERVER
     #===================================================================

@@ -20,10 +20,11 @@ drone_state = {
     "current_longitude": 0,
     "current_latitude": 0
 }
+#* lth's position i long, lati
 #longitude = 13.21008
 #latitude = 55.71106
 #===================================================================
-
+#* Sätter upp drönar information i ett Dictionarie (nyckel-värde par).
 drone_info = {'id': myID,
               'longitude': drone_state['current_longitude'],
               'latitude': drone_state['current_latitude'],

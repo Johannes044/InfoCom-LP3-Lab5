@@ -14,8 +14,8 @@ redis_server = redis.Redis("REDIS_SERVER", decode_responses=True, charset="unico
 
 @app.route('/drone', methods=['POST'])
 def drone():
-    drone = request.get_json()
-    drone_IP = request.remote_addr
+    drone = request.get_json() #* Tar emot en json packet från drönaren.
+    drone_IP = request.remote_addr #* Hämtar dränarens IP.
     drone_ID = drone['id']
     drone_longitude = drone['longitude']
     drone_latitude = drone['latitude']
@@ -26,6 +26,7 @@ def drone():
     # Note that you need to store the metioned infomation for all drones in Redis, think carefully how to store them
     # =========================================================================================
 
+    #* Sätter upp drönar information i ett Dictionarie (nyckel-värde par).
     drone_data = {
         "id": drone_ID,
         "longitude": drone_longitude,
@@ -33,7 +34,8 @@ def drone():
         "ip_address": drone_IP,
         "status": drone_status
     }
-    
+
+    #* 
     redis_server.set(drone_ID, json.dumps(drone_data))
 
 
