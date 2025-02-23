@@ -4,7 +4,7 @@ import redis
 import json
 
 # Konfigurera Redis
-redis_server = redis.Redis(host="REDIS_SERVER", port=6379, decode_responses=True)
+redis_server = redis.Redis(host="localhost", port=6379, decode_responses=True)
 
 def test_redis_connection():
     assert redis_server.ping() == True, "Redis-anslutning misslyckades"
