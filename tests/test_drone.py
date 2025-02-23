@@ -1,5 +1,11 @@
+import sys
+import os
+
+# Lägg till pi-mappen i sys.path
+sys.path.append(os.path.abspath("../pi"))
+
+from drone import app  # Importera Flask-appen från drone.py
 import requests
-import json
 
 DRONE_URL = "http://localhost:5000"
 
