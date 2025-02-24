@@ -12,6 +12,9 @@ app = Flask(__name__)
 CORS(app)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 
+# Setup SocketIO
+socketio = SocketIO(app)
+
 # change this so that you can connect to your redis server
 # ===============================================
 redis_server = redis.Redis("localhost", decode_responses=True, charset="unicode_escape")
@@ -68,6 +71,9 @@ def get_drones():
                 latitude = drone_data.get('latitude')
                 status = drone_data.get("status", "unknown")
 
+                if longitude is None or latitude is None:
+                    continue  # Hoppa över drönaren om data saknas
+
                 drone_logitude_svg, drone_latitude_svg = translate((longitude,latitude))
 
                 drone_dict[drone_id] = {
@@ -80,9 +86,13 @@ def get_drones():
         app.logger.error(f"Redis connection error: {e}")
         return jsonify({"error": "Unable to connect to Redis server"}), 500
     except Exception as e:
-        app.logger.error(f"Redis connection error: {e}")
-        return jsonify({"error": "An unexpected error occurred"}), 500
+        app.logger.error(f"Unexpected error: {e}")
+        return jsonify({"error": str(e)}), 500
     return jsonify(drone_dict)
-
+    
+@socketio.on('connect')
+def handle_connect():
+    print("Client connected")
+    
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port='5000')
+    app.run(debug=True, host='0.0.0.0', port=5000)
