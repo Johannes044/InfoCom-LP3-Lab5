@@ -49,7 +49,8 @@ def route_planner():
         available_drone = None
         for drone_key in redis_server.keys('*'): #* Tar alla drönare i databasen
             drone_data = json.loads(redis_server.get(drone_key))
-            if drone_data.get('status') == 'idle':
+            if drone_data.get('status') == 'idle': #* om en drönarens status är 'idle'.
+                #* Sätter drönarens data
                 available_drone = drone_data
                 break
         
