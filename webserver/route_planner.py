@@ -26,7 +26,10 @@ def send_request(drone_url, coords):
 
 @app.route('/planner', methods=['POST'])
 def route_planner():
-    Addresses =  json.loads(request.data.decode())
+    try:
+        Addresses = json.loads(request.data.decode())  # Försök att ladda JSON
+    except json.JSONDecodeError:
+        return jsonify({"error": "Invalid JSON format"}), 400
     FromAddress = Addresses['faddr']
     ToAddress = Addresses['taddr']
     from_location = geolocator.geocode(FromAddress + region, timeout=None)
