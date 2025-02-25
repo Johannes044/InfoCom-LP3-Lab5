@@ -63,6 +63,9 @@ def main():
                                                  '--tlong', str(to_coord[0]), '--tlat', str(to_coord[1]),
                                                  '--id', myID
                     ])
+    drone_state['longitude'] = to_coord[0]
+    drone_state['latitude'] = to_coord[1]
+    drone_state['status'] = 'busy'
     return 'New route received'
 
 if __name__ == '__main__':
