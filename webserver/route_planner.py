@@ -53,6 +53,11 @@ def route_planner():
     DRONE_IP = redis_server.hget(droneAvailable, 'ip')
     DRONE_URL = f'http://{DRONE_IP}:5000'
     send_request(DRONE_URL, coords)
+    
+    with requests.session() as session:
+        resp = session.post(DRONE_URL, json=coords)
+        print(resp.text)
+
     return 'Got address and sent request to the drone'
 
 if __name__ == "__main__":
