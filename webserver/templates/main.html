@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Följ din drönarleverans</title>
+  <link rel="stylesheet" type="text/css" href="static/map-style.css">
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  <script type="text/javascript">
+    function Submit() {
+      var from_addr = document.getElementById('faddr').value;
+      var to_addr = document.getElementById('taddr').value;
+      var data = { "faddr": from_addr, "taddr": to_addr };
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          try {
+            document.getElementById('txt').innerText = this.responseText;
+          } catch (err) {
+            alert(this.responseText);
+          }
+        }
+      };
+      xhttp.open("POST", "http://127.0.0.1:5002/planner", true);
+      xhttp.send(JSON.stringify(data));
+    }
+  </script>
+  <script type="text/javascript">
+    function LoadDrone(droneID, x, y, status) {
+      var doc = document.getElementById("map");
+      $(doc).ready(function() {
+        var doc_svg = doc.getSVGDocument();
+        var svg = doc_svg.getElementById("map-svg");
+        var circleNode = svg.getElementById(droneID);
+        var color = status === 'idle' ? 'green' : 'red';
+        if (circleNode == null) {
+          circleNode = doc_svg.createElementNS("http://www.w3.org/2000/svg", "circle");
+          circleNode.setAttributeNS(null, 'cx', x);
+          circleNode.setAttributeNS(null, 'cy', y);
+          circleNode.setAttributeNS(null, 'r', '5');
+          circleNode.setAttributeNS(null, 'fill', color);
+          circleNode.setAttributeNS(null, 'id', droneID);
+          svg.appendChild(circleNode);
+        } else {
+          circleNode.setAttributeNS(null, 'cx', x);
+          circleNode.setAttributeNS(null, 'cy', y);
+          circleNode.setAttributeNS(null, 'fill', color);
+        }
+      });
+    }
+  </script> 
+</head>
+<body>
+  <h1>Följ din drönarleverans här!</h1>
+  <div id="txt">Current Position: </div>
+  <form action="javascript:Submit()">
+    <label for="faddr">From address:</label>
+    <input type="text" id="faddr" name="faddr">
+    
+    <label for="taddr">To address:</label>
+    <input type="text" id="taddr" name="taddr">
+    
+    <input type="submit" value="Search addresses">
+  </form>
+
+<img id="map" src="static/images/lund-map.svg" style="width: 100%; height: 600px;">
+
+
+
+
+  <script>
+    var set_delay = 50;
+    function callout() {
+      $.ajax({ url: 'http://0.0.0.0:5000/get_drones' })
+        .done(function(server_response) {
+          var available_drones = Object.keys(server_response);
+          for (const droneID of available_drones) {
+            var x = server_response[droneID].longitude;
+            var y = server_response[droneID].latitude;
+            var status = server_response[droneID].status;
+            LoadDrone(droneID, x, y, status);
+          }
+        })
+        .always(function() {
+          setTimeout(callout, set_delay);
+        });
+    }
+    callout();
+  </script>
+</body>
+</html>
+
