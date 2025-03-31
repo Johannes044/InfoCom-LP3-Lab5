@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root{
+    --color-background: #e1f0f7;
+    --color-button: #0096c7;
+    --color-button-hover: #0077a3;
+    --color-text-dark: #011f4b;
+    --color-text-light: #d9e4f5;
+    --color-text-light-hover: #abcbfe;
+    --color-navbar: #03396c;
+
+    --navbar-height: 96px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lexend, Comic Sans MS;
+    color: var(--color-text-dark);
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column; /* Förbättrad layout */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Lägger till lite marginaler runt innehållet */
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    transition: color 0.1s ease-in;
+}
+
+a:hover {
+    color: var(--color-text-light-hover);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: var(--navbar-height);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    background-color: var(--color-navbar);
+    border-radius: 20px;
+}
+
+#navbar-items {
+    list-style: none;
+}
+
+#navbar-items > li {
+    display: inline-block;
+    padding: 0 2em;
+}
+
+.content {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}

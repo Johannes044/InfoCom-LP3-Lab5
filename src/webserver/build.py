@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, request
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import redis
@@ -26,9 +26,17 @@ def translate(coords_osm):
 def home():
     return render_template('index.html')
     
-@app.route('/map', methods=['GET'])
+@app.route('/map', methods=['GET', 'POST'])
 def map():
-    return render_template('main.html')
+    print(request.method)
+    if request.method == "POST":
+        print(request.values.get("tracking-number"))
+
+    return render_template('map.html')
+
+@app.route('/about', methods=['GET'])
+def about():
+    return render_template('about.html')
 
 @app.route('/get_drones', methods=['GET'])
 def get_drones():

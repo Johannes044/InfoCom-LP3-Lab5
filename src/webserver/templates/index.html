@@ -1,53 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>GWD</title>
-    <link rel="stylesheet" type="text/css" href="static/style.css"> <!-- Huvud CSS för framsidan -->
-    <style>
-        /* Specifik stil för index.html */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #E0F7FA;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+{% extends "base.html" %}
 
-        .container {
-            background: white;
-            padding: 40px 60px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
+{% block title %}Hem{% endblock %}
+{% block stylesheet %}{{ url_for("static", filename="css/home.css") }}{% endblock %}
 
-        h1 {
-            color: #0077B6;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #0077B6;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 20px;
-        }
-
-        .btn:hover {
-            background-color: #005f8e;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Välkommen till GWD!</h1>
-        <p>Utforska våra drönartjänster och se var våra drönare befinner sig.</p>
-        <a href="/map" class="btn">Se din drönare här</a>
+{% block content %}
+    <div class="content">
+        <div class="welcome-card">
+            <h1>Välkommen till GWD!</h1>
+            <p>Utforska våra drönartjänster och se var våra drönare befinner sig.</p>
+            <form action="/map" method="POST">
+                <input type="text" class="textbox" name="tracking-number">
+                <button type="submit" class="btn">Se din döner! :D</button>
+            </form>
+        </div>
     </div>
-</body>
-</html>
+{% endblock %}
+

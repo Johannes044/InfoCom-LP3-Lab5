@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="se">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} - GWD</title>
+        <link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% endblock %}"/> <!-- Huvud CSS för framsidan -->
+        {% block headstuff %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <a href="/">Home</a>
+            <nav id="navbar">
+                <ul id="navbar-items">
+                    <li><a href="/">Hem</a></li>
+                    <li><a href="/about">Om oss</a></li>
+                    <li><a href="/">Annan</a></li>
+                    <li><a href="/">Kanske en till</a></li>
+                </ul>
+            </nav>
+            <div></div>
+        </header>
+        {% block content %}{% endblock %}
+        <footer>
+            <p>Kontaktinfo :D</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+@import "base.css";
+
+.content {
+    color: var(--color-text-light);
+}
+
+.welcome-card {
+    background: var(--color-navbar);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form > * {
+    margin: 0 20px;
+}
+
+.textbox {
+    font-size: 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-button);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--color-button-hover);
+}
