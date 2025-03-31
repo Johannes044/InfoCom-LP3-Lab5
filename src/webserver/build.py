@@ -37,6 +37,10 @@ def map():
 def about():
     return render_template('about.html')
 
+@app.route('/admin', methods=['GET'])
+def admin():
+    return render_template('admin.html')
+
 @app.route('/get_drones', methods=['GET'])
 def get_drones():
     drone_dict = {}
