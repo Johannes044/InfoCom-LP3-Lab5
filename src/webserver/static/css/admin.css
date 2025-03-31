@@ -1,0 +1,26 @@
+@import "base.css";
+
+.admin-container {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    color: #0077B6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #0077B6;
+}
+.back-btn:hover {
+    background-color: #005f8e;
+    color: white;
+}
