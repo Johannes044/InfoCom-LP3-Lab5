@@ -31,7 +31,7 @@ def map():
     return render_template('main.html')
 
 @app.route('/admin', methods=['GET'])
-def map():
+def admin():
     return render_template('admin.html')
 
 @app.route('/get_drones', methods=['GET'])
