@@ -14,6 +14,21 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .admin-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #0077B6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .admin-btn:hover {
+            background-color: #005f8e;
         }
 
         .container {
@@ -44,6 +59,7 @@
     </style>
 </head>
 <body>
+    <a href="/admin" class="admin-btn">Admin</a>
     <div class="container">
         <h1>Välkommen till GWD!</h1>
         <p>Utforska våra drönartjänster och se var våra drönare befinner sig.</p>
