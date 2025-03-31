@@ -28,7 +28,6 @@ def home():
     
 @app.route('/map', methods=['GET', 'POST'])
 def map():
-    print(request.method)
     if request.method == "POST":
         print(request.values.get("tracking-number"))
 
