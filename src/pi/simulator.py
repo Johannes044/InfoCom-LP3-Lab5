@@ -2,6 +2,7 @@ import math
 import requests
 import argparse
 import os
+import random
 
 def getMovement(src, dst):
     speed = 0.00001
@@ -16,6 +17,11 @@ def moveDrone(src, d_long, d_la):
     x, y = src
     x = x + d_long
     y = y + d_la        
+    return (x, y)
+
+def randomCords():
+    x = random.uniform(0, 100)
+    y = random.uniform(0, 100)
     return (x, y)
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
