@@ -6,3 +6,6 @@ def randomCords():
     latitude = random.uniform(latitude_min, latitude_max)
     longitude = random.uniform(longitude_min, longitude_max)
     return longitude, latitude
+
+def isDelivery():
+    return random.random()< 0.1

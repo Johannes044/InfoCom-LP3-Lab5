@@ -17,8 +17,8 @@ myID = "DRONE_ID"
 # Get initial longitude and latitude the drone
 #===================================================================
 drone_state = {
-    "current_longitude": 0,
-    "current_latitude": 0
+    "current_longitude": 13.2,
+    "current_latitude": 55.7
 }
 #* lth's position i long, lati
 #longitude = 13.21008
