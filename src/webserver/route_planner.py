@@ -3,6 +3,8 @@ from flask import Flask, request, render_template, jsonify
 from flask.globals import current_app
 from geopy.geocoders import Nominatim
 from flask_cors import CORS
+from .. import utilities
+import random
 import redis
 import json
 import requests
@@ -26,17 +28,24 @@ def send_request(drone_url, coords):
 def route_planner():
     Addresses = json.loads(request.data.decode())
     FromAddress = Addresses['faddr']
-    ToAddress = Addresses['taddr']
+    ToLongitude, ToLatitude = utilities.randomCords()
+    #ToAddress = Addresses['taddr']
     from_location = geolocator.geocode(FromAddress + region, timeout=None)
-    to_location = geolocator.geocode(ToAddress + region, timeout=None)
+    #to_location = geolocator.geocode(ToAddress + region, timeout=None)
     
+   #if from_location is None:
+    #    return 'Departure address not found, please input a correct address'
+    #elif to_location is None:
+       # return 'Destination address not found, please input a correct address'
+    
+    #coords = {'from': (from_location.longitude, from_location.latitude),
+        #      'to': (to_location.longitude, to_location.latitude)}
     if from_location is None:
         return 'Departure address not found, please input a correct address'
-    elif to_location is None:
-        return 'Destination address not found, please input a correct address'
+    
     
     coords = {'from': (from_location.longitude, from_location.latitude),
-              'to': (to_location.longitude, to_location.latitude)}
+              'to': (ToLongitude, ToLatitude)}
     
     drones = redis_server.smembers("drones")
     droneAvailable = None
