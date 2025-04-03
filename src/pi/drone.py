@@ -33,7 +33,7 @@ drone_info = {'id': myID,
 
 # Fill in the IP address of server, and send the initial location of the drone to the SERVER
 #===================================================================
-SERVER="http://SERVER_IP:PORT/drone"
+SERVER="http://192.168.0.1:1338/drone"
 #* error handling when sending to server.
 try:
     with requests.Session() as session:
