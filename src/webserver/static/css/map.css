@@ -11,7 +11,7 @@ h1 {
 
 #map {
     width: 80%;  /* Justera bredden på kartan */
-    /*height: 600px; /* Justera höjden på kartan */
+    height: 600px; /* Justera höjden på kartan */
     display: block; /* Säkerställer att SVG:en inte är gömd */
     border-radius: 10px;
     border: 2px solid var(--color-navbar); /* Ram runt kartan */
@@ -20,7 +20,7 @@ h1 {
 
 object {
     width: 100%;
-    height: 20%;
+    height: 600px;
 }
 
 form {
