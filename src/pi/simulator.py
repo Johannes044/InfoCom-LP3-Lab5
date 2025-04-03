@@ -75,7 +75,7 @@ def save_final_coordinates(filename, longitude,latitude):
 if __name__ == "__main__":
     # Fill in the IP address of server, in order to location of the drone to the SERVER
     #===================================================================
-    SERVER_URL = "http://SERVER_IP:PORT/drone"
+    SERVER_URL = "http://192.168.0.1:1338/drone"
     #===================================================================
     #? Ska vi ha en file eller flera filer för varje drönare?
     COORDS_FILE = "drone_coords.txt"
