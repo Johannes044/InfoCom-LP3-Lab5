@@ -33,7 +33,7 @@ def route_planner():
     from_location = geolocator.geocode(FromAddress + region, timeout=None)
     to_location = geolocator.geocode(ToAddress + region, timeout=None)
     
-   if from_location is None:
+    if from_location is None:
         return 'Departure address not found, please input a correct address'
     elif to_location is None:
         return 'Destination address not found, please input a correct address'
