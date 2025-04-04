@@ -3,11 +3,13 @@ from flask import Flask, request, render_template, jsonify
 from flask.globals import current_app
 from geopy.geocoders import Nominatim
 from flask_cors import CORS
-from .. import utilities
+import sys
+sys.path.append("..")  
+import utilities
 import random
 import redis
 import json
-import requests
+import requests 
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -40,8 +42,6 @@ def route_planner():
     
     coords = {'from': (from_location.longitude, from_location.latitude),
               'to': (to_location.longitude, to_location.latitude)}
-    if from_location is None:
-       return 'Departure address not found, please input a correct address'
     
     drones = redis_server.smembers("drones")
     droneAvailable = None
@@ -57,17 +57,17 @@ def route_planner():
     
     DRONE_IP = redis_server.hget(droneAvailable, 'ip')
     DRONE_URL = f'http://{DRONE_IP}:5000'
-    send_request(DRONE_URL, coords)
-    return 'Got address and sent request to the drone'
 
     try:
-        with requests.session() as session:
+        send_request(DRONE_URL, coords)
+        with requests.Session() as session:
             resp = session.post(DRONE_URL, json=coords)
             print(resp.text)
-        return message
     except Exception as e:
         print(e)
         return "Could not connect to the drone, please try again"
+
+    return 'Got address and sent request to the drone'
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=1339)
