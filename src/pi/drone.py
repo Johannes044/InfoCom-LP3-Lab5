@@ -11,14 +11,14 @@ app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 
 #Give a unique ID for the drone
 #===================================================================
-myID = "DRONE_ID"
+myID = "D3"
 #===================================================================
 
 # Get initial longitude and latitude the drone
 #===================================================================
 drone_state = {
-    "current_longitude": 13.2,
-    "current_latitude": 55.7
+    "current_longitude":  13.188172689993708,
+    "current_latitude": 55.70547137847168
 }
 #* lth's position i long, lati
 #longitude = 13.21008
