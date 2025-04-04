@@ -17,12 +17,13 @@ app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
+clearFile(file)
+
 # Assign a unique ID to the drone
 myID = "D69"
 
 
 # Store the initial drone position
-
 drone_state = {
     "current_longitude": 13.2,
     "current_latitude": 55.7
