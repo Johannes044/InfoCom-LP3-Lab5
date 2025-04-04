@@ -10,7 +10,12 @@ img {
     border-radius: 20px;
 }
 
+
 .content > div {
     max-width: 32em;
     margin: 0 5em;
+}
+
+.about > h1 {
+    margin: 1em 0;
 }
