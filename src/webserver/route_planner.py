@@ -3,7 +3,7 @@ from flask import Flask, request, render_template, jsonify
 from flask.globals import current_app
 from geopy.geocoders import Nominatim
 from flask_cors import CORS
-from .. import utilities
+#from .. import utilities
 import random
 import redis
 import json
@@ -70,4 +70,4 @@ def route_planner():
         return "Could not connect to the drone, please try again"
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=1339)
+    app.run(debug=True, host='0.0.0.0', port='1339')
