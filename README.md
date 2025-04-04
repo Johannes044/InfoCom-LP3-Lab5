@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./static/icons/gwd.jpg" alt="Drone logo" width=256px>
+  <img src="/src/webserver/static/images/gwd.jpg" alt="Drone logo" width=256px>
   <h3>GWD</h3>
   <p>
     Medicine delivery

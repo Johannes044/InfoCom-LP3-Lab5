@@ -1,1 +1,16 @@
 @import "base.css";
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.content > div {
+    max-width: 32em;
+    margin: 0 5em;
+}
