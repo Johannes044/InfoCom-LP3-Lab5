@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import redis
 import logging
-file = "src\Logs\database.txt"
+file = "src/Logs/database.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
