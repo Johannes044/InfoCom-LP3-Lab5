@@ -1,8 +1,17 @@
 import math
 import requests
 import argparse
+import logging
+file = "src/Logs/simulator.txt"
+import sys
 import os
-import random
+sys.path.append(os.path.abspath(".."))
+from utilities import clearFile
+
+# Konfigurera loggning
+logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+
+clearFile(file)
 
 def getMovement(src, dst):
     speed = 0.00001
@@ -19,10 +28,6 @@ def moveDrone(src, d_long, d_la):
     y = y + d_la        
     return (x, y)
 
-def randomCords():
-    x = random.uniform(0, 100)
-    y = random.uniform(0, 100)
-    return (x, y)
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     drone_coords = current_coords
@@ -65,7 +70,9 @@ def load_initial_coordinates(filename):
             data = f.read().strip()
             if data:
                 longitude, latitude = map(float, data.split(','))
+                logging.info("Successfully loaded initial drone location.")
                 return longitude, latitude
+    logging.info("None initial drone location loaded.")
     return None
 
 def save_final_coordinates(filename, longitude,latitude):
@@ -73,14 +80,12 @@ def save_final_coordinates(filename, longitude,latitude):
     with open(filename, 'w') as f:
         f.write(f"{longitude},{latitude}")
         f.close()
-#=================================================================================================
+    logging.info("Successfully save the final location.")
+
+
 if __name__ == "__main__":
-    # Fill in the IP address of server, in order to location of the drone to the SERVER
-    #===================================================================
+    # The IP address of server, in order to location of the drone to the SERVER
     SERVER_URL = "http://192.168.0.1:1338/drone"
-    #===================================================================
-    #? Ska vi ha en file eller flera filer för varje drönare?
-    COORDS_FILE = "drone_coords.txt"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--clong", help='current longitude of drone location' ,type=float)
@@ -91,6 +96,11 @@ if __name__ == "__main__":
     parser.add_argument("--tlat", help ='latitude of input [to address]' ,type=float)
     parser.add_argument("--id", help ='drones ID' ,type=str)
     args = parser.parse_args()
+
+    # Assign a unique file name for every drone.
+    COORDS_FILE = f"{args.id}.txt"
+
+    logging.debug(f"Created {COORDS_FILE}.")
 
     # Load initial coordinates from file or use provided ones
     initial_coords = load_initial_coordinates(COORDS_FILE)
@@ -110,6 +120,7 @@ if __name__ == "__main__":
 
      # Save the final location to the file
     save_final_coordinates(COORDS_FILE, drone_long, drone_lat)
-    print(f"Drone final coordinates saved: {drone_long}, {drone_lat}")
+    logging.info(f"Drone's final coordinates saved: {drone_long}, {drone_lat}")
+    print("Task is done!")
     # drone_long and drone_lat is the final location when drlivery is completed, find a way save the value, and use it for the initial coordinates of next delivery
     #=============================================================================
