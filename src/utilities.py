@@ -2,8 +2,19 @@ import random
 import initial_coords
 import datetime
 
-medeciner = ["Viagra, Antidepp, Alvedon, Ipren, Zovirax, Gaviscon, Halstabletter"]
-leveranser = []
+medeciner = ["Viagra", "Antidepp", "Alvedon", "Ipren", "Zovirax", "Gaviscon", "Halstabletter"]
+leveranser = [{"d1": [
+
+]},
+{"d2": [
+
+]},
+{"d3": [
+
+]},
+{"d4": [
+
+]}]
 
 def randomMedicin():
     return medeciner[random.randint(0, len(medeciner) - 1)]
@@ -26,3 +37,5 @@ def newLeverans():
         droneName = ""
         KlockslagFramme = datetime.max 
         KlockslagTbk = datetime.max 
+        for drone in leveranser:
+            if (not )
