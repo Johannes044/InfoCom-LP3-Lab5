@@ -19,11 +19,6 @@ def moveDrone(src, d_long, d_la):
     y = y + d_la        
     return (x, y)
 
-def randomCords():
-    x = random.uniform(0, 100)
-    y = random.uniform(0, 100)
-    return (x, y)
-
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     drone_coords = current_coords
     d_long, d_la =  getMovement(drone_coords, from_coords)
