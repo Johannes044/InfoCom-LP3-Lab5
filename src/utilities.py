@@ -9,3 +9,17 @@ def randomCords():
 
 def isDelivery():
     return random.random()< 0.1
+
+
+
+
+
+
+
+
+
+
+
+def clearFile(filename):
+    with open(filename,'w') as file:
+        pass
