@@ -3,12 +3,23 @@ from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import redis
 import json
+import logging
+file = "../Logs/build.txt"
+import sys
+import os
+sys.path.append(os.path.abspath(".."))
+from utilities import clearFile
 
+# Konfigurera Flask och Redis
 app = Flask(__name__)
 CORS(app)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
-
 redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True, charset="unicode_escape")
+
+# Konfigurera loggning
+logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+
+clearFile()
 
 def translate(coords_osm):
     x_osm_lim = (13.143390664, 13.257501336)
@@ -42,6 +53,7 @@ def admin():
     return render_template('admin.html')
 
 @app.route('/get_drones', methods=['GET'])
+# Fetching drone data
 def get_drones():
     drone_dict = {}
     drones = redis_server.smembers("drones")
@@ -50,6 +62,7 @@ def get_drones():
         if 'longitude' in droneData and 'latitude' in droneData and 'status' in droneData:
             longitude_svg, latitude_svg = translate((float(droneData['longitude']), float(droneData['latitude'])))
             drone_dict[drone] = {'longitude': longitude_svg, 'latitude': latitude_svg, 'status': droneData['status']}
+    logging.debug(f"Drones fetched: {drone_dict}")
     return jsonify(drone_dict)
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@ from flask_cors import CORS
 import subprocess
 import  requests
 import logging
-file = "src/Logs/drone.txt"
+file = "../Logs/drone.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))

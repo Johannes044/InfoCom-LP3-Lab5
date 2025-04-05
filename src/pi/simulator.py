@@ -2,7 +2,7 @@ import math
 import requests
 import argparse
 import logging
-file = "src/Logs/simulator.txt"
+file = "../Logs/simulator.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))

@@ -7,7 +7,7 @@ import redis
 import json
 import requests
 import logging
-file = "src/Logs/route_planner.txt"
+file = "../Logs/route_planner.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
