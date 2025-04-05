@@ -31,7 +31,7 @@
 - Lägg till ett (x) i rutan när något är gjort.
 
 
-## Exempel on to write 
+## Exempel on how to write task
 
 - [ ] **Skiss på poster**  
   - Rita upp fysiska eller digitala leveransposter  
