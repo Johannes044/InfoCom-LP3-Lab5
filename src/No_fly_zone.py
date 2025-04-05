@@ -20,7 +20,7 @@ def is_in_no_fly_zone(lon, lat):
             return True  # Drönaren är i en förbjuden zon
     return False
 
-def safe_diraction(lon, lat, step_size_lon, step_size_lat):
+def safe_diraction(lon, lat, step_size_lon = 0.0005, step_size_lat=0.0005):
     """Hittar en säker position genom att flytta drönaren utanför no-fly-zonen"""
     original_lon, original_lat = lon, lat
     attempts = 0
