@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="static\icons\cat.webp" alt="Drone logo" width=256px>
+  <h3>ToDo</h3>
+</div>
+
+
 ## What we need to do:
 
 - Leverans-system
