@@ -21,7 +21,7 @@ def isDelivery():
 
 
 def waitingForInput():
-    print("Drone is waiting at from_coords. Press joystick to continue...")
+    print("Drone is waiting for QR-code. Press joystick to continue...")
     # Vänta på att användaren trycker på joystick
     event = sense.stick.wait_for_event()
     while event.action != "pressed":
