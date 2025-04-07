@@ -68,19 +68,10 @@ def route_planner():
         return 'No available drone, try later'
     
     DRONE_IP = redis_server.hget(droneAvailable, 'ip')
-    DRONE_URL = f'http://{DRONE_IP}:5000'
+    DRONE_URL = f'http://{DRONE_IP}:42069'
     send_request(DRONE_URL, coords)
     logging.debug('Got address and sent request to the drone')
     return 'Got address and sent request to the drone'
-
-    try:
-        with requests.session() as session:
-            resp = session.post(DRONE_URL, json=coords)
-            print(resp.text)
-        return message
-    except Exception as e:
-        print(e)
-        return "Could not connect to the drone, please try again"
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port='1339')

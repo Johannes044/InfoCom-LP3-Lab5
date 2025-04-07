@@ -1,3 +1,4 @@
+import time
 import math
 import requests
 import argparse
@@ -6,34 +7,36 @@ file = "../Logs/simulator.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from utilities import clearFile
+# from utilities import clearFile
 
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile(file)
+# clearFile(file)
 
 def getMovement(src, dst):
-    speed = 0.00001
     dst_x, dst_y = dst
     x, y = src
-    direction = math.sqrt((dst_x - x)**2 + (dst_y - y)**2)
-    longitude_move = speed * ((dst_x - x) / direction )
-    latitude_move = speed * ((dst_y - y) / direction )
+    distance = math.sqrt((dst_x - x)**2 + (dst_y - y)**2)
+    longitude_move = (dst_x - x) / distance 
+    latitude_move = (dst_y - y) / distance
     return longitude_move, latitude_move
 
-def moveDrone(src, d_long, d_la):
+def moveDrone(src, d_long, d_la, dt):
+    speed = 340 * 0.000009 # meter per second
     x, y = src
-    x = x + d_long
-    y = y + d_la        
-    return (x, y)
+    x = x + d_long * speed * dt
+    y = y + d_la * speed * dt        
+    return x, y
 
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     drone_coords = current_coords
     d_long, d_la =  getMovement(drone_coords, from_coords)
-    while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
-        drone_coords = moveDrone(drone_coords, d_long, d_la)
+    dt = 0
+    while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
+        start = time.perf_counter()
+        drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
         with requests.Session() as session:
             drone_info = {'id': id,
                           'longitude': drone_coords[0],
@@ -42,9 +45,11 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
                         }
             resp = session.post(SERVER_URL, json=drone_info)
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+        dt = time.perf_counter() - start
     d_long, d_la =  getMovement(drone_coords, to_coords)
-    while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
-        drone_coords = moveDrone(drone_coords, d_long, d_la)
+    while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
+        start = time.perf_counter()
+        drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
         with requests.Session() as session:
             drone_info = {'id': id,
                           'longitude': drone_coords[0],
@@ -53,6 +58,7 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
                         }
             resp = session.post(SERVER_URL, json=drone_info)
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+        dt = time.perf_counter() - start
     with requests.Session() as session:
             drone_info = {'id': id,
                           'longitude': drone_coords[0],
@@ -65,7 +71,7 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
 #=====================================================================================================
 def load_initial_coordinates(filename):
     """Load the initial coordinates from a file if it exists."""
-    if os.path.exists(filename):
+    if os.path.exists(filename):  # Fuck filen, helt ärligt!
         with open(filename, 'r') as f:
             data = f.read().strip()
             if data:
@@ -85,7 +91,8 @@ def save_final_coordinates(filename, longitude,latitude):
 
 if __name__ == "__main__":
     # The IP address of server, in order to location of the drone to the SERVER
-    SERVER_URL = "http://192.168.0.1:1338/drone"
+    # SERVER_URL = "http://192.168.0.1:1338/drone"
+    SERVER_URL = "http://127.0.0.1:1338/drone"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--clong", help='current longitude of drone location' ,type=float)

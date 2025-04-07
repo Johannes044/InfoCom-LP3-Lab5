@@ -26,6 +26,7 @@ def drone():
     try:
         # Hämta JSON-data från drönaren
         drone = request.get_json()
+        print(drone, "sadasdas")
         logging.debug(f"Incoming data: {drone}")
         
         # Kontrollera om nödvändiga fält finns
@@ -41,14 +42,15 @@ def drone():
         drone_status = drone['status']
 
         # Lägg till drönaren i Redis om den inte redan finns
-        #if not redis_server.sismember('drones', drone_id):
-            #redis_server.sadd('drones', drone_id)
-            #logging.info(f"New drone registrerad: {drone_id}")
+        if not redis_server.sismember('drones', drone_id):
+            redis_server.sadd('drones', drone_id)
+            logging.info(f"New drone registrerad: {drone_id}")
 
         logging.info(f"Drone {drone_id} report from {drone_ip}")
 
         # Spara drönardata i Redis
         drone_data = {
+            'id': drone_id,
             'ip': drone_ip,
             'longitude': drone_longitude,
             'latitude': drone_latitude,

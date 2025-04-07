@@ -7,7 +7,7 @@ file = "../Logs/drone.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from utilities import clearFile
+# from utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -17,7 +17,7 @@ app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile(file)
+# clearFile(file)
 
 # Assign a unique ID to the drone
 myID = "D69"
@@ -40,7 +40,8 @@ drone_info = {'id': myID,
              }
 
 # Define the server address
-SERVER="http://192.168.0.1:1338/drone"
+# SERVER="http://192.168.0.1:1338/drone"
+SERVER="http://127.0.0.1:1338/drone"
 # Send initial location to server with error handling
 try:
     with requests.Session() as session:
@@ -89,4 +90,4 @@ def main():
     return 'New route received'
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', port=42069)

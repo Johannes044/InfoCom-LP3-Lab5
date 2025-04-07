@@ -74,3 +74,698 @@
 2025-04-07 14:00:35,383 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
 2025-04-07 14:00:35,399 - WARNING -  * Debugger is active!
 2025-04-07 14:00:35,403 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 14:15:26,430 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 14:15:26,430 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 14:15:26,510 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.13.178:1339
+2025-04-07 14:15:26,510 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 14:15:26,511 - INFO -  * Restarting with stat
+2025-04-07 14:15:26,665 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 14:15:26,665 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 14:15:26,683 - WARNING -  * Debugger is active!
+2025-04-07 14:15:26,690 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 14:27:48,034 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 14:27:48,037 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 14:27:48,368 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 436
+2025-04-07 14:27:48,370 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 14:27:49,323 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 14:27:49,324 - DEBUG - Starting new HTTPS connection (2): nominatim.openstreetmap.org:443
+2025-04-07 14:27:49,335 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 436
+2025-04-07 14:27:49,339 - INFO - 127.0.0.1 - - [07/Apr/2025 14:27:49] "POST /planner HTTP/1.1" 200 -
+2025-04-07 14:27:50,500 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 436
+2025-04-07 14:27:50,500 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 14:27:51,445 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 436
+2025-04-07 14:27:51,446 - INFO - 127.0.0.1 - - [07/Apr/2025 14:27:51] "POST /planner HTTP/1.1" 200 -
+2025-04-07 14:36:31,483 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 14:36:31,485 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-04-07 14:36:31,715 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 436
+2025-04-07 14:36:31,717 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 14:36:32,287 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 14:36:32,289 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-04-07 14:36:32,759 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 436
+2025-04-07 14:36:32,762 - INFO - 127.0.0.1 - - [07/Apr/2025 14:36:32] "POST /planner HTTP/1.1" 200 -
+2025-04-07 14:36:33,784 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 436
+2025-04-07 14:36:33,785 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 14:36:34,688 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 436
+2025-04-07 14:36:34,689 - INFO - 127.0.0.1 - - [07/Apr/2025 14:36:34] "POST /planner HTTP/1.1" 200 -
+2025-04-07 15:22:21,507 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:22:21,604 - INFO -  * Restarting with stat
+2025-04-07 15:22:21,902 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:22:21,902 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:22:21,912 - WARNING -  * Debugger is active!
+2025-04-07 15:22:21,916 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:27:29,192 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:27:29,251 - INFO -  * Restarting with stat
+2025-04-07 15:27:29,533 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:27:29,533 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:27:29,547 - WARNING -  * Debugger is active!
+2025-04-07 15:27:29,551 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:28:48,217 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:28:48,276 - INFO -  * Restarting with stat
+2025-04-07 15:28:48,549 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:28:48,549 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:28:48,559 - WARNING -  * Debugger is active!
+2025-04-07 15:28:48,563 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:28:58,851 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:28:58,888 - INFO -  * Restarting with stat
+2025-04-07 15:28:59,101 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:28:59,101 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:28:59,113 - WARNING -  * Debugger is active!
+2025-04-07 15:28:59,117 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:34:48,180 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:34:48,230 - INFO -  * Restarting with stat
+2025-04-07 15:34:48,493 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:34:48,493 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:34:48,505 - WARNING -  * Debugger is active!
+2025-04-07 15:34:48,509 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:35:13,298 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:35:13,336 - INFO -  * Restarting with stat
+2025-04-07 15:35:13,557 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:35:13,557 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:35:13,569 - WARNING -  * Debugger is active!
+2025-04-07 15:35:13,574 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:35:18,098 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:35:18,098 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:35:18,169 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 15:35:18,169 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 15:35:18,169 - INFO -  * Restarting with stat
+2025-04-07 15:35:18,326 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:35:18,326 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:35:18,337 - WARNING -  * Debugger is active!
+2025-04-07 15:35:18,342 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:35:49,381 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:35:49,447 - INFO -  * Restarting with stat
+2025-04-07 15:35:49,666 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:35:49,666 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:35:49,679 - WARNING -  * Debugger is active!
+2025-04-07 15:35:49,684 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:36:17,605 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:36:17,659 - INFO -  * Restarting with stat
+2025-04-07 15:36:17,882 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:36:17,882 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:36:17,895 - WARNING -  * Debugger is active!
+2025-04-07 15:36:17,900 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:49:27,193 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 15:49:27,248 - INFO -  * Restarting with stat
+2025-04-07 15:49:27,476 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:49:27,476 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:49:27,488 - WARNING -  * Debugger is active!
+2025-04-07 15:49:27,496 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:49:43,001 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/drone.py', reloading
+2025-04-07 15:49:43,059 - INFO -  * Restarting with stat
+2025-04-07 15:49:43,269 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:49:43,269 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:49:43,282 - WARNING -  * Debugger is active!
+2025-04-07 15:49:43,286 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:50:21,575 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/drone.py', reloading
+2025-04-07 15:50:21,636 - INFO -  * Restarting with stat
+2025-04-07 15:50:21,904 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:50:21,905 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:50:21,916 - WARNING -  * Debugger is active!
+2025-04-07 15:50:21,924 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:50:44,607 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 15:50:44,666 - INFO -  * Restarting with stat
+2025-04-07 15:50:44,880 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:50:44,880 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:50:44,893 - WARNING -  * Debugger is active!
+2025-04-07 15:50:44,897 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:51:10,713 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/drone.py', reloading
+2025-04-07 15:51:10,768 - INFO -  * Restarting with stat
+2025-04-07 15:51:10,992 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:51:10,992 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:51:11,006 - WARNING -  * Debugger is active!
+2025-04-07 15:51:11,012 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:51:28,563 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/drone.py', reloading
+2025-04-07 15:51:28,611 - INFO -  * Restarting with stat
+2025-04-07 15:51:28,832 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:51:28,832 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:51:28,845 - WARNING -  * Debugger is active!
+2025-04-07 15:51:28,850 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:52:22,989 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:52:22,989 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:52:23,051 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 15:52:23,051 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 15:52:23,052 - INFO -  * Restarting with stat
+2025-04-07 15:52:23,208 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:52:23,208 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:52:23,219 - WARNING -  * Debugger is active!
+2025-04-07 15:52:23,225 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 15:57:44,049 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 15:57:44,126 - INFO -  * Restarting with stat
+2025-04-07 15:57:44,348 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:57:44,348 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 15:57:44,361 - WARNING -  * Debugger is active!
+2025-04-07 15:57:44,367 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:00:26,724 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/database.py', reloading
+2025-04-07 16:00:26,806 - INFO -  * Restarting with stat
+2025-04-07 16:00:27,032 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:00:27,032 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:00:27,047 - WARNING -  * Debugger is active!
+2025-04-07 16:00:27,055 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:00:38,554 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:00:38,554 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:00:38,638 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 16:00:38,638 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 16:00:38,639 - INFO -  * Restarting with stat
+2025-04-07 16:00:38,788 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:00:38,788 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:00:38,802 - WARNING -  * Debugger is active!
+2025-04-07 16:00:38,807 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:01:41,812 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/database.py', reloading
+2025-04-07 16:01:41,868 - INFO -  * Restarting with stat
+2025-04-07 16:01:42,037 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:01:42,037 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:01:42,053 - WARNING -  * Debugger is active!
+2025-04-07 16:01:42,061 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:02:55,665 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:02:55,666 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 16:02:56,943 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:02:56,944 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:02:58,052 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:02:58,067 - INFO - 127.0.0.1 - - [07/Apr/2025 16:02:58] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:03:17,034 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:18,037 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 479
+2025-04-07 16:03:18,038 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:18,926 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:18,927 - DEBUG - Starting new HTTPS connection (2): nominatim.openstreetmap.org:443
+2025-04-07 16:03:19,880 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 479
+2025-04-07 16:03:19,881 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:20,597 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:03:20,605 - INFO - 127.0.0.1 - - [07/Apr/2025 16:03:20] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:03:22,851 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:03:22,858 - INFO - 127.0.0.1 - - [07/Apr/2025 16:03:22] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:03:35,864 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:37,730 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:37,797 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 479
+2025-04-07 16:03:37,798 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:37,959 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:37,959 - DEBUG - Starting new HTTPS connection (3): nominatim.openstreetmap.org:443
+2025-04-07 16:03:38,202 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:38,203 - DEBUG - Starting new HTTPS connection (4): nominatim.openstreetmap.org:443
+2025-04-07 16:03:38,329 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 479
+2025-04-07 16:03:38,330 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:38,680 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:38,681 - DEBUG - Starting new HTTPS connection (5): nominatim.openstreetmap.org:443
+2025-04-07 16:03:40,462 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 479
+2025-04-07 16:03:40,463 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:40,866 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:03:40,875 - INFO - 127.0.0.1 - - [07/Apr/2025 16:03:40] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:03:42,536 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:03:42,544 - INFO - 127.0.0.1 - - [07/Apr/2025 16:03:42] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:03:43,114 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 479
+2025-04-07 16:03:43,114 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:43,285 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 479
+2025-04-07 16:03:43,285 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:03:44,663 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:03:44,670 - INFO - 127.0.0.1 - - [07/Apr/2025 16:03:44] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:03:45,604 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:03:45,612 - INFO - 127.0.0.1 - - [07/Apr/2025 16:03:45] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:03:46,811 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:03:46,819 - INFO - 127.0.0.1 - - [07/Apr/2025 16:03:46] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:04:15,922 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:04:15,922 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:04:15,987 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 16:04:15,987 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 16:04:15,988 - INFO -  * Restarting with stat
+2025-04-07 16:04:16,143 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:04:16,143 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:04:16,155 - WARNING -  * Debugger is active!
+2025-04-07 16:04:16,160 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:04:45,847 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:04:45,849 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 16:04:48,150 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:04:48,151 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:04:49,891 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:04:49,906 - INFO - 127.0.0.1 - - [07/Apr/2025 16:04:49] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-04-07 16:06:58,187 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/database.py', reloading
+2025-04-07 16:06:58,255 - INFO -  * Restarting with stat
+2025-04-07 16:06:58,515 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:06:58,515 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:06:58,526 - WARNING -  * Debugger is active!
+2025-04-07 16:06:58,535 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:07:00,609 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/database.py', reloading
+2025-04-07 16:07:00,648 - INFO -  * Restarting with stat
+2025-04-07 16:07:00,794 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:07:00,794 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:07:00,808 - WARNING -  * Debugger is active!
+2025-04-07 16:07:00,813 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:07:07,742 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:07:07,742 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:07:07,807 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 16:07:07,807 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 16:07:07,808 - INFO -  * Restarting with stat
+2025-04-07 16:07:07,966 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:07:07,966 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:07:07,979 - WARNING -  * Debugger is active!
+2025-04-07 16:07:07,984 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:07:22,027 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:07:22,030 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 16:07:22,311 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:07:22,313 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:07:23,390 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:07:23,396 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:07:23,402 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-04-07 16:07:23,422 - DEBUG - http://127.0.0.1:5000 "POST / HTTP/1.1" 403 0
+2025-04-07 16:07:23,423 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:07:23,424 - INFO - 127.0.0.1 - - [07/Apr/2025 16:07:23] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:07:41,733 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:07:41,881 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:07:41,882 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:07:42,878 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:07:42,879 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:07:42,882 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-04-07 16:07:42,885 - DEBUG - http://127.0.0.1:5000 "POST / HTTP/1.1" 403 0
+2025-04-07 16:07:42,885 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:07:42,886 - INFO - 127.0.0.1 - - [07/Apr/2025 16:07:42] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:07:58,829 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:07:58,947 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:07:58,948 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:08:00,049 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:08:00,050 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:08:00,052 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-04-07 16:08:00,053 - DEBUG - http://127.0.0.1:5000 "POST / HTTP/1.1" 403 0
+2025-04-07 16:08:00,053 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:08:00,054 - INFO - 127.0.0.1 - - [07/Apr/2025 16:08:00] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:33:17,761 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-04-07 16:33:17,853 - INFO -  * Restarting with stat
+2025-04-07 16:33:18,110 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:33:18,111 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:33:18,123 - WARNING -  * Debugger is active!
+2025-04-07 16:33:18,129 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:36:12,310 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 16:36:12,400 - INFO -  * Restarting with stat
+2025-04-07 16:36:12,665 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:36:12,665 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:36:12,678 - WARNING -  * Debugger is active!
+2025-04-07 16:36:12,687 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:41:36,558 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:41:36,558 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:41:36,658 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 16:41:36,658 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 16:41:36,658 - INFO -  * Restarting with stat
+2025-04-07 16:41:36,810 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:41:36,810 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:41:36,823 - WARNING -  * Debugger is active!
+2025-04-07 16:41:36,828 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:43:39,150 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:43:39,150 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:43:39,217 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 16:43:39,217 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 16:43:39,217 - INFO -  * Restarting with stat
+2025-04-07 16:43:39,380 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:43:39,380 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:43:39,393 - WARNING -  * Debugger is active!
+2025-04-07 16:43:39,401 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:44:11,524 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:44:11,526 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 16:44:11,811 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:44:11,812 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:44:12,875 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:44:12,879 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:44:12,882 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:44:12,892 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:44:12,892 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:44:12,893 - INFO - 127.0.0.1 - - [07/Apr/2025 16:44:12] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:44:22,750 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:44:23,111 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:44:23,112 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:44:23,987 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:44:23,988 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:44:23,990 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:44:23,997 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:44:23,997 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:44:23,998 - INFO - 127.0.0.1 - - [07/Apr/2025 16:44:23] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:47:11,767 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:47:11,769 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-04-07 16:47:12,016 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:47:12,018 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:47:13,020 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:47:13,021 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:47:13,024 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:47:13,039 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:47:13,039 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:47:13,040 - INFO - 127.0.0.1 - - [07/Apr/2025 16:47:13] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:47:17,615 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:47:17,776 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:47:17,776 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:47:18,829 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:47:18,830 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:47:18,832 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:47:18,838 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:47:18,839 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:47:18,839 - INFO - 127.0.0.1 - - [07/Apr/2025 16:47:18] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:48:26,631 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/database.py', reloading
+2025-04-07 16:48:26,703 - INFO -  * Restarting with stat
+2025-04-07 16:48:26,927 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:48:26,927 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:48:26,941 - WARNING -  * Debugger is active!
+2025-04-07 16:48:26,950 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:48:48,226 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:48:48,226 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:48:48,294 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 16:48:48,294 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 16:48:48,295 - INFO -  * Restarting with stat
+2025-04-07 16:48:48,451 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:48:48,451 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:48:48,463 - WARNING -  * Debugger is active!
+2025-04-07 16:48:48,467 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:49:00,971 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:49:00,973 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 16:49:01,241 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:49:01,242 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:49:02,254 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:49:02,256 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:49:02,258 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:49:02,265 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:49:02,265 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:49:02,266 - INFO - 127.0.0.1 - - [07/Apr/2025 16:49:02] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:53:41,360 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:53:41,362 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-04-07 16:53:41,580 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:53:41,581 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:53:42,627 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:53:42,630 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:53:42,633 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:53:42,653 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:53:42,654 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:53:42,654 - INFO - 127.0.0.1 - - [07/Apr/2025 16:53:42] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:54:17,062 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:54:17,064 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-04-07 16:54:17,262 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:54:17,263 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:54:18,366 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:54:18,367 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:54:18,372 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:54:18,412 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:54:18,412 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:54:18,413 - INFO - 127.0.0.1 - - [07/Apr/2025 16:54:18] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:55:33,206 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 16:55:33,274 - INFO -  * Restarting with stat
+2025-04-07 16:55:33,527 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:55:33,528 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 16:55:33,542 - WARNING -  * Debugger is active!
+2025-04-07 16:55:33,548 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 16:56:08,050 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:56:08,052 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 16:56:08,268 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:56:08,269 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:56:09,264 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:56:09,266 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:56:09,270 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:56:09,279 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:56:09,280 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:56:09,280 - INFO - 127.0.0.1 - - [07/Apr/2025 16:56:09] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:56:19,179 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:56:19,334 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:56:19,335 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:56:20,323 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:56:20,323 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:56:20,324 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:56:20,328 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:56:20,328 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:56:20,328 - INFO - 127.0.0.1 - - [07/Apr/2025 16:56:20] "POST /planner HTTP/1.1" 200 -
+2025-04-07 16:58:11,681 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:58:11,683 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-04-07 16:58:12,074 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 16:58:12,075 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 16:58:13,065 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 16:58:13,066 - DEBUG - Drone data from D69 have been access!
+2025-04-07 16:58:13,068 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 16:58:13,077 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 16:58:13,077 - DEBUG - Got address and sent request to the drone
+2025-04-07 16:58:13,078 - INFO - 127.0.0.1 - - [07/Apr/2025 16:58:13] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:01:56,519 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:01:56,586 - INFO -  * Restarting with stat
+2025-04-07 17:01:56,839 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:01:56,839 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:01:56,851 - WARNING -  * Debugger is active!
+2025-04-07 17:01:56,859 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:03:42,314 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:03:42,384 - INFO -  * Restarting with stat
+2025-04-07 17:03:42,637 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:03:42,637 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:03:42,650 - WARNING -  * Debugger is active!
+2025-04-07 17:03:42,658 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:06:39,401 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:06:39,478 - INFO -  * Restarting with stat
+2025-04-07 17:06:39,841 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:06:39,841 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:06:39,858 - WARNING -  * Debugger is active!
+2025-04-07 17:06:39,866 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:06:48,109 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:06:48,188 - INFO -  * Restarting with stat
+2025-04-07 17:06:48,356 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:06:48,356 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:06:48,371 - WARNING -  * Debugger is active!
+2025-04-07 17:06:48,379 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:07:05,851 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:07:05,852 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 17:07:06,454 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:07:06,455 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:07:07,376 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:07:07,380 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:07:07,383 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:07:07,398 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:07:07,398 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:07:07,399 - INFO - 127.0.0.1 - - [07/Apr/2025 17:07:07] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:07:55,248 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:07:55,316 - INFO -  * Restarting with stat
+2025-04-07 17:07:55,613 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:07:55,613 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:07:55,624 - WARNING -  * Debugger is active!
+2025-04-07 17:07:55,632 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:07:57,703 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:07:57,747 - INFO -  * Restarting with stat
+2025-04-07 17:07:57,910 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:07:57,910 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:07:57,928 - WARNING -  * Debugger is active!
+2025-04-07 17:07:57,934 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:08:00,011 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:08:00,055 - INFO -  * Restarting with stat
+2025-04-07 17:08:00,210 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:08:00,210 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:08:00,222 - WARNING -  * Debugger is active!
+2025-04-07 17:08:00,227 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:08:04,394 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:08:04,444 - INFO -  * Restarting with stat
+2025-04-07 17:08:04,606 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:08:04,607 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:08:04,621 - WARNING -  * Debugger is active!
+2025-04-07 17:08:04,633 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:08:07,735 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:08:07,779 - INFO -  * Restarting with stat
+2025-04-07 17:08:07,931 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:08:07,931 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:08:07,943 - WARNING -  * Debugger is active!
+2025-04-07 17:08:07,951 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:08:15,156 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-04-07 17:08:15,211 - INFO -  * Restarting with stat
+2025-04-07 17:08:15,366 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:08:15,366 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:08:15,377 - WARNING -  * Debugger is active!
+2025-04-07 17:08:15,387 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:08:24,821 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:08:24,822 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 17:08:25,109 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:08:25,110 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:08:26,122 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:08:26,124 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:08:26,127 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:08:26,136 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:08:26,136 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:08:26,137 - INFO - 127.0.0.1 - - [07/Apr/2025 17:08:26] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:09:34,887 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:09:34,948 - INFO -  * Restarting with stat
+2025-04-07 17:09:35,162 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:09:35,162 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:09:35,178 - WARNING -  * Debugger is active!
+2025-04-07 17:09:35,187 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:10:54,992 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:10:55,054 - INFO -  * Restarting with stat
+2025-04-07 17:10:55,309 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:10:55,309 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:10:55,322 - WARNING -  * Debugger is active!
+2025-04-07 17:10:55,329 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:11:09,391 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:11:09,391 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:11:09,456 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 17:11:09,456 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 17:11:09,456 - INFO -  * Restarting with stat
+2025-04-07 17:11:09,651 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:11:09,651 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:11:09,664 - WARNING -  * Debugger is active!
+2025-04-07 17:11:09,670 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:11:26,131 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:11:26,133 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 17:11:26,414 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:11:26,415 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:11:27,472 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:11:27,474 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:11:27,478 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:11:27,487 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:11:27,487 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:11:27,488 - INFO - 127.0.0.1 - - [07/Apr/2025 17:11:27] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:12:01,134 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:12:01,174 - INFO -  * Restarting with stat
+2025-04-07 17:12:01,404 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:12:01,404 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:12:01,425 - WARNING -  * Debugger is active!
+2025-04-07 17:12:01,432 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:12:14,755 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:12:14,757 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 17:12:15,113 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:12:15,114 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:12:16,010 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:12:16,012 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:12:16,015 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:12:16,027 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:12:16,027 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:12:16,028 - INFO - 127.0.0.1 - - [07/Apr/2025 17:12:16] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:12:26,446 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:12:26,673 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:12:26,673 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:12:27,672 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:12:27,674 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:12:27,676 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:12:27,685 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:12:27,686 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:12:27,686 - INFO - 127.0.0.1 - - [07/Apr/2025 17:12:27] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:12:40,326 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:12:40,555 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:12:40,556 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:12:41,859 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:12:41,860 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:12:41,861 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:12:41,867 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:12:41,867 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:12:41,867 - INFO - 127.0.0.1 - - [07/Apr/2025 17:12:41] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:12:51,013 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:12:51,013 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:12:51,081 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 17:12:51,081 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 17:12:51,081 - INFO -  * Restarting with stat
+2025-04-07 17:12:51,231 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:12:51,231 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:12:51,243 - WARNING -  * Debugger is active!
+2025-04-07 17:12:51,247 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:13:08,837 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:13:08,838 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 17:13:09,461 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:13:09,462 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:13:10,281 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:13:10,283 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:13:10,287 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:13:10,297 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:13:10,297 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:13:10,298 - INFO - 127.0.0.1 - - [07/Apr/2025 17:13:10] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:15:19,297 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:15:19,298 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:15:19,376 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.147.212:1339
+2025-04-07 17:15:19,376 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 17:15:19,377 - INFO -  * Restarting with stat
+2025-04-07 17:15:19,530 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:15:19,530 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:15:19,543 - WARNING -  * Debugger is active!
+2025-04-07 17:15:19,549 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:15:42,064 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:15:42,065 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 17:15:42,473 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:15:42,474 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:15:43,471 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:15:43,474 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:15:43,477 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:15:43,484 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:15:43,485 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:15:43,486 - INFO - 127.0.0.1 - - [07/Apr/2025 17:15:43] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:16:55,482 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:16:55,538 - INFO -  * Restarting with stat
+2025-04-07 17:16:55,698 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:16:55,698 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:16:55,710 - WARNING -  * Debugger is active!
+2025-04-07 17:16:55,716 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:17:01,873 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:17:01,910 - INFO -  * Restarting with stat
+2025-04-07 17:17:02,059 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:17:02,060 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:17:02,071 - WARNING -  * Debugger is active!
+2025-04-07 17:17:02,077 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:17:09,914 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:17:09,915 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 17:17:10,144 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:17:10,144 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:17:11,125 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:17:11,128 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:17:11,130 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:17:11,140 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:17:11,140 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:17:11,141 - INFO - 127.0.0.1 - - [07/Apr/2025 17:17:11] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:17:24,527 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:17:24,646 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:17:24,647 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:17:25,654 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:17:25,655 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:17:25,655 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:17:25,660 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:17:25,660 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:17:25,660 - INFO - 127.0.0.1 - - [07/Apr/2025 17:17:25] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:18:20,043 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-04-07 17:18:20,090 - INFO -  * Restarting with stat
+2025-04-07 17:18:20,307 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:18:20,308 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-04-07 17:18:20,321 - WARNING -  * Debugger is active!
+2025-04-07 17:18:20,329 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 17:18:32,614 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:18:32,616 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-04-07 17:18:32,812 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-04-07 17:18:32,813 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:18:33,796 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:18:33,798 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:18:33,801 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:18:33,808 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:18:33,808 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:18:33,809 - INFO - 127.0.0.1 - - [07/Apr/2025 17:18:33] "POST /planner HTTP/1.1" 200 -
+2025-04-07 17:18:55,513 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:18:55,514 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-04-07 17:18:55,680 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=flormansgatan+2%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 479
+2025-04-07 17:18:55,681 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-04-07 17:18:56,746 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 493
+2025-04-07 17:18:56,747 - DEBUG - Drone data from D69 have been access!
+2025-04-07 17:18:56,749 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-04-07 17:18:56,756 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-04-07 17:18:56,757 - DEBUG - Got address and sent request to the drone
+2025-04-07 17:18:56,757 - INFO - 127.0.0.1 - - [07/Apr/2025 17:18:56] "POST /planner HTTP/1.1" 200 -

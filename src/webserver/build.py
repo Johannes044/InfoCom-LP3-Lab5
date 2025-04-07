@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, request
+from flask import Flask, render_template, request, jsonify, request, redirect, url_for
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import redis
@@ -37,12 +37,15 @@ def translate(coords_osm):
 def home():
     return render_template('index.html')
     
-@app.route('/map', methods=['GET', 'POST'])
+@app.route('/map', methods=['POST'])
 def map():
-    if request.method == "POST":
-        print(request.values.get("tracking-number"))
+    drone_id = request.values.get("drone-id").strip()  # Drönar-id från input
+    drone_ids = redis_server.smembers("drones")  # Alla faktiska drönar-idn
 
-    return render_template('map.html')
+    if drone_id not in drone_ids:
+        return redirect("/")
+
+    return render_template('map.html', drone_id=drone_id)
 
 @app.route('/about', methods=['GET'])
 def about():
@@ -57,6 +60,7 @@ def admin():
 def get_drones():
     drone_dict = {}
     drones = redis_server.smembers("drones")
+    print(drones)
     for drone in drones:
         droneData = redis_server.hgetall(drone)
         if 'longitude' in droneData and 'latitude' in droneData and 'status' in droneData:
