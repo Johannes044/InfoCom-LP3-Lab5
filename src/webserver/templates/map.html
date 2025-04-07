@@ -4,88 +4,114 @@
 {% block stylesheet %}{{ url_for("static", filename="css/map.css") }}{% endblock %}
 
 {% block headstuff %}
-  <script src="https://d3js.org/d3.v3.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
-  <script type="text/javascript">
-    function Submit() {
-      var from_addr = document.getElementById('faddr').value;
-      var to_addr = document.getElementById('taddr').value;
-      var data = { "faddr": from_addr, "taddr": to_addr };
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          try {
-            document.getElementById('txt').innerText = this.responseText;
-            console.log("Response received: ", this.responseText);
-          } catch (err) {
-            alert(this.responseText);
-          }
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+  function Submit() {
+    var from_addr = document.getElementById('faddr').value;
+    var to_addr = document.getElementById('taddr').value;
+    var data = { "faddr": from_addr, "taddr": to_addr };
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        try {
+          document.getElementById('txt').innerText = this.responseText;
+          console.log("Response received: ", this.responseText);
+        } catch (err) {
+          alert(this.responseText);
         }
-      };
-      xhttp.open("POST", "http://127.0.0.1:1339/planner", true);
-      xhttp.send(JSON.stringify(data));
-    }
-  </script>
-  <script type="text/javascript">
-    function LoadDrone(droneID, x, y, status) {
-      var doc = document.getElementById("map");
-      $(doc).ready(function() {
-        var doc_svg = doc.getSVGDocument();
-        var svg = doc_svg.getElementById("map-svg");
-        var circleNode = svg.getElementById(droneID);
-        var color = status === 'idle' ? 'green' : 'red';
-        if (circleNode == null) {
-          circleNode = doc_svg.createElementNS("http://www.w3.org/2000/svg", "circle");
-          circleNode.setAttributeNS(null, 'cx', x);
-          circleNode.setAttributeNS(null, 'cy', y);
-          circleNode.setAttributeNS(null, 'r', '5');
-          circleNode.setAttributeNS(null, 'fill', color);
-          circleNode.setAttributeNS(null, 'id', droneID);
-          svg.appendChild(circleNode);
-        } else {
-          circleNode.setAttributeNS(null, 'cx', x);
-          circleNode.setAttributeNS(null, 'cy', y);
-          circleNode.setAttributeNS(null, 'fill', color);
-        }
-      });
-    }
-    
-  </script> 
+      }
+    };
+    xhttp.open("POST", "http://127.0.0.1:1339/planner", true);
+    xhttp.send(JSON.stringify(data));
+  }
+</script>
+<script type="text/javascript">
+  function LoadDrone(droneID, x, y, status) {
+    var doc = document.getElementById("map");
+    $(doc).ready(function () {
+      var doc_svg = doc.getSVGDocument();
+      var svg = doc_svg.getElementById("map-svg");
+      var circleNode = svg.getElementById(droneID);
+      var color = status === 'idle' ? 'green' : 'red';
+      if (circleNode == null) {
+        circleNode = doc_svg.createElementNS("http://www.w3.org/2000/svg", "circle");
+        circleNode.setAttributeNS(null, 'cx', x);
+        circleNode.setAttributeNS(null, 'cy', y);
+        circleNode.setAttributeNS(null, 'r', '5');
+        circleNode.setAttributeNS(null, 'fill', color);
+        circleNode.setAttributeNS(null, 'id', droneID);
+        svg.appendChild(circleNode);
+      } else {
+        circleNode.setAttributeNS(null, 'cx', x);
+        circleNode.setAttributeNS(null, 'cy', y);
+        circleNode.setAttributeNS(null, 'fill', color);
+      }
+    });
+  }
+  function DrawNoFlyZone(x, y, width = 10, height = 10) {
+    var doc = document.getElementById("map");
+    $(doc).ready(function () {
+      var doc_svg = doc.getSVGDocument();
+      var svg = doc_svg.getElementById("map-svg");
+
+      var zone = doc_svg.createElementNS("http://www.w3.org/2000/svg", "rect");
+      zone.setAttributeNS(null, 'x', x);
+      zone.setAttributeNS(null, 'y', y);
+      zone.setAttributeNS(null, 'width', width);
+      zone.setAttributeNS(null, 'height', height);
+      zone.setAttributeNS(null, 'fill', 'orange');
+      zone.setAttributeNS(null, 'opacity', '0.5');
+      zone.setAttributeNS(null, 'stroke', 'red');
+      zone.setAttributeNS(null, 'stroke-width', '1');
+      svg.appendChild(zone);
+    });
+  }
+
+
+</script>
 {% endblock %}
 
 {% block content %}
-    <div class="content">
-      <h1>Följ din drönarleverans här!</h1>
-      <div id="txt">Current Position: </div>
-      <form action="javascript:Submit()">
-        <label for="faddr">From address:</label>
-        <input type="text" id="faddr" name="faddr">
+<div class="content">
+  <h1>Följ din drönarleverans här!</h1>
+  <div id="txt">Current Position: </div>
+  <form action="javascript:Submit()">
+    <label for="faddr">From address:</label>
+    <input type="text" id="faddr" name="faddr">
+
+    <label for="taddr">To address:</label>
+    <input type="text" id="taddr" name="taddr">
+
+    <input type="submit" value="Search addresses">
+  </form>
+
+  <object id="map" type="image/svg+xml" data="static/images/lund-map.svg"></object>
+  <script>
+    var set_delay = 50;
+    function callout() {
+      $.ajax({ url: 'http://0.0.0.0:1337/get_drones' })
+        .done(function (server_response) {
+          var available_drones = Object.keys(server_response);
+          for (const droneID of available_drones) {
+            var x = server_response[droneID].longitude;
+            var y = server_response[droneID].latitude;
+            var status = server_response[droneID].status;
+            LoadDrone(droneID, x, y, status);
+          }
+        })
+        .always(function () {
+          setTimeout(callout, set_delay);
+        });
         
-        <label for="taddr">To address:</label>
-        <input type="text" id="taddr" name="taddr">
-        
-        <input type="submit" value="Search addresses">
-      </form>
-    
-    <object id="map" type="image/svg+xml" data="static/images/lund-map.svg"></object>
-      <script>
-        var set_delay = 50;
-        function callout() {
-          $.ajax({ url: 'http://0.0.0.0:1337/get_drones' })
-            .done(function(server_response) {
-              var available_drones = Object.keys(server_response);
-              for (const droneID of available_drones) {
-                var x = server_response[droneID].longitude;
-                var y = server_response[droneID].latitude;
-                var status = server_response[droneID].status;
-                LoadDrone(droneID, x, y, status);
-              }
-            })
-            .always(function() {
-              setTimeout(callout, set_delay);
-            });
-        }
-        callout();
-      </script>
-    </div>
+      $.ajax({ url: 'http://0.0.0.0:1337/get_no_fly_zones' })
+        .done(function (zones) {
+          for (const zone of zones) {
+            DrawNoFlyZone(zone.x, zone.y);
+          }
+        });
+    }
+    callout();
+  </script>
+</div>
 {% endblock %}

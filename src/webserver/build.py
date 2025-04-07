@@ -53,6 +53,15 @@ def about():
 def admin():
     return render_template('admin.html')
 
+@app.route("/get_no_fly_zones", methods=["GET"])
+def get_no_fly_zones():
+    zones = [
+        {"x": 300, "y": 200},
+        {"x": 500, "y": 350},
+        {"x": 150, "y": 400}
+    ]
+    return jsonify(zones)
+
 @app.route('/get_drones', methods=['GET'])
 # Fetching drone data
 def get_drones():
