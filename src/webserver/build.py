@@ -62,7 +62,7 @@ def get_drones():
         droneData = redis_server.hgetall(drone)
         if 'longitude' in droneData and 'latitude' in droneData and 'status' in droneData:
             lon,lat = safe_diraction(float(droneData['longitude']), float(droneData['latitude']))
-            longitude_svg, latitude_svg = translate((lon, lat))
+            longitude_svg, latitude_svg = translate((float(lon), float(lat)))
             drone_dict[drone] = {'longitude': longitude_svg, 'latitude': latitude_svg, 'status': droneData['status']}
     logging.debug(f"Drones fetched: {drone_dict}")
     return jsonify(drone_dict)

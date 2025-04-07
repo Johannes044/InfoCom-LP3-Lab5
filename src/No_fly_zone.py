@@ -1,4 +1,11 @@
 ##dig project
+import logging
+file = "../Logs/NOfly.txt"
+
+# Konfigurera loggning
+logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+
+
 NO_FLY_ZONES = [
     {
         "min_lon": 13.182460,
