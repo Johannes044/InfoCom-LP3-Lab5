@@ -9,7 +9,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(".."))
 from utilities import clearFile
-from No_fly_zone import safe_direction
+from No_fly_zone import safe_diraction
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
