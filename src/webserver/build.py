@@ -9,6 +9,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(".."))
 from utilities import clearFile
+from No_fly_zone import safe_direction
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -60,7 +61,8 @@ def get_drones():
     for drone in drones:
         droneData = redis_server.hgetall(drone)
         if 'longitude' in droneData and 'latitude' in droneData and 'status' in droneData:
-            longitude_svg, latitude_svg = translate((float(droneData['longitude']), float(droneData['latitude'])))
+            lon,lat = safe_diraction(float(droneData['longitude']), float(droneData['latitude']))
+            longitude_svg, latitude_svg = translate((lon, lat))
             drone_dict[drone] = {'longitude': longitude_svg, 'latitude': latitude_svg, 'status': droneData['status']}
     logging.debug(f"Drones fetched: {drone_dict}")
     return jsonify(drone_dict)

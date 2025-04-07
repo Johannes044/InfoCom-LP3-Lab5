@@ -28,7 +28,12 @@ def safe_diraction(lon, lat, step_size_lon = 0.0005, step_size_lat=0.0005):
     while is_in_no_fly_zone(lon, lat) and attempts < 100:
         lon += step_size_lon  # Flytta österut
         lat += step_size_lat  # Flytta norrut
+        new_lon = lon
+        new_lat = lat
         attempts += 1
+    
+    if is_in_no_fly_zone(new_lon, new_lat):
+        print("Could move out drone")
 
     print(f"Från ({original_lon}, {original_lat}) -> Till ({lon}, {lat}) efter {attempts} försök")
     return lon, lat
