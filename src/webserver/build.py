@@ -9,7 +9,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(".."))
 from utilities import clearFile
-from No_fly_zone import safe_diraction
+from No_fly_zone import safe_diraction, NO_FLY_ZONES
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -55,12 +55,14 @@ def admin():
 
 @app.route("/get_no_fly_zones", methods=["GET"])
 def get_no_fly_zones():
-    zones = [
-        {"x": 300, "y": 200},
-        {"x": 500, "y": 350},
-        {"x": 150, "y": 400}
-    ]
-    return jsonify(zones)
+    zones_svg = []
+    for zone in NO_FLY_ZONES:
+        x1, y1 = translate((zone["min_lon"], zone["max_lat"]))
+        x2,y2 = translate((zone["max_lon"], zone["min_lat"]))
+        width = abs(x2 - x1)
+        height = abs(y2 - y1)
+        zones_svg.append({"x": min(x1, x2), "y": min(y1, y2), "width": width, "height": height})
+    return jsonify(zones_svg)
 
 @app.route('/get_drones', methods=['GET'])
 # Fetching drone data
