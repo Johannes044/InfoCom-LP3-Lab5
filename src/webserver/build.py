@@ -62,6 +62,7 @@ def get_no_fly_zones():
         width = abs(x2 - x1)
         height = abs(y2 - y1)
         zones_svg.append({"x": min(x1, x2), "y": min(y1, y2), "width": width, "height": height})
+    logging.debug(f"Sent {zones_svg} to draw the no fly zone.")
     return jsonify(zones_svg)
 
 @app.route('/get_drones', methods=['GET'])
