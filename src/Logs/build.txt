@@ -1,0 +1,162 @@
+2025-04-07 09:53:59,219 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1337
+ * Running on http://10.8.147.212:1337
+2025-04-07 09:53:59,219 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 09:53:59,219 - INFO -  * Restarting with stat
+2025-04-07 09:53:59,402 - WARNING -  * Debugger is active!
+2025-04-07 09:53:59,408 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:55:00,404 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 09:55:00,460 - INFO -  * Restarting with stat
+2025-04-07 09:55:12,068 - INFO -  * Restarting with stat
+2025-04-07 09:56:20,663 - INFO -  * Restarting with stat
+2025-04-07 09:56:37,455 - INFO -  * Restarting with stat
+2025-04-07 09:58:13,153 - WARNING -  * Debugger is active!
+2025-04-07 09:58:13,159 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:58:23,476 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-04-07 09:58:23,765 - WARNING -  * Debugger is active!
+2025-04-07 09:58:23,769 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:58:32,035 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-04-07 09:58:32,309 - WARNING -  * Debugger is active!
+2025-04-07 09:58:32,313 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:58:39,288 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:39] "GET /about HTTP/1.1" 200 -
+2025-04-07 09:58:39,306 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:39] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-04-07 09:58:39,306 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:39] "[36mGET /static/images/gwd.jpg HTTP/1.1[0m" 304 -
+2025-04-07 09:58:39,309 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:39] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2025-04-07 09:58:40,652 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:40] "GET / HTTP/1.1" 200 -
+2025-04-07 09:58:40,672 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:40] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-04-07 09:58:40,698 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:40] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2025-04-07 09:58:42,285 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "POST /map HTTP/1.1" 200 -
+2025-04-07 09:58:42,301 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "[36mGET /static/css/map.css HTTP/1.1[0m" 304 -
+2025-04-07 09:58:42,307 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2025-04-07 09:58:42,321 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,322 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,324 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "[36mGET /static/images/lund-map.svg HTTP/1.1[0m" 304 -
+2025-04-07 09:58:42,392 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,392 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,447 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,448 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,502 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,502 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,557 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,558 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,611 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,611 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,674 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,675 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,731 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,732 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,789 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,790 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,845 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,846 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,900 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,900 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:42,963 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:42,964 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:42] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,019 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,019 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,077 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,078 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,134 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,135 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,190 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,191 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,248 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,249 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,304 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,305 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,360 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,360 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,414 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,414 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,469 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,470 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,525 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,525 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,580 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,581 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,635 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,636 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,692 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,692 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,749 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,749 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,807 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,808 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,867 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,867 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,924 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,924 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:43,980 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:43,981 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:43] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,038 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,039 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,096 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,097 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,155 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,156 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,214 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,215 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,272 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,273 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,331 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,332 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,390 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,391 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,450 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,450 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,508 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,509 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,566 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,566 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,624 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,625 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,680 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,680 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,735 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,736 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,792 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,792 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,848 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,849 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,905 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,905 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:44,962 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:44,962 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:44] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:45,019 - DEBUG - Drones fetched: {}
+2025-04-07 09:58:45,019 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:45] "GET /get_drones HTTP/1.1" 200 -
+2025-04-07 09:58:45,026 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:45] "GET /about HTTP/1.1" 200 -
+2025-04-07 09:58:45,053 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:45] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-04-07 09:58:45,053 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:45] "[36mGET /static/images/gwd.jpg HTTP/1.1[0m" 304 -
+2025-04-07 09:58:45,059 - INFO - 127.0.0.1 - - [07/Apr/2025 09:58:45] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2025-04-07 14:00:17,987 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1337
+ * Running on http://10.8.13.178:1337
+2025-04-07 14:00:17,988 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 14:00:17,988 - INFO -  * Restarting with stat
+2025-04-07 14:00:18,150 - WARNING -  * Debugger is active!
+2025-04-07 14:00:18,159 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 14:00:35,241 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1337
+ * Running on http://10.8.13.178:1337
+2025-04-07 14:00:35,241 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 14:00:35,241 - INFO -  * Restarting with stat
+2025-04-07 14:00:35,406 - WARNING -  * Debugger is active!
+2025-04-07 14:00:35,410 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 14:00:54,186 - INFO - 127.0.0.1 - - [07/Apr/2025 14:00:54] "GET / HTTP/1.1" 200 -
+2025-04-07 14:00:54,221 - INFO - 127.0.0.1 - - [07/Apr/2025 14:00:54] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2025-04-07 14:00:54,225 - INFO - 127.0.0.1 - - [07/Apr/2025 14:00:54] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2025-04-07 14:04:29,410 - INFO - 127.0.0.1 - - [07/Apr/2025 14:04:29] "GET / HTTP/1.1" 200 -
+2025-04-07 14:04:29,444 - INFO - 127.0.0.1 - - [07/Apr/2025 14:04:29] "GET /static/css/home.css HTTP/1.1" 200 -
+2025-04-07 14:04:29,457 - INFO - 127.0.0.1 - - [07/Apr/2025 14:04:29] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2025-04-07 14:06:42,053 - INFO - 127.0.0.1 - - [07/Apr/2025 14:06:42] "GET /about HTTP/1.1" 200 -
+2025-04-07 14:06:42,074 - INFO - 127.0.0.1 - - [07/Apr/2025 14:06:42] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-04-07 14:06:42,076 - INFO - 127.0.0.1 - - [07/Apr/2025 14:06:42] "[36mGET /static/images/gwd.jpg HTTP/1.1[0m" 304 -
+2025-04-07 14:06:42,089 - INFO - 127.0.0.1 - - [07/Apr/2025 14:06:42] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2025-04-07 14:07:30,283 - INFO - 127.0.0.1 - - [07/Apr/2025 14:07:30] "GET /about HTTP/1.1" 200 -
+2025-04-07 14:07:30,297 - INFO - 127.0.0.1 - - [07/Apr/2025 14:07:30] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-04-07 14:07:30,298 - INFO - 127.0.0.1 - - [07/Apr/2025 14:07:30] "[36mGET /static/images/gwd.jpg HTTP/1.1[0m" 304 -
+2025-04-07 14:07:30,301 - INFO - 127.0.0.1 - - [07/Apr/2025 14:07:30] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -

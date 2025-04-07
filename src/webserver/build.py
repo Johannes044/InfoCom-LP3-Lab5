@@ -8,7 +8,7 @@ file = "../Logs/build.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from utilities import clearFile
+#from utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -19,7 +19,7 @@ redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True, c
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile()
+#clearFile()
 
 def translate(coords_osm):
     x_osm_lim = (13.143390664, 13.257501336)

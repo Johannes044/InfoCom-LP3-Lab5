@@ -11,7 +11,7 @@ file = "../Logs/route_planner.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from utilities import clearFile
+#from utilities import clearFile
 
 
 # Konfigurera Flask och Redis
@@ -23,7 +23,7 @@ redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True)
 # Konfigurera loggning och geolocator
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile(file)
+#clearFile(file)
 
 geolocator = Nominatim(user_agent="my_request")
 region = ", Lund, Skåne, Sweden"

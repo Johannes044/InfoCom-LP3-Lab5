@@ -1,0 +1,43 @@
+2025-04-07 09:53:59,201 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://10.8.147.212:1338
+2025-04-07 09:53:59,201 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 09:53:59,201 - INFO -  * Restarting with stat
+2025-04-07 09:53:59,341 - WARNING -  * Debugger is active!
+2025-04-07 09:53:59,347 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:55:00,403 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 09:55:00,450 - INFO -  * Restarting with stat
+2025-04-07 09:55:00,651 - WARNING -  * Debugger is active!
+2025-04-07 09:55:00,659 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:55:12,018 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/database.py', reloading
+2025-04-07 09:55:12,064 - INFO -  * Restarting with stat
+2025-04-07 09:56:20,648 - INFO -  * Restarting with stat
+2025-04-07 09:56:37,448 - INFO -  * Restarting with stat
+2025-04-07 09:57:38,546 - WARNING -  * Debugger is active!
+2025-04-07 09:57:38,551 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:58:12,781 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-04-07 09:58:13,108 - WARNING -  * Debugger is active!
+2025-04-07 09:58:13,114 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:58:23,475 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-04-07 09:58:23,716 - WARNING -  * Debugger is active!
+2025-04-07 09:58:23,723 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 09:58:32,034 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-04-07 09:58:32,261 - WARNING -  * Debugger is active!
+2025-04-07 09:58:32,268 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 14:00:17,949 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://10.8.13.178:1338
+2025-04-07 14:00:17,950 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 14:00:17,950 - INFO -  * Restarting with stat
+2025-04-07 14:00:18,072 - WARNING -  * Debugger is active!
+2025-04-07 14:00:18,080 - INFO -  * Debugger PIN: 896-077-013
+2025-04-07 14:00:35,180 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://10.8.13.178:1338
+2025-04-07 14:00:35,180 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 14:00:35,181 - INFO -  * Restarting with stat
+2025-04-07 14:00:35,308 - WARNING -  * Debugger is active!
+2025-04-07 14:00:35,313 - INFO -  * Debugger PIN: 896-077-013
