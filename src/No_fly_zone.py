@@ -23,16 +23,17 @@ def is_in_no_fly_zone(lon, lat):
 def safe_diraction(lon, lat, step_size_lon = 0.0005, step_size_lat=0.0005):
     """Hittar en säker position genom att flytta drönaren utanför no-fly-zonen"""
     original_lon, original_lat = lon, lat
+    new_lon,new_lat =0,0
     attempts = 0
 
     while is_in_no_fly_zone(lon, lat) and attempts < 100:
         lon += step_size_lon  # Flytta österut
         lat += step_size_lat  # Flytta norrut
-        new_lon = lon
-        new_lat = lat
         attempts += 1
+
+    new_lon,new_lat =lon,lat
     
-    if is_in_no_fly_zone(new_lon, new_lat):
+    if not is_in_no_fly_zone(new_lon, new_lat):
         print("Could move out drone")
 
     print(f"Från ({original_lon}, {original_lat}) -> Till ({lon}, {lat}) efter {attempts} försök")
