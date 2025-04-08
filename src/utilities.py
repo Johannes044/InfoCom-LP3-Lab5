@@ -1,6 +1,7 @@
 import random
-import initial_coords
+# import initial_coords.txt # type: ignore
 import datetime
+import time
 
 medeciner = ["Viagra", "Antidepp", "Alvedon", "Ipren", "Zovirax", "Gaviscon", "Halstabletter"]
 leveranser = [{"d1": [
@@ -17,7 +18,7 @@ leveranser = [{"d1": [
 ]}]
 
 def randomMedicin():
-    return medeciner[random.randint(0, len(medeciner) - 1)]
+    return random.choice(medeciner)
 
 def randomCords():
     latitude_min, latitude_max = 55.678, 55.734
@@ -29,13 +30,34 @@ def randomCords():
 def isDelivery():
     return random.random() < 0.1
 
+
+
 def newLeverans():
-    toChords = randomCords()
-    medecin = randomMedicin()
-    bestämtKlockslag = False
-    if (not bestämtKlockslag):
-        droneName = ""
-        KlockslagFramme = datetime.max 
-        KlockslagTbk = datetime.max 
-        for drone in leveranser:
-            if (not )
+    toCords = randomCords()  
+    medecin = randomMedicin()  
+    bestämtKlockslag = False  
+    if not bestämtKlockslag:
+        droneName = ""  
+        KlockslagFramme = datetime.datetime.max  
+        KlockslagTbk = datetime.datetime.max  
+        leverans = {
+            'medecin': medecin,
+            'coordinates': toCords,
+            'drone': droneName,
+            'KlockslagFramme': KlockslagFramme,
+            'KlockslagTbk': KlockslagTbk
+        }
+        leveranser.append(leverans)  
+
+    print (leveranser) 
+
+count = 0
+while count <10:
+    if isDelivery():
+        newLeverans()
+    time.sleep(1)  
+    count +=1 
+
+    
+if __name__ == "__utilities__":
+    newLeverans()
