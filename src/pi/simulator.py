@@ -2,15 +2,26 @@ import math
 import requests
 import argparse
 import os
+import sys
+sys.path.append(os.path.abspath(".."))
+from utilities import randomCords
 import random
 
-def getMovement(src, dst):
-    speed = 0.00001
+def getMovement(src, dst, speed=50):
     dst_x, dst_y = dst
     x, y = src
     direction = math.sqrt((dst_x - x)**2 + (dst_y - y)**2)
-    longitude_move = speed * ((dst_x - x) / direction )
-    latitude_move = speed * ((dst_y - y) / direction )
+
+    if direction == 0:
+        return 0, 0
+    
+    dx = dst_x - x
+    dy = dst_y - y
+    unit_dx = dx / direction  
+    unit_dy = dy / direction  
+    longitude_move = unit_dx * speed
+    latitude_move = unit_dy * speed
+
     return longitude_move, latitude_move
 
 def moveDrone(src, d_long, d_la):
