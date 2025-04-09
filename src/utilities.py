@@ -1,6 +1,7 @@
 import random
 import initial_coords
 import datetime
+import time
 
 medeciner = ["Viagra", "Antidepp", "Alvedon", "Ipren", "Zovirax", "Gaviscon", "Halstabletter"]
 leveranser = [{"d1": [
@@ -39,3 +40,8 @@ def newLeverans():
         KlockslagTbk = datetime.max 
         for drone in leveranser:
             if (not )
+
+while True:
+    if(isDelivery):
+        newLeverans()
+    time.sleep(1)
