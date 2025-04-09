@@ -11,6 +11,7 @@ file = "../Logs/route_planner.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
+from No_fly_zone import is_in_no_fly_zone
 from utilities import clearFile
 
 
@@ -41,6 +42,10 @@ def route_planner():
     ToAddress = Addresses['taddr']
     from_location = geolocator.geocode(FromAddress + region, timeout=None)
     to_location = geolocator.geocode(ToAddress + region, timeout=None)
+
+    if is_in_no_fly_zone(from_location.longitude, from_location.latitude) or is_in_no_fly_zone(to_location.longitude, to_location.latitude):
+        return "Du anger coordinater som är in en ingen flyg zone."
+
     
     if from_location is None:
         logging.error("Departure from_address not found, please input a correct address")
