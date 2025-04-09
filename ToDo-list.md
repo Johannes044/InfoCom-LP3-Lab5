@@ -12,15 +12,20 @@
 
 - [ ] **Kö-system**  
 
-- [ ] **No Fly Zones**  
+- [ ] **No Fly Zones**
+  - Implementera i drönar-systemet.
+  - Testa så att allt funkar.
+  - Fixa eventuella buggr som kommer att komma upp.  
 
-- [ ] **Skiss på poster**  
+- [ ] **Skiss på poster** 
 
 ---
 
 ## 🛠️ Need to be fixed:
 
-- [ ] **Fixa hemsidan så att det är lättare att se drönaren**  
+- [x] **Fixa hemsidan så att det är lättare att se drönaren**
+
+- [ ] **Fixa så att man kan se en drönare med ett typ av ID** 
 
 ---
 
