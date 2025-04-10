@@ -7,7 +7,9 @@
 
 ## ✈️ What we need to do:
 
-- [ ] **Leveranssystem**  
+- [ ] **Leveranssystem **
+  -  Hitta ett sätt att hantera beställing
+  - 
  
 
 - [ ] **Kö-system**  
