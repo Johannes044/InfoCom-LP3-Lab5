@@ -25,9 +25,11 @@
 
 ## 🛠️ Need to be fixed:
 
-- [x] **Fixa hemsidan så att det är lättare att se drönaren**
+- [ ] **Fixa hemsidan så att det är lättare att se drönaren**
 
-- [ ] **Fixa så att man kan se en drönare med ett typ av ID** 
+- [ ] **Fixa så att man kan se en drönare med ett typ av ID**
+
+- [ ] **Fixa med importer av våra funktions filer.**
 
 ---
 
