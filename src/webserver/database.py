@@ -3,10 +3,10 @@ from flask_cors import CORS
 import redis
 import logging
 file = "../Logs/database.txt"
-import sys
-import os
-sys.path.append(os.path.abspath(".."))
-#from utilities import clearFile
+#import sys
+#import os
+#sys.path.append(os.path.abspath(".."))
+#from logic.utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
