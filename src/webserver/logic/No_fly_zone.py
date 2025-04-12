@@ -55,5 +55,10 @@ def test_find_safe_position():
 
     print("Alla testfall har klarat sig! ✅")
 
+def test_your_position(lon,lat):
+    return is_in_no_fly_zone(lon, lat)
+    
+
+
 # Kör testet
 test_find_safe_position()
