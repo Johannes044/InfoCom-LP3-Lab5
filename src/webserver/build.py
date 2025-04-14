@@ -5,11 +5,11 @@ import redis
 import json
 import logging
 file = "../Logs/build.txt"
-import sys
-import os
-sys.path.append(os.path.abspath(".."))
-from utilities import clearFile
-from No_fly_zone import safe_diraction, NO_FLY_ZONES
+#import sys
+#import os
+#sys.path.append(os.path.abspath(".."))
+from logic.utilities import clearFile
+from logic.No_fly_zone import safe_diraction, NO_FLY_ZONES
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)

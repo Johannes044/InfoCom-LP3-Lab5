@@ -6,7 +6,7 @@ file = "../Logs/simulator.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from utilities import clearFile
+from webserver.logic.utilities import clearFile
 
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")

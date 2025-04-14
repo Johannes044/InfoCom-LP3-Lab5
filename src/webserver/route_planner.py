@@ -8,11 +8,11 @@ import json
 import requests
 import logging
 file = "../Logs/route_planner.txt"
-import sys
-import os
-sys.path.append(os.path.abspath(".."))
-from No_fly_zone import is_in_no_fly_zone
-from utilities import clearFile
+#import sys
+#import os
+#sys.path.append(os.path.abspath(".."))
+from logic.No_fly_zone import is_in_no_fly_zone
+from logic.utilities import clearFile
 
 
 # Konfigurera Flask och Redis

@@ -7,7 +7,7 @@ file = "../Logs/drone.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from utilities import clearFile
+from webserver.logic.utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
