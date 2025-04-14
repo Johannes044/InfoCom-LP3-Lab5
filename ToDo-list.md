@@ -12,7 +12,8 @@
   - 
  
 
-- [ ] **Kö-system**  
+- [ ] **Kö-system**
+  - Hur ska vi pripitera leveranser? 
 
 - [ ] **No Fly Zones**
   - Implementera i drönar-systemet.
@@ -29,7 +30,7 @@
 
 - [ ] **Fixa så att man kan se en drönare med ett typ av ID**
 
-- [ ] **Fixa med importer av våra funktions filer.**
+- [x] **Fixa med importer av våra funktions filer.**
 
 ---
 
