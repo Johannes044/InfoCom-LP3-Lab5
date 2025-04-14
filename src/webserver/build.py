@@ -29,12 +29,7 @@ def randomCords():
 coord1 = randomCords()
 coord2 = randomCords()
 
-
-
-
-
 def translate1(coords_osm):
-    
     x_ratio = (x_svg_lim[1] - x_svg_lim[0]) / (x_osm_lim[1] - x_osm_lim[0])
     y_ratio = (y_svg_lim[1] - y_svg_lim[0]) / (y_osm_lim[1] - y_osm_lim[0])
     x_svg = x_ratio * (coords_osm[0] - x_osm_lim[0]) + x_svg_lim[0]
@@ -57,7 +52,6 @@ def home():
 def map():
     if request.method == "POST":
         print(request.values.get("tracking-number"))
-
     return render_template('map.html')
 
 @app.route('/about', methods=['GET'])

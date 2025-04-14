@@ -29,12 +29,14 @@ def send_request(drone_url, coords):
 
 @app.route('/planner', methods=['POST'])
 def route_planner():
-    from_long, from_lat = 55.7, 13.2
-    to_long, to_lat = randomCords()
+    from_coords = (55.7, 13.2)  
+    to_coords = randomCords()
 
-    coords = {'from': (from_long, from_lat),
-              'to': (to_long, to_lat)}
+    coords = {'from': from_coords, 'to': to_coords}
+
     
+    print(f"Coordinates: {coords}")
+
     drones = redis_server.smembers("drones")
     droneAvailable = None
     for drone in drones:
