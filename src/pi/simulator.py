@@ -24,11 +24,12 @@ def getMovement(src, dst, speed=50):
 
     return longitude_move, latitude_move
 
-def moveDrone(src, d_long, d_la):
+def moveDrone(src, d_long, d_la, dt):
+    speed = 340 * 0.000009 
     x, y = src
-    x = x + d_long
-    y = y + d_la        
-    return (x, y)
+    x = x + d_long * speed * dt
+    y = y + d_la * speed * dt        
+    return x, y
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     drone_coords = current_coords
