@@ -6,17 +6,20 @@ from flask_cors import CORS
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from utilities import randomCords
+import utilities 
 import random
 import redis
 import json
 import requests 
+
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 #55.7, 13.2
 redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True)
+
+coords = utilities.coords
 
 geolocator = Nominatim(user_agent="my_request")
 region = ", Lund, Skåne, Sweden"
@@ -29,14 +32,8 @@ def send_request(drone_url, coords):
 
 @app.route('/planner', methods=['POST'])
 def route_planner():
-    from_coords = (55.7, 13.2)  
-    to_coords = randomCords()
-
-    coords = {'from': from_coords, 'to': to_coords}
-
     
-    print(f"Coordinates: {coords}")
-
+   
     drones = redis_server.smembers("drones")
     droneAvailable = None
     for drone in drones:
@@ -59,7 +56,7 @@ def route_planner():
             print(resp.text)
     except Exception as e:
         print(e)
-        return "Could not connect to the drone, please try again" + print("Sending the following coordinates:", coords)
+        return "Could not connect to the drone, please try again" 
 
 
     return 'Got address and sent request to the drone'
