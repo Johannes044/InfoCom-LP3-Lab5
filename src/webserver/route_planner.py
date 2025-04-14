@@ -29,7 +29,7 @@ def send_request(drone_url, coords):
 
 @app.route('/planner', methods=['POST'])
 def route_planner():
-    from_long, from_lat = randomCords()
+    from_long, from_lat = 55.7, 13.2
     to_long, to_lat = randomCords()
 
     coords = {'from': (from_long, from_lat),
@@ -57,7 +57,8 @@ def route_planner():
             print(resp.text)
     except Exception as e:
         print(e)
-        return "Could not connect to the drone, please try again"
+        return "Could not connect to the drone, please try again" + print("Sending the following coordinates:", coords)
+
 
     return 'Got address and sent request to the drone'
 
