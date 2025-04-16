@@ -4,36 +4,35 @@ import argparse
 import os
 import sys
 sys.path.append(os.path.abspath(".."))
-from utilities import randomCords
+import utilities
 import random
 
-def getMovement(src, dst, speed=50):
+def getMovement(src, dst, lSpeed):
     dst_x, dst_y = dst
     x, y = src
-    direction = math.sqrt((dst_x - x)**2 + (dst_y - y)**2)
+    distance = math.sqrt((dst_x - x)**2 + (dst_y - y)**2)
 
-    if direction == 0:
+    if distance == 0:
         return 0, 0
     
     dx = dst_x - x
     dy = dst_y - y
-    unit_dx = dx / direction  
-    unit_dy = dy / direction  
-    longitude_move = unit_dx * speed
-    latitude_move = unit_dy * speed
+    unit_dx = dx / distance  
+    unit_dy = dy / distance  
+    longitude_move = unit_dx * lSpeed
+    latitude_move = unit_dy * lSpeed
 
     return longitude_move, latitude_move
 
 def moveDrone(src, d_long, d_la, dt):
-    speed = 340 * 0.000009 
     x, y = src
-    x = x + d_long * speed * dt
-    y = y + d_la * speed * dt        
+    x = x + d_long * utilities.lSpeed * dt
+    y = y + d_la * utilities.lSpeed * dt        
     return x, y
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     drone_coords = current_coords
-    d_long, d_la =  getMovement(drone_coords, from_coords)
+    d_long, d_la =  getMovement(drone_coords, from_coords, utilities.lSpeed)
     while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
         drone_coords = moveDrone(drone_coords, d_long, d_la)
         with requests.Session() as session:
