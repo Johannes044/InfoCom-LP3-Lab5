@@ -6,6 +6,8 @@ import sys
 sys.path.append(os.path.abspath(".."))
 import utilities
 import random
+delay = 50/1000
+""""
 
 def getMovement(src, dst, lSpeed):
     dst_x, dst_y = dst
@@ -23,15 +25,48 @@ def getMovement(src, dst, lSpeed):
     latitude_move = unit_dy * lSpeed
 
     return longitude_move, latitude_move
+    x
+def distanceLeft(droneLocation, toCords, delay=50):
+    toCordsX, toCordsY = toCords
+    x, y = droneLocation
+    distance = delay * utilities.lSpeed
+    
+    
 
 def moveDrone(src, d_long, d_la, dt):
     x, y = src
     x = x + d_long * utilities.lSpeed * dt
     y = y + d_la * utilities.lSpeed * dt        
     return x, y
+    """""
+
+def getMovement(currentDroneCoords, dst, lSpeed):
+    dst_x, dst_y = dst
+    x, y = currentDroneCoords
+    distance = math.sqrt((dst_x - x)**2 + (dst_y - y)**2)
+
+    if distance == 0:
+        return 0, 0
+    
+    dx = dst_x - x
+    dy = dst_y - y
+    unit_dx = dx / distance  
+    unit_dy = dy / distance  
+    longitude_move = unit_dx * lSpeed
+    latitude_move = unit_dy * lSpeed
+
+    return longitude_move, latitude_move
+
+
+def moveDrone(src, d_long, d_la, delay):
+    x, y = src
+    x = x + d_long * utilities.lSpeed * delay  
+    y = y + d_la * utilities.lSpeed * delay  
+    return x, y
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     drone_coords = current_coords
+    """""
     d_long, d_la =  getMovement(drone_coords, from_coords, utilities.lSpeed)
     while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
         drone_coords = moveDrone(drone_coords, d_long, d_la)
@@ -43,9 +78,10 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
                         }
             resp = session.post(SERVER_URL, json=drone_info)
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+    """
     d_long, d_la =  getMovement(drone_coords, to_coords)
     while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
-        drone_coords = moveDrone(drone_coords, d_long, d_la)
+        drone_coords = moveDrone(drone_coords, d_long, d_la, delay)
         with requests.Session() as session:
             drone_info = {'id': id,
                           'longitude': drone_coords[0],
