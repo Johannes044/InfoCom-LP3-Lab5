@@ -5,13 +5,20 @@
 
 {% block content %}
     <div class="content">
+        <div class="title">
+            <h1>Välkommen till GWD</h1>
+        </div>
         <div class="welcome-card">
-            <h1>Välkommen till GWD!</h1>
-            <p>Utforska våra drönartjänster och se var våra drönare befinner sig.</p>
+            
+            <h2>Spåra ditt paket här!</h2>
+            <p>Skriv in ditt drönar-ID i rutan och se var din drönare befinner sig</p>
             <form action="/map" method="POST">
-                <input type="text" class="textbox" name="tracking-number">
-                <button type="submit" class="btn">Se din döner! :D</button>
+                <input type="text" class="textbox" name="drone-id">
+                <button type="submit" class="btn">Spåra</button>
             </form>
+        </div>
+        <div class="small-about-text">
+            <img src="/static/images/cat.webp">
         </div>
     </div>
 {% endblock %}
