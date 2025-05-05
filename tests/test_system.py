@@ -15,7 +15,7 @@ redis_server = redis.Redis(host="REDIS_SERVER", port=6379, decode_responses=True
 def test_redis_connection():
     """Testa att Redis är tillgängligt."""
     assert redis_server.ping(), "❌ Redis-anslutning misslyckades"
-    print("✅ Redis är anslutet")
+    print(" Redis är anslutet")
 
 def test_store_drone_data():
     """Testa att spara och hämta drönardata i Redis."""

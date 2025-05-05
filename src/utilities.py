@@ -47,7 +47,6 @@ def svgSpeed():
     speed_svg_y = speed * y_ratio
     return speed_svg_x, speed_svg_y
 
-
 def svgDistance(p1, p2):
     return math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
 
@@ -63,18 +62,19 @@ def newLeverans():
     svg_start = translateToSVG((13.2, 55.7))
     svg_end = translateToSVG(toCoords)
     dist = svgDistance(svg_start, svg_end)
-    flygtid = datetime.timedelta(seconds=dist / svgSpeed())
+    speed_x, speed_y = svgSpeed()
+    total_speed = math.sqrt(speed_x**2 + speed_y**2)  
+    flygtid = datetime.timedelta(seconds=dist / total_speed)
     
-    #väljer drönare:
+
     chosen_drone = None
     klockslagtbk = datetime.time.max
     klockslagframme = datetime.time.max
     for drone in leveranser.items():
-        #total_time = sum([(t['KlockslagTbk'] - datetime.datetime.now()).total_seconds() for t in tasks])
         if (not drone):
             klockslagframmeNy = datetime.datetime.now() + flygtid           
         else:
-           klockslagframmeNy = leveranser[drone][-1]['KlockslagTbk'] + flygtid
+            klockslagframmeNy = leveranser[drone][-1]['KlockslagTbk'] + flygtid
         if (klockslagframmeNy < klockslagframme):
             klockslagframme = klockslagframmeNy
             klockslagtbk = klockslagframme + flygtid

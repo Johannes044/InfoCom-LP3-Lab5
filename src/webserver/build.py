@@ -16,8 +16,6 @@ app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 
 redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True, charset="unicode_escape")
 
-
-
 @app.route('/', methods=['GET'])
 def home():
     return render_template('index.html')
