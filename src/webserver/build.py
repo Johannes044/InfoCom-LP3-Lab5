@@ -5,14 +5,13 @@ import redis
 import json
 import os
 import sys
-import utilities
 import random
 import math
 import logging
 file = "../Logs/build.txt"
 #import sys
 sys.path.append(os.path.abspath(".."))
-#from logic.utilities import clearFile
+from logic.utilities import clearFile, translateToSVG
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -23,7 +22,7 @@ redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True, c
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-#clearFile()
+clearFile()
 
 def translate(coords_osm):
     x_osm_lim = (13.143390664, 13.257501336)
@@ -73,7 +72,7 @@ def get_drones():
     for drone in drones:
         droneData = redis_server.hgetall(drone)
         if 'longitude' in droneData and 'latitude' in droneData and 'status' in droneData:
-            longitude_svg, latitude_svg = utilities.translate1((float(droneData['longitude']), float(droneData['latitude'])))
+            longitude_svg, latitude_svg = translateToSVG((float(droneData['longitude']), float(droneData['latitude'])))
             drone_dict[drone] = {'longitude': longitude_svg, 'latitude': latitude_svg, 'status': droneData['status']}
     logging.debug(f"Drones fetched: {drone_dict}")
     return jsonify(drone_dict)

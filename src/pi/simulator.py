@@ -7,10 +7,12 @@ file = "../Logs/simulator.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-import utilities
-import random
 delay = 50/1000
+from webserver.logic.utilities import clearFile
+
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+
+clearFile(file)
 
 def getMovement(currentDroneCoords, dst, lSpeed):
     dst_x, dst_y = dst

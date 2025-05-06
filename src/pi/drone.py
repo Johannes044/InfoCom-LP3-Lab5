@@ -7,7 +7,7 @@ file = "../Logs/drone.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-# from utilities import clearFile
+from webserver.logic.utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -17,7 +17,7 @@ app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-# clearFile(file)
+clearFile(file)
 
 # Assign a unique ID to the drone
 myID = "D69"

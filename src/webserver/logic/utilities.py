@@ -26,6 +26,8 @@ def randomCords():
     lat = random.uniform(*y_osm_lim)
     return (lon, lat)
 
+coords = randomCords()
+
 def translateToSVG(coords_osm):
     x_ratio = (x_svg_lim[1] - x_svg_lim[0]) / (x_osm_lim[1] - x_osm_lim[0])
     y_ratio = (y_svg_lim[1] - y_svg_lim[0]) / (y_osm_lim[1] - y_osm_lim[0])

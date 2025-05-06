@@ -5,18 +5,13 @@ from geopy.geocoders import Nominatim
 from flask_cors import CORS
 import sys
 import os
-sys.path.append(os.path.abspath(".."))
-import utilities 
-import random
+#sys.path.append(os.path.abspath(".."))
 import redis
 import json
 import requests 
 import logging
 file = "../Logs/route_planner.txt"
-#import sys
-#import os
-#sys.path.append(os.path.abspath(".."))
-#from logic.utilities import clearFile
+from logic.utilities import clearFile, coords
 
 
 # Konfigurera Flask och Redis
@@ -25,11 +20,11 @@ CORS(app, supports_credentials=True)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
-coords = utilities.coords
+coords = coords
 # Konfigurera loggning och geolocator
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-#clearFile(file)
+clearFile(file)
 
 geolocator = Nominatim(user_agent="my_request")
 region = ", Lund, Skåne, Sweden"
