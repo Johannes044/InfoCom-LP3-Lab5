@@ -11,7 +11,7 @@ import logging
 file = "../Logs/build.txt"
 #import sys
 sys.path.append(os.path.abspath(".."))
-from logic.utilities import clearFile, translateToSVG
+from logic.utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -72,7 +72,7 @@ def get_drones():
     for drone in drones:
         droneData = redis_server.hgetall(drone)
         if 'longitude' in droneData and 'latitude' in droneData and 'status' in droneData:
-            longitude_svg, latitude_svg = translateToSVG((float(droneData['longitude']), float(droneData['latitude'])))
+            longitude_svg, latitude_svg = translate((float(droneData['longitude']), float(droneData['latitude'])))
             drone_dict[drone] = {'longitude': longitude_svg, 'latitude': latitude_svg, 'status': droneData['status']}
     logging.debug(f"Drones fetched: {drone_dict}")
     return jsonify(drone_dict)
