@@ -22,7 +22,7 @@ redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True, c
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile()
+clearFile(file)
 
 def translate(coords_osm):
     x_osm_lim = (13.143390664, 13.257501336)

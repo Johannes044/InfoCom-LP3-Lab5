@@ -1,6 +1,6 @@
 import random
-from sense_hat import SenseHat
-sense = SenseHat()
+#from sense_hat import SenseHat
+#sense = SenseHat()
 import datetime
 import math
 
@@ -109,14 +109,6 @@ def newLeverans():
 if isDelivery():
     newLeverans()
 
-
-def waitingForInput():
-    print("Drone is waiting for QR-code. Press joystick to continue...")
-    # Vänta på att användaren trycker på joystick
-    event = sense.stick.wait_for_event()
-    while event.action != "pressed":
-        event = sense.stick.wait_for_event()
-    print("Joystick pressed! Continuing to destination...")
 
 
 def clearFile(filename):
