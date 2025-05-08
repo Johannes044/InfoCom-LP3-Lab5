@@ -1,4 +1,11 @@
 ##dig project
+import logging
+file = "../Logs/NOfly.txt"
+
+# Konfigurera loggning
+logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+
+
 NO_FLY_ZONES = [
     {
         "min_lon": 13.182460,
@@ -13,6 +20,12 @@ NO_FLY_ZONES = [
         "max_lat": 55.726623
     }
 ]
+
+def is_not_in_zone(coord):
+    for zone in NO_FLY_ZONES:
+        if zone["min_lon"] <=  coord[0]<= zone["max_lon"] and zone["min_lat"] <= coord[1] <= zone["max_lat"]:
+            return False  # Drönaren är i en förbjuden zon
+    return True
 
 def is_in_no_fly_zone(lon, lat):
     for zone in NO_FLY_ZONES:

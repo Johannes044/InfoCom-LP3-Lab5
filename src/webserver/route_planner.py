@@ -3,15 +3,15 @@ from flask import Flask, request, render_template, jsonify
 from flask.globals import current_app
 from geopy.geocoders import Nominatim
 from flask_cors import CORS
+import sys
+import os
+#sys.path.append(os.path.abspath(".."))
 import redis
 import json
-import requests
+import requests 
 import logging
 file = "../Logs/route_planner.txt"
-#import sys
-#import os
-#sys.path.append(os.path.abspath(".."))
-#from logic.utilities import clearFile
+from logic.utilities import clearFile, coords
 
 
 # Konfigurera Flask och Redis
@@ -20,10 +20,11 @@ CORS(app, supports_credentials=True)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
+coords = coords
 # Konfigurera loggning och geolocator
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-#clearFile(file)
+clearFile(file)
 
 geolocator = Nominatim(user_agent="my_request")
 region = ", Lund, Skåne, Sweden"
@@ -54,6 +55,7 @@ def route_planner():
         'to': (to_location.longitude, to_location.latitude)
     }
     
+   
     drones = redis_server.smembers("drones")
     droneAvailable = None
     for drone in drones:

@@ -3,11 +3,15 @@ from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import redis
 import json
+import os
+import sys
+import random
+import math
 import logging
 file = "../Logs/build.txt"
 #import sys
-##sys.path.append(os.path.abspath(".."))
-#from logic.utilities import clearFile
+sys.path.append(os.path.abspath(".."))
+from logic.utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -18,7 +22,7 @@ redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True, c
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-#clearFile()
+clearFile()
 
 def translate(coords_osm):
     x_osm_lim = (13.143390664, 13.257501336)
@@ -40,11 +44,16 @@ def home():
 def map():
     drone_id = request.values.get("drone-id").strip()  # Drönar-id från input
     drone_ids = redis_server.smembers("drones")  # Alla faktiska drönar-idn
-
-    if drone_id not in drone_ids:
-        return redirect("/")
-
+    if request.method == "POST":
+        print(request.values.get("tracking-number"))
+        if drone_id not in drone_ids:
+            return redirect("/")
     return render_template('map.html', drone_id=drone_id)
+    
+
+    
+
+    
 
 @app.route('/about', methods=['GET'])
 def about():

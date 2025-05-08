@@ -7,32 +7,45 @@ file = "../Logs/simulator.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-# from utilities import clearFile
+delay = 50/1000
+from webserver.logic.utilities import clearFile
 
-# Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-# clearFile(file)
+clearFile(file)
 
-def getMovement(src, dst):
+def getMovement(currentDroneCoords, dst, lSpeed):
     dst_x, dst_y = dst
-    x, y = src
+    x, y = currentDroneCoords
     distance = math.sqrt((dst_x - x)**2 + (dst_y - y)**2)
-    longitude_move = (dst_x - x) / distance 
-    latitude_move = (dst_y - y) / distance
+
+    if distance == 0:
+        return 0, 0
+    
+    dx = dst_x - x
+    dy = dst_y - y
+    unit_dx = dx / distance  
+    unit_dy = dy / distance  
+    longitude_move = unit_dx * lSpeed
+    latitude_move = unit_dy * lSpeed
+
     return longitude_move, latitude_move
 
-def moveDrone(src, d_long, d_la, dt):
-    speed = 340 * 0.000009 # meter per second
+
+def moveDrone(src, d_long, d_la):
     x, y = src
-    x = x + d_long * speed * dt
-    y = y + d_la * speed * dt        
+    x = x + d_long 
+    y = y + d_la 
     return x, y
 
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     drone_coords = current_coords
     d_long, d_la =  getMovement(drone_coords, from_coords)
+    dt = 0
+    while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
+        start = time.perf_counter()
+        drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
     dt = 0
     while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
         start = time.perf_counter()
@@ -46,7 +59,11 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             resp = session.post(SERVER_URL, json=drone_info)
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
         dt = time.perf_counter() - start
+        dt = time.perf_counter() - start
     d_long, d_la =  getMovement(drone_coords, to_coords)
+    while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
+        start = time.perf_counter()
+        drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
     while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
         start = time.perf_counter()
         drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
@@ -59,6 +76,7 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             resp = session.post(SERVER_URL, json=drone_info)
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
         dt = time.perf_counter() - start
+        dt = time.perf_counter() - start
     with requests.Session() as session:
             drone_info = {'id': id,
                           'longitude': drone_coords[0],
@@ -67,6 +85,10 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
                          }
             resp = session.post(SERVER_URL, json=drone_info)
     return drone_coords[0], drone_coords[1]
+
+
+
+
 
 #=====================================================================================================
 def load_initial_coordinates(filename):
