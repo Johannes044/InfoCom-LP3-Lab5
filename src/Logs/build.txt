@@ -1,6 +1,4 @@
-2025-05-08 13:33:45,399 - WARNING -  * Debugger is active!
-2025-05-08 13:33:45,403 - INFO -  * Debugger PIN: 896-077-013
-2025-05-08 13:33:49,521 - INFO - 127.0.0.1 - - [08/May/2025 13:33:49] "GET / HTTP/1.1" 200 -
-2025-05-08 13:33:49,570 - INFO - 127.0.0.1 - - [08/May/2025 13:33:49] "[36mGET /static/images/cat.webp HTTP/1.1[0m" 304 -
-2025-05-08 13:33:49,570 - INFO - 127.0.0.1 - - [08/May/2025 13:33:49] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
-2025-05-08 13:33:49,589 - INFO - 127.0.0.1 - - [08/May/2025 13:33:49] "[36mGET /static/css/base.css HTTP/1.1[0m" 304 -
+2025-05-08 15:37:14,388 - WARNING -  * Debugger is active!
+2025-05-08 15:37:14,392 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:37:14,874 - DEBUG - Drones fetched: {}
+2025-05-08 15:37:14,874 - INFO - 127.0.0.1 - - [08/May/2025 15:37:14] "GET /get_drones HTTP/1.1" 200 -

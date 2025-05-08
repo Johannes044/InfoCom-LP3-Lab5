@@ -19,6 +19,8 @@ def getMovement(currentDroneCoords, dst, lSpeed):
     x, y = currentDroneCoords
     distance = math.sqrt((dst_x - x)**2 + (dst_y - y)**2)
 
+    print(f"Distance: {distance}, Speed: {lSpeed}")  # Utskrift för att se distansen
+
     if distance == 0:
         return 0, 0
     
@@ -29,24 +31,26 @@ def getMovement(currentDroneCoords, dst, lSpeed):
     longitude_move = unit_dx * lSpeed
     latitude_move = unit_dy * lSpeed
 
+    print(f"Movement: {longitude_move}, {latitude_move}")  # Utskrift för att se rörelsen per iteration
+
     return longitude_move, latitude_move
 
 
-def moveDrone(src, d_long, d_la):
+def moveDrone(src, d_long, d_la, dt):
     x, y = src
-    x = x + d_long 
-    y = y + d_la 
+    x = x + d_long * dt
+    y = y + d_la * dt
     return x, y
 
 
+
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
+    print("RUN() called")  # Lägg till denna rad
+    print(f"drone_coords: {current_coords}, from: {from_coords}, to: {to_coords}")  # Lägg till denna rad
     drone_coords = current_coords
-    d_long, d_la =  getMovement(drone_coords, from_coords)
-    dt = 0
-    while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
-        start = time.perf_counter()
-        drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
-    dt = 0
+    d_long, d_la =  getMovement(drone_coords, from_coords, 0.001)
+    dt = 1
+    
     while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
         start = time.perf_counter()
         drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
@@ -59,11 +63,9 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             resp = session.post(SERVER_URL, json=drone_info)
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
         dt = time.perf_counter() - start
-        dt = time.perf_counter() - start
-    d_long, d_la =  getMovement(drone_coords, to_coords)
-    while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
-        start = time.perf_counter()
-        drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
+    d_long, d_la =  getMovement(drone_coords, to_coords, 0.001)
+
+
     while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
         start = time.perf_counter()
         drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
@@ -75,7 +77,6 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
                         }
             resp = session.post(SERVER_URL, json=drone_info)
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
-        dt = time.perf_counter() - start
         dt = time.perf_counter() - start
     with requests.Session() as session:
             drone_info = {'id': id,
