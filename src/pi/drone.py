@@ -69,6 +69,7 @@ def main():
     # Fetch current longitude and latitude of the drone
     current_longitude = drone_state['current_longitude']
     current_latitude = drone_state['current_latitude']
+    #current_longitude, current_latitude = drone_state['current']
 
     logging.debug(f"Moving from {from_coord} to {to_coord}")
     app.logger.debug(f"Moving from {from_coord} to {to_coord}")

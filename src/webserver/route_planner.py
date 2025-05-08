@@ -45,14 +45,14 @@ def route_planner():
     if from_location is None:
         logging.error("Departure from_address not found, please input a correct address")
         return 'Departure from_address not found, please input a correct address'
-    elif to_location is None:
+    if to_location is None:
         logging.error('Destination to_address not found, please input a correct address')
         return 'Destination to_address not found, please input a correct address'
     
-    coords = {'from': (from_location.longitude, from_location.latitude),
-              'to': (to_location.longitude, to_location.latitude)}
-    if from_location is None:
-       return 'Departure address not found, please input a correct address'
+    coords = {
+        'from': (from_location.longitude, from_location.latitude),
+        'to': (to_location.longitude, to_location.latitude)
+    }
     
     drones = redis_server.smembers("drones")
     droneAvailable = None
