@@ -6,6 +6,7 @@ sense = SenseHat()
 g = (0, 255, 0) # Green
 b = (0, 0, 0) # Black
 r = (255, 0, 0)
+y = (255, 255, 0)
 
 # Set up where each colour will display
 creeper_pixels = [
@@ -40,15 +41,26 @@ O_pixels = [
     g, g, g, b, b, g, g, g
 ]
 
+Y_pixels = [
+    y, y, y, b, b, y, y, y,
+    y, y, y, b, b, y, y, y,
+    y, y, y, b, b, y, y, y,
+    y, y, y, b, b, y, y, y,
+    y, y, y, b, b, y, y, y,
+    y, y, y, y, y, y, y, y,
+    y, y, y, b, b, y, y, y,
+    y, y, y, b, b, y, y, y
+]
+
 # Display these colours on the LED matrix
 
 
 
 def waitingForInput():
-    print("Drone is waiting for QR-code. Press joystick to continue...")
+    print("Drone is waiting for input. Press joystick to continue...")
     # Vänta på att användaren trycker på joystick
     event = sense.stick.wait_for_event()
-    sense.set_pixels(X_pixels)
+    sense.set_pixels(Y_pixels)
     while event.action != "pressed":
         event = sense.stick.wait_for_event()
     sense.set_pixels(O_pixels)
