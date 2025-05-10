@@ -2,12 +2,12 @@ from flask import Flask, request
 from flask_cors import CORS
 import subprocess
 import  requests
-import logging
-file = "../Logs/drone.txt"
+#import logging
+#file = "../Logs/drone.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from webserver.logic.utilities import clearFile
+#from webserver.logic.utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -15,9 +15,9 @@ CORS(app, supports_credentials=True)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 
 # Konfigurera loggning
-logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+#logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile(file)
+#clearFile(file)
 
 # Assign a unique ID to the drone
 myID = "D69"
@@ -46,10 +46,10 @@ try:
     with requests.Session() as session:
         resp = session.post(SERVER, json=drone_info)
         resp.raise_for_status()
-        logging.info("Successfully sent initial drone location to server.")
+        #logging.info("Successfully sent initial drone location to server.")
         app.logger.info("Successfully sent initial drone location to server.")
 except requests.RequestException as e:
-    logging.error(f"Error sending initial location to server: {e}")
+    #logging.error(f"Error sending initial location to server: {e}")
     app.logger.error(f"Error sending initial location to server: {e}")
 #===================================================================
 
@@ -60,7 +60,7 @@ def main():
     """
     coords = request.json
     app.logger.info(f"Received new route: {coords}")
-    logging.info(f"Received new route: {coords}")
+    #logging.info(f"Received new route: {coords}")
 
     from_coord = coords['from']
     to_coord = coords['to']
@@ -69,7 +69,7 @@ def main():
     current_longitude = drone_state['current_longitude']
     current_latitude = drone_state['current_latitude']
 
-    logging.debug(f"Moving from {from_coord} to {to_coord}")
+    #logging.debug(f"Moving from {from_coord} to {to_coord}")
     app.logger.debug(f"Moving from {from_coord} to {to_coord}")
     
     # Run the simulator process
@@ -84,7 +84,7 @@ def main():
     drone_state['latitude'] = to_coord[1]
     drone_state['status'] = 'busy'
 
-    logging.info(f"Drone {myID} now moving to {to_coord}. Status updated to 'busy'.")
+    #logging.info(f"Drone {myID} now moving to {to_coord}. Status updated to 'busy'.")
     app.logger.info(f"Drone {myID} now moving to {to_coord}. Status updated to 'busy'.")
     return 'New route received'
 
