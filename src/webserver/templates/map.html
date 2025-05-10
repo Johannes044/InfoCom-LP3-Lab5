@@ -49,24 +49,6 @@
       }
     });
   }
-  function DrawNoFlyZone(x, y, width = 10, height = 10) {
-    var doc = document.getElementById("map");
-    $(doc).ready(function () {
-      var doc_svg = doc.getSVGDocument();
-      var svg = doc_svg.getElementById("map-svg");
-
-      var zone = doc_svg.createElementNS("http://www.w3.org/2000/svg", "rect");
-      zone.setAttributeNS(null, 'x', x);
-      zone.setAttributeNS(null, 'y', y);
-      zone.setAttributeNS(null, 'width', width);
-      zone.setAttributeNS(null, 'height', height);
-      zone.setAttributeNS(null, 'fill', 'orange');
-      zone.setAttributeNS(null, 'opacity', '0.5');
-      zone.setAttributeNS(null, 'stroke', 'red');
-      zone.setAttributeNS(null, 'stroke-width', '1');
-      svg.appendChild(zone);
-    });
-  }
 
 
 </script>
@@ -87,6 +69,7 @@
   </form>
 
   <object id="map" type="image/svg+xml" data="static/images/lund-map.svg"></object>
+  <script src="static\js\noFly.js"></script>
   <script>
     var set_delay = 50;
     function callout() {
@@ -102,13 +85,6 @@
         })
         .always(function () {
           setTimeout(callout, set_delay);
-        });
-        
-      $.ajax({ url: 'http://0.0.0.0:1337/get_no_fly_zones' })
-        .done(function (zones) {
-          for (const zone of zones) {
-            DrawNoFlyZone(zone.x, zone.y);
-          }
         });
     }
     callout();
