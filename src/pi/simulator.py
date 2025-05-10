@@ -7,6 +7,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(".."))
 from webserver.logic.utilities import clearFile
+from webserver.logic.No_fly_zone import is_in_no_fly_zone, safe_direction2
 
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -34,6 +35,18 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     d_long, d_la =  getMovement(drone_coords, from_coords)
     while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
         drone_coords = moveDrone(drone_coords, d_long, d_la)
+        #========================================= Added ==============================================================
+
+        if is_in_no_fly_zone(*drone_coords):
+            print("Drönaren riskerar att flyga in i no-fly-zone under färd mot 'from'. Justerar kurs...")
+            safe_coords = safe_direction2(*drone_coords)
+            if safe_coords == (None, None):
+                print("Kunde inte hitta säker väg. Avbryter flygning.")
+                return drone_coords[0],drone_coords[1]
+            drone_coords = safe_coords
+            continue  # Hoppa till nästa iteration med nya koordinater
+
+        #========================================================================================================
         with requests.Session() as session:
             drone_info = {'id': id,
                           'longitude': drone_coords[0],
@@ -45,6 +58,18 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
     d_long, d_la =  getMovement(drone_coords, to_coords)
     while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
         drone_coords = moveDrone(drone_coords, d_long, d_la)
+        #======================================= Added ================================================================
+
+        if is_in_no_fly_zone(*drone_coords):
+            print("Drönaren riskerar att flyga in i no-fly-zone under färd mot 'from'. Justerar kurs...")
+            safe_coords = safe_direction2(*drone_coords)
+            if safe_coords == (None, None):
+                print("Kunde inte hitta säker väg. Avbryter flygning.")
+                return drone_coords[0],drone_coords[1]
+            drone_coords = safe_coords
+            continue  # Hoppa till nästa iteration med nya koordinater
+
+        #========================================================================================================
         with requests.Session() as session:
             drone_info = {'id': id,
                           'longitude': drone_coords[0],
@@ -114,6 +139,20 @@ if __name__ == "__main__":
 
     from_coords = (args.flong, args.flat)
     to_coords = (args.tlong, args.tlat)
+
+    #======================================= Added ================================================
+
+    if is_in_no_fly_zone(current_coords[0], current_coords[1]):
+        print("Drönaren är i no-fly-zon. Försöker hitta säker plats...")
+        new_coords = safe_direction2(current_coords[0], current_coords[1])
+        if new_coords == (None, None):
+            print("Kunde inte hitta säker plats. Avslutar.")
+            sys.exit(1)
+        current_coords = new_coords
+        print(f"Flyttade till säker plats: {current_coords}")
+    
+
+    #===========================================================================================
 
     print(current_coords, from_coords, to_coords)
     drone_long, drone_lat = run(args.id ,current_coords, from_coords, to_coords, SERVER_URL)
