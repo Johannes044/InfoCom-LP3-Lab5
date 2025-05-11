@@ -19,7 +19,6 @@ def isDelivery():
 
 
 
-
 def waitingForInput():
     print("Drone is waiting for QR-code. Press joystick to continue...")
     # Vänta på att användaren trycker på joystick
