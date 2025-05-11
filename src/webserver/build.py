@@ -53,17 +53,17 @@ def about():
 def admin():
     return render_template('admin.html')
 
-@app.route("/get_no_fly_zones", methods=["GET"])
-def get_no_fly_zones():
-    zones_svg = []
-    for zone in NO_FLY_ZONES:
-        x1, y1 = translate((zone["min_lon"], zone["max_lat"]))
-        x2,y2 = translate((zone["max_lon"], zone["min_lat"]))
-        width = abs(x2 - x1)
-        height = abs(y2 - y1)
-        zones_svg.append({"x": min(x1, x2), "y": min(y1, y2), "width": width, "height": height})
-    logging.debug(f"Sent {zones_svg} to draw the no fly zone.")
-    return jsonify(zones_svg)
+# @app.route("/get_no_fly_zones", methods=["GET"])
+# def get_no_fly_zones():
+#     zones_svg = []
+#     for zone in NO_FLY_ZONES:
+#         x1, y1 = translate((zone["min_lon"], zone["max_lat"]))
+#         x2,y2 = translate((zone["max_lon"], zone["min_lat"]))
+#         width = abs(x2 - x1)
+#         height = abs(y2 - y1)
+#         zones_svg.append({"x": min(x1, x2), "y": min(y1, y2), "width": width, "height": height})
+#     logging.debug(f"Sent {zones_svg} to draw the no fly zone.")
+#     return jsonify(zones_svg)
 
 @app.route('/get_drones', methods=['GET'])
 # Fetching drone data
@@ -73,8 +73,10 @@ def get_drones():
     for drone in drones:
         droneData = redis_server.hgetall(drone)
         if 'longitude' in droneData and 'latitude' in droneData and 'status' in droneData:
+            #========================================================================================================
             lon,lat = safe_diraction(float(droneData['longitude']), float(droneData['latitude']))
             longitude_svg, latitude_svg = translate((float(lon), float(lat)))
+            #=========================================================================================================
             drone_dict[drone] = {'longitude': longitude_svg, 'latitude': latitude_svg, 'status': droneData['status']}
     logging.debug(f"Drones fetched: {drone_dict}")
     return jsonify(drone_dict)

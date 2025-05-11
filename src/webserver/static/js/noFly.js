@@ -1,7 +1,7 @@
 
 const NO_FLY_ZONES = [
-    { min_lon: 13.182460, max_lon: 13.214460, min_lat: 55.702952, max_lat: 55.720952 },
-    { min_lon: 13.197878, max_lon: 13.229878, min_lat: 55.708623, max_lat: 55.726623 }
+  { min_lon: 13.182460, max_lon: 13.214460, min_lat: 55.702952, max_lat: 55.720952 },
+  { min_lon: 13.197878, max_lon: 13.229878, min_lat: 55.708623, max_lat: 55.726623 }
 ];
 
 function mapToSVGCoords(lon, lat) {
