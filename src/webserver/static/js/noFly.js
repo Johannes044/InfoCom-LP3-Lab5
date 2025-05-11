@@ -21,18 +21,18 @@ function mapToSVGCoords(lon, lat) {
 }
 
 function halve_zone(zone) {
-    const center_lon = (zone["min_lon"] + zone["max_lon"])/2;
-    const center_lat = (zone["min_lat"] + zone["max_lat"])/2;
+  const center_lon = (zone["min_lon"] + zone["max_lon"])/2;
+  const center_lat = (zone["min_lat"] + zone["max_lat"])/2;
 
-    const half_width = (zone["max_lon"] - zone["min_lon"])/4;
-    const half_height = (zone["max_lat"] - zone["min_lat"])/4;
+  const half_width = (zone["max_lon"] - zone["min_lon"])/4;
+  const half_height = (zone["max_lat"] - zone["min_lat"])/4;
 
-    return {
-        "min_lon": center_lon - half_width,
-        "max_lon": center_lon + half_width,
-        "min_lat": center_lat - half_height,
-        "max_lat": center_lat + half_height,
-    }
+  return {
+    "min_lon": center_lon - half_width,
+    "max_lon": center_lon + half_width,
+    "min_lat": center_lat - half_height,
+    "max_lat": center_lat + half_height,
+  }
 
 }
 
