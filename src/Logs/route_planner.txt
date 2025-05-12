@@ -484,3 +484,43 @@
 2025-05-12 13:51:26,502 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
 2025-05-12 13:51:26,514 - WARNING -  * Debugger is active!
 2025-05-12 13:51:26,518 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 14:15:25,811 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 14:15:25,812 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 14:15:25,829 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.239.78:1339
+2025-05-12 14:15:25,829 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 14:15:25,829 - INFO -  * Restarting with stat
+2025-05-12 14:15:26,010 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 14:15:26,010 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 14:15:26,023 - WARNING -  * Debugger is active!
+2025-05-12 14:15:26,030 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 14:16:22,232 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-12 14:16:22,233 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-12 14:16:22,534 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-05-12 14:16:22,535 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-12 14:16:23,518 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-12 14:16:23,521 - DEBUG - Drone data from D69 have been access!
+2025-05-12 14:16:23,525 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-05-12 14:16:23,537 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-05-12 14:16:23,538 - DEBUG - Got address and sent request to the drone
+2025-05-12 14:16:23,539 - INFO - 127.0.0.1 - - [12/May/2025 14:16:23] "POST /planner HTTP/1.1" 200 -
+2025-05-12 14:19:52,925 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/build.py', reloading
+2025-05-12 14:19:52,994 - INFO -  * Restarting with stat
+2025-05-12 14:19:53,268 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 14:19:53,268 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 14:19:53,280 - WARNING -  * Debugger is active!
+2025-05-12 14:19:53,285 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 16:53:21,341 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 16:53:21,341 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 16:53:21,362 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.239.78:1339
+2025-05-12 16:53:21,363 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 16:53:21,365 - INFO -  * Restarting with stat
+2025-05-12 16:53:21,550 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 16:53:21,550 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 16:53:21,568 - WARNING -  * Debugger is active!
+2025-05-12 16:53:21,583 - INFO -  * Debugger PIN: 896-077-013
