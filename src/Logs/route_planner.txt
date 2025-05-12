@@ -414,3 +414,73 @@
 2025-05-08 15:37:14,361 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
 2025-05-08 15:37:14,375 - WARNING -  * Debugger is active!
 2025-05-08 15:37:14,380 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:28:55,951 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:28:55,951 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:28:55,967 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.239.78:1339
+2025-05-12 13:28:55,967 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 13:28:55,968 - INFO -  * Restarting with stat
+2025-05-12 13:28:56,157 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:28:56,158 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:28:56,170 - WARNING -  * Debugger is active!
+2025-05-12 13:28:56,178 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:30:03,595 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/database.py', reloading
+2025-05-12 13:30:03,636 - INFO -  * Restarting with stat
+2025-05-12 13:30:03,854 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:30:03,854 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:30:03,868 - WARNING -  * Debugger is active!
+2025-05-12 13:30:03,875 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:30:16,359 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/database.py', reloading
+2025-05-12 13:30:16,394 - INFO -  * Restarting with stat
+2025-05-12 13:30:16,609 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:30:16,609 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:30:16,625 - WARNING -  * Debugger is active!
+2025-05-12 13:30:16,632 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:47:49,871 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:47:49,871 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:47:49,894 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.239.78:1339
+2025-05-12 13:47:49,894 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 13:47:49,900 - INFO -  * Restarting with stat
+2025-05-12 13:47:50,070 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:47:50,070 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:47:50,082 - WARNING -  * Debugger is active!
+2025-05-12 13:47:50,088 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:48:50,958 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:48:50,958 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:48:50,979 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.239.78:1339
+2025-05-12 13:48:50,981 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 13:48:50,983 - INFO -  * Restarting with stat
+2025-05-12 13:48:51,173 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:48:51,174 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:48:51,185 - WARNING -  * Debugger is active!
+2025-05-12 13:48:51,192 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:49:16,996 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-12 13:49:16,998 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-12 13:49:17,495 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=tunav%C3%A4gen+39+h%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 490
+2025-05-12 13:49:17,497 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-12 13:49:18,513 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-12 13:49:18,517 - DEBUG - Drone data from D69 have been access!
+2025-05-12 13:49:18,521 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-05-12 13:49:18,531 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-05-12 13:49:18,532 - DEBUG - Got address and sent request to the drone
+2025-05-12 13:49:18,533 - INFO - 127.0.0.1 - - [12/May/2025 13:49:18] "POST /planner HTTP/1.1" 200 -
+2025-05-12 13:51:26,311 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:51:26,311 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:51:26,329 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.239.78:1339
+2025-05-12 13:51:26,329 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 13:51:26,330 - INFO -  * Restarting with stat
+2025-05-12 13:51:26,502 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:51:26,502 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-12 13:51:26,514 - WARNING -  * Debugger is active!
+2025-05-12 13:51:26,518 - INFO -  * Debugger PIN: 896-077-013

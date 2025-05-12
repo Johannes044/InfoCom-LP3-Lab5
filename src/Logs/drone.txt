@@ -486,3 +486,56 @@
 2025-05-08 15:21:44,899 - INFO - Drone D69 now moving to [13.2075372, 55.7089998]. Status updated to 'busy'.
 2025-05-08 15:21:44,900 - INFO - Drone D69 now moving to [13.2075372, 55.7089998]. Status updated to 'busy'.
 2025-05-08 15:21:44,900 - INFO - 127.0.0.1 - - [08/May/2025 15:21:44] "POST / HTTP/1.1" 200 -
+2025-05-12 13:36:54,176 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-12 13:36:54,177 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106b6b4d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-12 13:36:54,177 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106b6b4d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-12 13:36:54,198 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.239.78:42069
+2025-05-12 13:36:54,200 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 13:36:54,200 - INFO -  * Restarting with stat
+2025-05-12 13:36:54,310 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-12 13:36:54,310 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1043334d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-12 13:36:54,310 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1043334d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-12 13:36:54,321 - WARNING -  * Debugger is active!
+2025-05-12 13:36:54,327 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:47:54,317 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-12 13:47:54,323 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-12 13:47:54,323 - INFO - Successfully sent initial drone location to server.
+2025-05-12 13:47:54,323 - INFO - Successfully sent initial drone location to server.
+2025-05-12 13:47:54,343 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.239.78:42069
+2025-05-12 13:47:54,343 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 13:47:54,343 - INFO -  * Restarting with stat
+2025-05-12 13:47:54,457 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-12 13:47:54,458 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-12 13:47:54,458 - INFO - Successfully sent initial drone location to server.
+2025-05-12 13:47:54,458 - INFO - Successfully sent initial drone location to server.
+2025-05-12 13:47:54,470 - WARNING -  * Debugger is active!
+2025-05-12 13:47:54,474 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:49:00,062 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-12 13:49:00,066 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-12 13:49:00,066 - INFO - Successfully sent initial drone location to server.
+2025-05-12 13:49:00,066 - INFO - Successfully sent initial drone location to server.
+2025-05-12 13:49:00,088 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.239.78:42069
+2025-05-12 13:49:00,088 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-12 13:49:00,088 - INFO -  * Restarting with stat
+2025-05-12 13:49:00,200 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-12 13:49:00,202 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-12 13:49:00,202 - INFO - Successfully sent initial drone location to server.
+2025-05-12 13:49:00,202 - INFO - Successfully sent initial drone location to server.
+2025-05-12 13:49:00,215 - WARNING -  * Debugger is active!
+2025-05-12 13:49:00,219 - INFO -  * Debugger PIN: 896-077-013
+2025-05-12 13:49:18,525 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-12 13:49:18,525 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-12 13:49:18,525 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-12 13:49:18,525 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-12 13:49:18,529 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-12 13:49:18,529 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-12 13:49:18,530 - INFO - 127.0.0.1 - - [12/May/2025 13:49:18] "POST / HTTP/1.1" 200 -
