@@ -1,0 +1,488 @@
+2025-05-08 14:01:04,041 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:01:04,042 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106cd74d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-08 14:01:04,042 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106cd74d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-08 14:01:04,074 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 14:01:04,074 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 14:01:04,075 - INFO -  * Restarting with stat
+2025-05-08 14:03:19,739 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:03:19,739 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1022f74d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-08 14:03:19,739 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1022f74d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-08 14:03:19,763 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 14:03:19,763 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 14:03:19,763 - INFO -  * Restarting with stat
+2025-05-08 14:03:19,875 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:03:19,875 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1021734d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-08 14:03:19,875 - ERROR - Error sending initial location to server: HTTPConnectionPool(host='127.0.0.1', port=1338): Max retries exceeded with url: /drone (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1021734d0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-05-08 14:03:19,886 - WARNING -  * Debugger is active!
+2025-05-08 14:03:19,893 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:08:22,865 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:08:22,873 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:08:22,873 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:08:22,873 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:08:22,900 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 14:08:22,900 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 14:08:22,900 - INFO -  * Restarting with stat
+2025-05-08 14:08:23,012 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:08:23,014 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:08:23,014 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:08:23,014 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:08:23,028 - WARNING -  * Debugger is active!
+2025-05-08 14:08:23,032 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:08:33,878 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:08:33,878 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:08:33,878 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:08:33,878 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:08:33,881 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:08:33,881 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:08:33,882 - INFO - 127.0.0.1 - - [08/May/2025 14:08:33] "POST / HTTP/1.1" 200 -
+2025-05-08 14:10:28,057 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:10:28,092 - INFO -  * Restarting with stat
+2025-05-08 14:10:28,284 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:10:28,287 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:10:28,287 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:10:28,287 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:10:28,331 - WARNING -  * Debugger is active!
+2025-05-08 14:10:28,337 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:10:40,242 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:10:40,252 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:10:40,252 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:10:40,252 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:10:40,255 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:10:40,255 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:10:40,256 - INFO - 127.0.0.1 - - [08/May/2025 14:10:40] "POST / HTTP/1.1" 200 -
+2025-05-08 14:11:57,312 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:11:57,349 - INFO -  * Restarting with stat
+2025-05-08 14:11:57,531 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:11:57,538 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:11:57,538 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:11:57,539 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:11:57,558 - WARNING -  * Debugger is active!
+2025-05-08 14:11:57,563 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:12:24,371 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:12:24,403 - INFO -  * Restarting with stat
+2025-05-08 14:12:24,583 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:12:24,585 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:12:24,585 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:12:24,585 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:12:24,601 - WARNING -  * Debugger is active!
+2025-05-08 14:12:24,607 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:14:21,666 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:14:21,705 - INFO -  * Restarting with stat
+2025-05-08 14:14:21,891 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:14:21,894 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:14:21,894 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:14:21,894 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:14:21,912 - WARNING -  * Debugger is active!
+2025-05-08 14:14:21,918 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:14:28,030 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:14:28,030 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:14:28,030 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:14:28,031 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:14:28,034 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:14:28,034 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:14:28,035 - INFO - 127.0.0.1 - - [08/May/2025 14:14:28] "POST / HTTP/1.1" 200 -
+2025-05-08 14:15:10,618 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:15:10,621 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:15:10,621 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:15:10,621 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:15:10,639 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 14:15:10,639 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 14:15:10,640 - INFO -  * Restarting with stat
+2025-05-08 14:15:10,751 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:15:10,753 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:15:10,753 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:15:10,753 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:15:10,765 - WARNING -  * Debugger is active!
+2025-05-08 14:15:10,769 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:15:22,138 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:15:22,138 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:15:22,138 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:15:22,138 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:15:22,141 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:15:22,141 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:15:22,142 - INFO - 127.0.0.1 - - [08/May/2025 14:15:22] "POST / HTTP/1.1" 200 -
+2025-05-08 14:16:02,763 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:16:02,787 - INFO -  * Restarting with stat
+2025-05-08 14:16:02,925 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:16:02,929 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:16:02,929 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:16:02,929 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:16:02,947 - WARNING -  * Debugger is active!
+2025-05-08 14:16:02,953 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:16:19,402 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:16:19,403 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:16:19,404 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:16:19,404 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:16:19,428 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 14:16:19,428 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 14:16:19,428 - INFO -  * Restarting with stat
+2025-05-08 14:16:19,537 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:16:19,538 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:16:19,538 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:16:19,538 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:16:19,550 - WARNING -  * Debugger is active!
+2025-05-08 14:16:19,554 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:16:28,706 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:28,706 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:28,706 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:28,706 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:28,710 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:28,710 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:28,711 - INFO - 127.0.0.1 - - [08/May/2025 14:16:28] "POST / HTTP/1.1" 200 -
+2025-05-08 14:16:31,833 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:31,833 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:31,833 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:31,833 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:31,836 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:31,836 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:31,837 - INFO - 127.0.0.1 - - [08/May/2025 14:16:31] "POST / HTTP/1.1" 200 -
+2025-05-08 14:16:33,772 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:33,772 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:33,772 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:33,772 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:33,773 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:33,773 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:33,774 - INFO - 127.0.0.1 - - [08/May/2025 14:16:33] "POST / HTTP/1.1" 200 -
+2025-05-08 14:16:34,795 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:34,795 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:34,796 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:34,796 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:34,797 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:34,797 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:34,797 - INFO - 127.0.0.1 - - [08/May/2025 14:16:34] "POST / HTTP/1.1" 200 -
+2025-05-08 14:16:55,175 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:55,176 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:55,176 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:55,176 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:55,178 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:55,178 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:55,179 - INFO - 127.0.0.1 - - [08/May/2025 14:16:55] "POST / HTTP/1.1" 200 -
+2025-05-08 14:16:57,224 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:57,224 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:16:57,224 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:57,225 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:16:57,228 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:57,228 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:16:57,230 - INFO - 127.0.0.1 - - [08/May/2025 14:16:57] "POST / HTTP/1.1" 200 -
+2025-05-08 14:19:20,880 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:19:20,924 - INFO -  * Restarting with stat
+2025-05-08 14:19:21,202 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:19:21,207 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:19:21,207 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:19:21,209 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:19:21,233 - WARNING -  * Debugger is active!
+2025-05-08 14:19:21,257 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:19:56,655 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:19:56,659 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:19:56,659 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:19:56,659 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:19:56,677 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 14:19:56,677 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 14:19:56,677 - INFO -  * Restarting with stat
+2025-05-08 14:19:56,788 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:19:56,790 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:19:56,790 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:19:56,790 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:19:56,802 - WARNING -  * Debugger is active!
+2025-05-08 14:19:56,806 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:20:08,255 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:20:08,255 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:20:08,255 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:20:08,255 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:20:08,258 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:20:08,258 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:20:08,259 - INFO - 127.0.0.1 - - [08/May/2025 14:20:08] "POST / HTTP/1.1" 200 -
+2025-05-08 14:26:51,739 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:26:51,743 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:26:51,743 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:26:51,743 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:26:51,762 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 14:26:51,762 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 14:26:51,762 - INFO -  * Restarting with stat
+2025-05-08 14:26:51,876 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:26:51,878 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:26:51,878 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:26:51,878 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:26:51,893 - WARNING -  * Debugger is active!
+2025-05-08 14:26:51,897 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:27:03,435 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:27:03,435 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:27:03,435 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:27:03,435 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:27:03,438 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:27:03,438 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:27:03,439 - INFO - 127.0.0.1 - - [08/May/2025 14:27:03] "POST / HTTP/1.1" 200 -
+2025-05-08 14:27:17,801 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:27:17,838 - INFO -  * Restarting with stat
+2025-05-08 14:27:18,019 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:27:18,022 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:27:18,022 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:27:18,022 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:27:18,040 - WARNING -  * Debugger is active!
+2025-05-08 14:27:18,045 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:27:23,297 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:27:23,297 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:27:23,297 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:27:23,297 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:27:23,301 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:27:23,301 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:27:23,302 - INFO - 127.0.0.1 - - [08/May/2025 14:27:23] "POST / HTTP/1.1" 200 -
+2025-05-08 14:29:43,926 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:29:43,959 - INFO -  * Restarting with stat
+2025-05-08 14:29:44,136 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:29:44,139 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:29:44,139 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:29:44,139 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:29:44,154 - WARNING -  * Debugger is active!
+2025-05-08 14:29:44,159 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:30:07,467 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:30:07,468 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:30:07,468 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:30:07,468 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:30:07,472 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:30:07,473 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:30:07,474 - INFO - 127.0.0.1 - - [08/May/2025 14:30:07] "POST / HTTP/1.1" 200 -
+2025-05-08 14:32:33,227 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:32:33,252 - INFO -  * Restarting with stat
+2025-05-08 14:32:33,367 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:32:33,369 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:32:33,370 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:32:33,370 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:32:33,383 - WARNING -  * Debugger is active!
+2025-05-08 14:32:33,386 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:33:18,755 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:33:18,788 - INFO -  * Restarting with stat
+2025-05-08 14:33:18,976 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:33:18,979 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:33:18,979 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:33:18,979 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:33:18,995 - WARNING -  * Debugger is active!
+2025-05-08 14:33:19,001 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:33:56,191 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 14:33:56,231 - INFO -  * Restarting with stat
+2025-05-08 14:33:56,437 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:33:56,440 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:33:56,440 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:33:56,440 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:33:56,458 - WARNING -  * Debugger is active!
+2025-05-08 14:33:56,465 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:34:17,370 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:34:17,375 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:34:17,375 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:34:17,375 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:34:17,397 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 14:34:17,397 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 14:34:17,398 - INFO -  * Restarting with stat
+2025-05-08 14:34:17,509 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 14:34:17,511 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 14:34:17,511 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:34:17,511 - INFO - Successfully sent initial drone location to server.
+2025-05-08 14:34:17,523 - WARNING -  * Debugger is active!
+2025-05-08 14:34:17,527 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 14:34:27,159 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:34:27,159 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 14:34:27,160 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:34:27,160 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 14:34:27,164 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:34:27,164 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 14:34:27,165 - INFO - 127.0.0.1 - - [08/May/2025 14:34:27] "POST / HTTP/1.1" 200 -
+2025-05-08 15:03:07,203 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 15:03:07,274 - INFO -  * Restarting with stat
+2025-05-08 15:03:07,494 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:03:07,509 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:03:07,510 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:03:07,510 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:03:07,533 - WARNING -  * Debugger is active!
+2025-05-08 15:03:07,539 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:03:40,755 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:03:40,759 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:03:40,759 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:03:40,759 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:03:40,781 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 15:03:40,781 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 15:03:40,781 - INFO -  * Restarting with stat
+2025-05-08 15:03:40,912 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:03:40,914 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:03:40,914 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:03:40,914 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:03:40,929 - WARNING -  * Debugger is active!
+2025-05-08 15:03:40,941 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:03:52,047 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:03:52,047 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:03:52,047 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:03:52,047 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:03:52,050 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:03:52,050 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:03:52,052 - INFO - 127.0.0.1 - - [08/May/2025 15:03:52] "POST / HTTP/1.1" 200 -
+2025-05-08 15:16:09,430 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:16:09,434 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:16:09,434 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:16:09,434 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:16:09,456 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 15:16:09,456 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 15:16:09,457 - INFO -  * Restarting with stat
+2025-05-08 15:16:09,568 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:16:09,569 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:16:09,569 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:16:09,569 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:16:09,582 - WARNING -  * Debugger is active!
+2025-05-08 15:16:09,588 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:16:21,884 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:16:21,885 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:16:21,885 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:16:21,885 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:16:21,889 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:16:21,889 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:16:21,890 - INFO - 127.0.0.1 - - [08/May/2025 15:16:21] "POST / HTTP/1.1" 200 -
+2025-05-08 15:17:12,281 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 15:17:12,321 - INFO -  * Restarting with stat
+2025-05-08 15:17:12,455 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:17:12,458 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:17:12,458 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:17:12,458 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:17:12,488 - WARNING -  * Debugger is active!
+2025-05-08 15:17:12,497 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:17:15,261 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:17:15,262 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:17:15,262 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:17:15,262 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:17:15,264 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:17:15,265 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:17:15,266 - INFO - 127.0.0.1 - - [08/May/2025 15:17:15] "POST / HTTP/1.1" 200 -
+2025-05-08 15:17:28,906 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 15:17:28,942 - INFO -  * Restarting with stat
+2025-05-08 15:17:29,083 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:17:29,085 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:17:29,085 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:17:29,085 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:17:29,099 - WARNING -  * Debugger is active!
+2025-05-08 15:17:29,103 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:18:00,124 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:18:00,128 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:18:00,128 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:18:00,129 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:18:00,146 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 15:18:00,146 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 15:18:00,146 - INFO -  * Restarting with stat
+2025-05-08 15:18:00,260 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:18:00,262 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:18:00,262 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:18:00,262 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:18:00,273 - WARNING -  * Debugger is active!
+2025-05-08 15:18:00,280 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:18:10,662 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:18:10,663 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:18:10,663 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:18:10,663 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:18:10,666 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:18:10,666 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:18:10,667 - INFO - 127.0.0.1 - - [08/May/2025 15:18:10] "POST / HTTP/1.1" 200 -
+2025-05-08 15:19:46,434 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 15:19:46,477 - INFO -  * Restarting with stat
+2025-05-08 15:19:46,678 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:19:46,681 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:19:46,682 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:19:46,682 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:19:46,701 - WARNING -  * Debugger is active!
+2025-05-08 15:19:46,707 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:19:54,244 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:19:54,246 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:19:54,246 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:19:54,246 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:19:54,264 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 15:19:54,264 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 15:19:54,264 - INFO -  * Restarting with stat
+2025-05-08 15:19:54,376 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:19:54,377 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:19:54,377 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:19:54,377 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:19:54,389 - WARNING -  * Debugger is active!
+2025-05-08 15:19:54,395 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:20:06,379 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:20:06,379 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:20:06,379 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:20:06,379 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:20:06,382 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:20:06,382 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:20:06,383 - INFO - 127.0.0.1 - - [08/May/2025 15:20:06] "POST / HTTP/1.1" 200 -
+2025-05-08 15:20:18,113 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-08 15:20:18,143 - INFO -  * Restarting with stat
+2025-05-08 15:20:18,323 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:20:18,326 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:20:18,326 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:20:18,326 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:20:18,341 - WARNING -  * Debugger is active!
+2025-05-08 15:20:18,346 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:20:25,163 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:20:25,166 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:20:25,166 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:20:25,166 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:20:25,192 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.66.96:42069
+2025-05-08 15:20:25,192 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 15:20:25,193 - INFO -  * Restarting with stat
+2025-05-08 15:20:25,307 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-08 15:20:25,309 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-08 15:20:25,309 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:20:25,309 - INFO - Successfully sent initial drone location to server.
+2025-05-08 15:20:25,319 - WARNING -  * Debugger is active!
+2025-05-08 15:20:25,324 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:20:30,845 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:20:30,845 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:20:30,845 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:20:30,845 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:20:30,848 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:20:30,848 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:20:30,849 - INFO - 127.0.0.1 - - [08/May/2025 15:20:30] "POST / HTTP/1.1" 200 -
+2025-05-08 15:20:49,421 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:20:49,421 - INFO - Received new route: {'from': [13.2169956, 55.7104337], 'to': [13.2118373, 55.7231233], 'current': ['13.188172689993708', '55.70547137847168']}
+2025-05-08 15:20:49,421 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:20:49,421 - DEBUG - Moving from [13.2169956, 55.7104337] to [13.2118373, 55.7231233]
+2025-05-08 15:20:49,425 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:20:49,425 - INFO - Drone D69 now moving to [13.2118373, 55.7231233]. Status updated to 'busy'.
+2025-05-08 15:20:49,426 - INFO - 127.0.0.1 - - [08/May/2025 15:20:49] "POST / HTTP/1.1" 200 -
+2025-05-08 15:21:44,896 - INFO - Received new route: {'from': [13.1948896, 55.6971513], 'to': [13.2075372, 55.7089998], 'current': ['13.211851874380619', '55.72308744650982']}
+2025-05-08 15:21:44,896 - INFO - Received new route: {'from': [13.1948896, 55.6971513], 'to': [13.2075372, 55.7089998], 'current': ['13.211851874380619', '55.72308744650982']}
+2025-05-08 15:21:44,896 - DEBUG - Moving from [13.1948896, 55.6971513] to [13.2075372, 55.7089998]
+2025-05-08 15:21:44,896 - DEBUG - Moving from [13.1948896, 55.6971513] to [13.2075372, 55.7089998]
+2025-05-08 15:21:44,899 - INFO - Drone D69 now moving to [13.2075372, 55.7089998]. Status updated to 'busy'.
+2025-05-08 15:21:44,900 - INFO - Drone D69 now moving to [13.2075372, 55.7089998]. Status updated to 'busy'.
+2025-05-08 15:21:44,900 - INFO - 127.0.0.1 - - [08/May/2025 15:21:44] "POST / HTTP/1.1" 200 -

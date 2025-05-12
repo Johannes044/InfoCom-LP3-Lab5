@@ -1,10 +1,12 @@
 <div align="center">
-  <img src="./static/icons/gwd.jpg" alt="Drone logo" width=256px>
+  <img src="/src/webserver/static/images/gwd.jpg" alt="Drone logo" width=256px>
   <h3>GWD</h3>
   <p>
     Medicine delivery
   </p>
 </div>
+
+
 
 ## Guide
 _**IMPORTANT**: All of the following commands must be ran from the root of the repository._

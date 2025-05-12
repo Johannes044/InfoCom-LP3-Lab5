@@ -25,9 +25,8 @@ body {
     display: flex;
     flex-direction: column; /* Förbättrad layout */
     align-items: center;
-    height: 100vh;
     margin: 0;
-    padding: 20px; /* Lägger till lite marginaler runt innehållet */
+    padding: 1em; /* Lägger till lite marginaler runt innehållet */
 }
 
 a {
@@ -40,15 +39,30 @@ a:hover {
     color: var(--color-text-light-hover);
 }
 
+.btn{
+    font-family: Lexend, Comic Sans MS;
+}
+
 header {
-    width: 100%;
+    width: 100%; 
+    height: 2em;
     display: flex;
     height: var(--navbar-height);
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
     background-color: var(--color-navbar);
-    border-radius: 20px;
+    border-radius: 1em;
+}
+
+footer {
+    width: 100%;
+    margin-top: 2em;
+}
+
+footer > hr {
+    border: 2px solid var(--color-navbar);
+    color: #00000000;
 }
 
 #navbar-items {
@@ -61,7 +75,7 @@ header {
 }
 
 .content {
-    min-height: 80vh;
     display: grid;
     place-items: center;
+    min-height: 80vh;
 }

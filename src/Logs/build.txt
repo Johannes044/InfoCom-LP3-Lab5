@@ -1,0 +1,4 @@
+2025-05-08 15:37:14,388 - WARNING -  * Debugger is active!
+2025-05-08 15:37:14,392 - INFO -  * Debugger PIN: 896-077-013
+2025-05-08 15:37:14,874 - DEBUG - Drones fetched: {}
+2025-05-08 15:37:14,874 - INFO - 127.0.0.1 - - [08/May/2025 15:37:14] "GET /get_drones HTTP/1.1" 200 -
