@@ -5,6 +5,8 @@
 # Konfigurera loggning
 #logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
+#! added a new zone with is mitt in long: 55.71742, lat: 13.22948;
+
 
 NO_FLY_ZONES = [
     {
