@@ -6,13 +6,13 @@ file = "../Logs/simulator.txt"
 import sys
 import os
 sys.path.append(os.path.abspath(".."))
-from webserver.logic.utilities import clearFile
+#from webserver.logic.utilities import clearFile
 from webserver.logic.No_fly_zone import is_in_no_fly_zone, safe_direction2
 
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile(file)
+#clearFile(file)
 
 def getMovement(src, dst):
     speed = 0.00001
