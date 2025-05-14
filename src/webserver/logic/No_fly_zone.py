@@ -24,28 +24,27 @@ NO_FLY_ZONES = [
 ]
 
 def halve_zone(zone):
-    center_lon = (zone["min_lon"] + zone["max_lon"]) / 2
-    center_lat = (zone["min_lat"] + zone["max_lat"]) / 2
-    half_width = (zone["max_lon"] - zone["min_lon"]) / 4
-    half_height = (zone["max_lat"] - zone["min_lat"]) / 4
+    mid_lon = (zone["min_lon"] + zone["max_lon"]) / 2
+    mid_lat = (zone["min_lat"] + zone["max_lat"]) / 2
 
-    return {
-        "min_lon": center_lon - half_width,
-        "max_lon": center_lon + half_width,
-        "min_lat": center_lat - half_height,
-        "max_lat": center_lat + half_height,
-    }
+    # Returnera två mindre zoner
+    return [
+        {"min_lon": zone["min_lon"], "max_lon": mid_lon, "min_lat": zone["min_lat"], "max_lat": mid_lat},
+        {"min_lon": mid_lon, "max_lon": zone["max_lon"], "min_lat": mid_lat, "max_lat": zone["max_lat"]}
+    ]
 
 def is_not_in_zone(coord):
-    NO_FLY_ZONE = [halve_zone(zone) for zone in NO_FLY_ZONES]
-    for zone in NO_FLY_ZONE:
+    zones_once = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    zones_twice = [z for zone in zones_once for z in halve_zone(zone)]
+    for zone in zones_twice:
         if zone["min_lon"] <=  coord[0]<= zone["max_lon"] and zone["min_lat"] <= coord[1] <= zone["max_lat"]:
             return False  # Drönaren är i en förbjuden zon
     return True
 
 def is_in_no_fly_zone(lon, lat):
-    NO_FLY_ZONE = [halve_zone(zone) for zone in NO_FLY_ZONES]
-    for zone in NO_FLY_ZONE:
+    zones_once = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    zones_twice = [z for zone in zones_once for z in halve_zone(zone)]
+    for zone in zones_twice:
         if zone["min_lon"] <= lon <= zone["max_lon"] and zone["min_lat"] <= lat <= zone["max_lat"]:
             return True  # Drönaren är i en förbjuden zon
     return False

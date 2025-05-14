@@ -1,4 +1,6 @@
 import heapq
+
+from No_fly_zone import halve_zone
 #from No_fly_zone import is_in_no_fly_zone
 
 NO_FLY_ZONES = [
@@ -17,7 +19,9 @@ NO_FLY_ZONES = [
 ]
 
 def is_in_no_fly_zone(lon, lat):
-    for zone in NO_FLY_ZONES:
+    zones_once = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    zones_twice = [z for zone in zones_once for z in halve_zone(zone)]
+    for zone in zones_twice:
         if zone["min_lon"] <= lon <= zone["max_lon"] and zone["min_lat"] <= lat <= zone["max_lat"]:
             return True  # Drönaren är i en förbjuden zon
     return False
@@ -73,8 +77,8 @@ def a_star(start, goal, step_size=0.0005, max_iter=100000):
     return None  # No path found
 
 
-start = (13.1950, 55.7100)
-goal = (13.2050, 55.7200)
+start = (13.1800, 55.7070)   # Väster om första no-fly-zonen
+goal = (13.2330, 55.7220)    # Öster om andra no-fly-zonen
 
 path = a_star(start, goal)
 
