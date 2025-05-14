@@ -89,7 +89,8 @@ def safe_direction2(lon, lat, step_size=0.0005, max_attempts=100):
     return lon, lat
 
 
-
+print(safe_direction2(13.2, 55.71))  # Inuti en zon
+print(safe_direction2(13.25, 55.73))  # Utanför zonen
 print(is_in_no_fly_zone(13.197878,55.708623))
 
 
