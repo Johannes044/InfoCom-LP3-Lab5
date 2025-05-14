@@ -38,8 +38,9 @@ def send_request(drone_url, coords):
 @app.route('/planner', methods=['POST'])
 def route_planner():
     Addresses = json.loads(request.data.decode())
-    FromAddress = Addresses['faddr']
+    FromAddress = "Mårtenstorget 12" #Addresses['faddr']
     ToAddress = Addresses['taddr']
+    print(Addresses['taddr'])
     from_location = geolocator.geocode(FromAddress + region, timeout=None)
     to_location = geolocator.geocode(ToAddress + region, timeout=None)
     
