@@ -665,3 +665,35 @@
 2025-05-14 15:23:32,581 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
 2025-05-14 15:23:32,582 - DEBUG - Got address and sent request to the drone
 2025-05-14 15:23:32,582 - INFO - 127.0.0.1 - - [14/May/2025 15:23:32] "POST /planner HTTP/1.1" 200 -
+2025-05-14 15:29:59,073 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-14 15:29:59,075 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-14 15:29:59,094 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.24.150:1339
+2025-05-14 15:29:59,095 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-14 15:29:59,095 - INFO -  * Restarting with stat
+2025-05-14 15:29:59,267 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-14 15:29:59,267 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-14 15:29:59,279 - WARNING -  * Debugger is active!
+2025-05-14 15:29:59,286 - INFO -  * Debugger PIN: 896-077-013
+2025-05-14 15:30:40,526 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-14 15:30:40,527 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-14 15:30:41,300 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-14 15:30:41,301 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-14 15:30:42,328 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-14 15:30:42,330 - DEBUG - Drone data from D69 have been access!
+2025-05-14 15:30:42,333 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-05-14 15:30:42,344 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-05-14 15:30:42,345 - DEBUG - Got address and sent request to the drone
+2025-05-14 15:30:42,346 - INFO - 127.0.0.1 - - [14/May/2025 15:30:42] "POST /planner HTTP/1.1" 200 -
+2025-05-14 15:32:17,804 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-14 15:32:17,807 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-05-14 15:32:18,012 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-14 15:32:18,013 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-14 15:32:19,092 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-14 15:32:19,094 - DEBUG - Drone data from D69 have been access!
+2025-05-14 15:32:19,096 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:42069
+2025-05-14 15:32:19,106 - DEBUG - http://127.0.0.1:42069 "POST / HTTP/1.1" 200 18
+2025-05-14 15:32:19,106 - DEBUG - Got address and sent request to the drone
+2025-05-14 15:32:19,107 - INFO - 127.0.0.1 - - [14/May/2025 15:32:19] "POST /planner HTTP/1.1" 200 -
