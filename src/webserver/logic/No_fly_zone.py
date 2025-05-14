@@ -72,10 +72,12 @@ def safe_direction2(lon, lat, step_size=0.0005, max_attempts=100):
         (step_size, -step_size), (-step_size, -step_size)
     ]
 
-    while is_in_no_fly_zone(lon, lat) and attempts < max_attempts:
-        dx, dy = directions[attempts % len(directions)]
-        lon += dx
-        lat += dy
+   while is_in_no_fly_zone(lon, lat) and attempts < max_attempts:
+       dx, dy = directions[attempts % len(directions)]
+       test_lon = original_lon + dx
+       test_lat = original_lat + dy
+       if not is_in_no_fly_zone(test_lon, test_lat):
+           return test_lon, test_lat
         attempts += 1
 
     print(f"Från ({original_lon}, {original_lat}) -> Till ({lon}, {lat}) efter {attempts} försök")
