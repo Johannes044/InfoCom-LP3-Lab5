@@ -2,12 +2,14 @@ import math
 import requests
 import argparse
 import logging
+
+from webserver.logic.algoritmen import a_star
 file = "../Logs/simulator.txt"
 import sys
 import os
-sys.path.append(os.path.abspath(".."))
+#sys.path.append(os.path.abspath(".."))
 #from webserver.logic.utilities import clearFile
-from webserver.logic.No_fly_zone import is_in_no_fly_zone, safe_direction2
+#from webserver.logic.No_fly_zone import is_in_no_fly_zone, safe_direction2
 
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -29,63 +31,130 @@ def moveDrone(src, d_long, d_la):
     y = y + d_la        
     return (x, y)
 
+# Helper function to send coordinates to server
+def send_coordinates(id, longitude, latitude, status, SERVER_URL):
+    with requests.Session() as session:
+        drone_info = {
+            'id': id,
+            'longitude': longitude,
+            'latitude': latitude,
+            'status': status
+        }
+        try:
+            resp = session.post(SERVER_URL, json=drone_info)
+            resp.raise_for_status()  # This will raise an exception for bad responses
+            logging.info(f"Sent coordinates: {longitude}, {latitude}, status: {status}")
+        except requests.exceptions.RequestException as e:
+            logging.error(f"Error sending coordinates: {longitude}, {latitude}, status: {status}. Error: {e}")
+
+#=====================================================================================================================
+
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
-    drone_coords = current_coords
-    d_long, d_la =  getMovement(drone_coords, from_coords)
-    while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
-        drone_coords = moveDrone(drone_coords, d_long, d_la)
-        #========================================= Added ==============================================================
+    # First, use A* algorithm to find the path
+    print(f"🧭 A* pathfinding from {current_coords} to {from_coords}")
+    path = a_star(current_coords, from_coords)  # A* returns a path
 
-        if is_in_no_fly_zone(*drone_coords):
-            print("Drönaren riskerar att flyga in i no-fly-zone under färd mot 'from'. Justerar kurs...")
-            safe_coords = safe_direction2(*drone_coords)
-            if safe_coords == (None, None):
-                print("Kunde inte hitta säker väg. Avbryter flygning.")
-                return drone_coords[0],drone_coords[1]
-            drone_coords = safe_coords
-            continue  # Hoppa till nästa iteration med nya koordinater
+    if path is None:
+        print("❌ No valid path found.")
+        return current_coords  # Return the original coordinates if no path is found
 
-        #========================================================================================================
-        with requests.Session() as session:
-            drone_info = {'id': id,
-                          'longitude': drone_coords[0],
-                          'latitude': drone_coords[1],
-                          'status': 'busy'
-                        }
-            resp = session.post(SERVER_URL, json=drone_info)
-            print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
-    d_long, d_la =  getMovement(drone_coords, to_coords)
-    while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
-        drone_coords = moveDrone(drone_coords, d_long, d_la)
-        #======================================= Added ================================================================
+    # Move drone along the path
+    for waypoint in path:
+        # Update drone's position
+        longitude, latitude = waypoint
+        print(f"📍 Moving to waypoint: {waypoint}")
 
-        if is_in_no_fly_zone(*drone_coords):
-            print("Drönaren riskerar att flyga in i no-fly-zone under färd mot 'from'. Justerar kurs...")
-            safe_coords = safe_direction2(*drone_coords)
-            if safe_coords == (None, None):
-                print("Kunde inte hitta säker väg. Avbryter flygning.")
-                return drone_coords[0],drone_coords[1]
-            drone_coords = safe_coords
-            continue  # Hoppa till nästa iteration med nya koordinater
+        # Send the coordinates to the server
+        send_coordinates(id, longitude, latitude, 'busy', SERVER_URL)
 
-        #========================================================================================================
-        with requests.Session() as session:
-            drone_info = {'id': id,
-                          'longitude': drone_coords[0],
-                          'latitude': drone_coords[1],
-                          'status': 'busy'
-                        }
-            resp = session.post(SERVER_URL, json=drone_info)
-            print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
-    with requests.Session() as session:
-            drone_info = {'id': id,
-                          'longitude': drone_coords[0],
-                          'latitude': drone_coords[1],
-                          'status': 'idle'
-                         }
-            resp = session.post(SERVER_URL, json=drone_info)
-    return drone_coords[0], drone_coords[1]
+        # You can add a delay here if needed to simulate movement over time
+        # time.sleep(some_delay_time)
+
+    # After reaching the final destination, update the drone's status to 'idle'
+    send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL)
+
+    print(f"🧭 A* pathfinding from {current_coords} to {to_coords}")
+    path = a_star(current_coords, to_coords)  # A* returns a path
+
+    if path is None:
+        print("❌ No valid path found.")
+        return current_coords  # Return the original coordinates if no path is found
+
+    # Move drone along the path
+    for waypoint in path:
+        # Update drone's position
+        longitude, latitude = waypoint
+        print(f"📍 Moving to waypoint: {waypoint}")
+
+        # Send the coordinates to the server
+        send_coordinates(id, longitude, latitude, 'busy', SERVER_URL)
+
+        # You can add a delay here if needed to simulate movement over time
+        # time.sleep(some_delay_time)
+
+    # After reaching the final destination, update the drone's status to 'idle'
+    send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL)
+    
+    return path[-1]  # Return final coordinates after reaching destination
+
+
+# def run(id, current_coords, from_coords, to_coords, SERVER_URL):
+#     drone_coords = current_coords
+#     d_long, d_la =  getMovement(drone_coords, from_coords)
+#     while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
+#         drone_coords = moveDrone(drone_coords, d_long, d_la)
+#         #========================================= Added ==============================================================
+
+#         if is_in_no_fly_zone(*drone_coords):
+#             print("Drönaren riskerar att flyga in i no-fly-zone under färd mot 'from'. Justerar kurs...")
+#             safe_coords = safe_direction2(*drone_coords)
+#             if safe_coords == (None, None):
+#                 print("Kunde inte hitta säker väg. Avbryter flygning.")
+#                 return drone_coords[0],drone_coords[1]
+#             drone_coords = safe_coords
+#             continue  # Hoppa till nästa iteration med nya koordinater
+
+#         #========================================================================================================
+#         with requests.Session() as session:
+#             drone_info = {'id': id,
+#                           'longitude': drone_coords[0],
+#                           'latitude': drone_coords[1],
+#                           'status': 'busy'
+#                         }
+#             resp = session.post(SERVER_URL, json=drone_info)
+#             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+#     d_long, d_la =  getMovement(drone_coords, to_coords)
+#     while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.0002:
+#         drone_coords = moveDrone(drone_coords, d_long, d_la)
+#         #======================================= Added ================================================================
+
+#         if is_in_no_fly_zone(*drone_coords):
+#             print("Drönaren riskerar att flyga in i no-fly-zone under färd mot 'from'. Justerar kurs...")
+#             safe_coords = safe_direction2(*drone_coords)
+#             if safe_coords == (None, None):
+#                 print("Kunde inte hitta säker väg. Avbryter flygning.")
+#                 return drone_coords[0],drone_coords[1]
+#             drone_coords = safe_coords
+#             continue  # Hoppa till nästa iteration med nya koordinater
+
+#         #========================================================================================================
+#         with requests.Session() as session:
+#             drone_info = {'id': id,
+#                           'longitude': drone_coords[0],
+#                           'latitude': drone_coords[1],
+#                           'status': 'busy'
+#                         }
+#             resp = session.post(SERVER_URL, json=drone_info)
+#             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+#     with requests.Session() as session:
+#             drone_info = {'id': id,
+#                           'longitude': drone_coords[0],
+#                           'latitude': drone_coords[1],
+#                           'status': 'idle'
+#                          }
+#             resp = session.post(SERVER_URL, json=drone_info)
+#     return drone_coords[0], drone_coords[1]
 
 #=====================================================================================================
 def load_initial_coordinates(filename):
@@ -142,14 +211,14 @@ if __name__ == "__main__":
 
     #======================================= Added ================================================
 
-    if is_in_no_fly_zone(current_coords[0], current_coords[1]):
-        print("Drönaren är i no-fly-zon. Försöker hitta säker plats...")
-        new_coords = safe_direction2(current_coords[0], current_coords[1])
-        if new_coords == (None, None):
-            print("Kunde inte hitta säker plats. Avslutar.")
-            sys.exit(1)
-        current_coords = new_coords
-        print(f"Flyttade till säker plats: {current_coords}")
+    # if is_in_no_fly_zone(current_coords[0], current_coords[1]):
+    #     print("Drönaren är i no-fly-zon. Försöker hitta säker plats...")
+    #     new_coords = safe_direction2(current_coords[0], current_coords[1])
+    #     if new_coords == (None, None):
+    #         print("Kunde inte hitta säker plats. Avslutar.")
+    #         sys.exit(1)
+    #     current_coords = new_coords
+    #     print(f"Flyttade till säker plats: {current_coords}")
     
 
     #===========================================================================================
