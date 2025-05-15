@@ -20,7 +20,7 @@ CORS(app, supports_credentials=True)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
 redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
-coords = coords
+
 # Konfigurera loggning och geolocator
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -38,8 +38,9 @@ def send_request(drone_url, coords):
 @app.route('/planner', methods=['POST'])
 def route_planner():
     Addresses = json.loads(request.data.decode())
-    FromAddress = Addresses['faddr']
+    FromAddress = "Mårtenstorget 12" #Addresses['faddr']
     ToAddress = Addresses['taddr']
+    print(Addresses['taddr'])
     from_location = geolocator.geocode(FromAddress + region, timeout=None)
     to_location = geolocator.geocode(ToAddress + region, timeout=None)
     
@@ -50,10 +51,11 @@ def route_planner():
         logging.error('Destination to_address not found, please input a correct address')
         return 'Destination to_address not found, please input a correct address'
     
-    coords = {
-        'from': (from_location.longitude, from_location.latitude),
-        'to': (to_location.longitude, to_location.latitude)
-    }
+    else:   
+        coords = {
+            'from': (from_location.longitude, from_location.latitude),
+            'to': (to_location.longitude, to_location.latitude)
+        }
     
    
     drones = redis_server.smembers("drones")

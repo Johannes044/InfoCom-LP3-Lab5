@@ -6,7 +6,7 @@ file = "../Logs/database.txt"
 #import sys
 #import os
 #sys.path.append(os.path.abspath(".."))
-from logic.utilities import clearFile
+#from logic.utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -16,7 +16,7 @@ redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True, c
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile(file)
+#clearFile(file)
 
 @app.route('/drone', methods=['POST'])
 def drone():
@@ -66,4 +66,4 @@ def drone():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == "__main__": 
-    app.run(debug=True, host='0.0.0.0', port=1338)
+    app.run(debug=True, host='0.0.0.0', port='1338')

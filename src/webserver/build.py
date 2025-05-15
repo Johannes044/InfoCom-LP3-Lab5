@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, request, redirect, url_for
+from flask import Flask, render_template, jsonify, request, redirect, url_for
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import redis
@@ -11,7 +11,7 @@ import logging
 file = "../Logs/build.txt"
 #import sys
 sys.path.append(os.path.abspath(".."))
-from logic.utilities import clearFile
+#from logic.utilities import clearFile
 
 # Konfigurera Flask och Redis
 app = Flask(__name__)
@@ -22,7 +22,7 @@ redis_server = redis.Redis(host='localhost', port=6379, decode_responses=True, c
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
-clearFile(file)
+#clearFile(file)
 
 def translate(coords_osm):
     x_osm_lim = (13.143390664, 13.257501336)
@@ -68,7 +68,7 @@ def admin():
 def get_drones():
     drone_dict = {}
     drones = redis_server.smembers("drones")
-    print(drones)
+    #print(drones)
     for drone in drones:
         droneData = redis_server.hgetall(drone)
         if 'longitude' in droneData and 'latitude' in droneData and 'status' in droneData:
