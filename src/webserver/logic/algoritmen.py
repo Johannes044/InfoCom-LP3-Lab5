@@ -1,7 +1,6 @@
 import heapq
 
 from No_fly_zone import halve_zone
-#from No_fly_zone import is_in_no_fly_zone
 
 NO_FLY_ZONES = [
     {

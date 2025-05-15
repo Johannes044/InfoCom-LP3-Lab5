@@ -51,50 +51,28 @@ def send_coordinates(id, longitude, latitude, status, SERVER_URL):
 
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
-    # First, use A* algorithm to find the path
-    print(f"🧭 A* pathfinding from {current_coords} to {from_coords}")
-    path = a_star(current_coords, from_coords)  # A* returns a path
 
-    if path is None:
-        print("❌ No valid path found.")
-        return current_coords  # Return the original coordinates if no path is found
+    targets = [from_coords,to_coords]
 
-    # Move drone along the path
-    for waypoint in path:
-        # Update drone's position
-        longitude, latitude = waypoint
-        print(f"📍 Moving to waypoint: {waypoint}")
+    path = []
 
-        # Send the coordinates to the server
-        send_coordinates(id, longitude, latitude, 'busy', SERVER_URL)
+    for target in targets:
+        print(f"🧭 A* pathfinding from {current_coords} to {from_coords}")
+        path = a_star(current_coords, target)
 
-        # You can add a delay here if needed to simulate movement over time
-        # time.sleep(some_delay_time)
-
-    # After reaching the final destination, update the drone's status to 'idle'
-    send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL)
-
-    print(f"🧭 A* pathfinding from {current_coords} to {to_coords}")
-    path = a_star(current_coords, to_coords)  # A* returns a path
-
-    if path is None:
-        print("❌ No valid path found.")
-        return current_coords  # Return the original coordinates if no path is found
-
-    # Move drone along the path
-    for waypoint in path:
-        # Update drone's position
-        longitude, latitude = waypoint
-        print(f"📍 Moving to waypoint: {waypoint}")
-
-        # Send the coordinates to the server
-        send_coordinates(id, longitude, latitude, 'busy', SERVER_URL)
-
-        # You can add a delay here if needed to simulate movement over time
-        # time.sleep(some_delay_time)
-
-    # After reaching the final destination, update the drone's status to 'idle'
-    send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL)
+        if path is None:
+            print("No valid path found!")
+            return current_coords
+        
+        for waypoint in path:
+            longitude, latitude = waypoint
+            print(f"📍 Moving to waypoint: {waypoint}")
+            
+            send_coordinates(id, longitude, latitude, 'busy', SERVER_URL)
+            
+            # time.sleep(some_delay_time)
+        
+        send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL)
     
     return path[-1]  # Return final coordinates after reaching destination
 
