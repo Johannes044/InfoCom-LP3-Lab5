@@ -60,8 +60,7 @@ def isDelivery():
 def getTime(fromCoords, toCoords):
     return
 
-def newLeverans():
-    toCoords = coords
+def newLeverans(toCoords):
     medecin = randomMedicin()
     svg_start = translateToSVG((13.2, 55.7))
     svg_end = translateToSVG(toCoords)
