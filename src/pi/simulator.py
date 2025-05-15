@@ -2,7 +2,7 @@ import math
 import requests
 import argparse
 import logging
-
+import time
 from webserver.logic.algoritmen import a_star
 file = "../Logs/simulator.txt"
 import sys
@@ -70,11 +70,11 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             
             send_coordinates(id, longitude, latitude, 'busy', SERVER_URL)
             
-            # time.sleep(some_delay_time)
+            time.sleep(6)
         
         send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL)
     
-    return path[-1]  # Return final coordinates after reaching destination
+    return path[-1]
 
 
 # def run(id, current_coords, from_coords, to_coords, SERVER_URL):
