@@ -45,7 +45,7 @@ def moveDrone(src, d_long, d_la, dt):
 
 
 
-def run(id, current_coords, from_coords, to_coords, SERVER_URL):
+def run(id, current_coords, from_coords, to_coords, SERVER_URL): #VAR körs den, måste koppla till lista o kösystem
     print("RUN() called")  # Lägg till denna rad
     print(f"drone_coords: {current_coords}, from: {from_coords}, to: {to_coords}")  # Lägg till denna rad
     drone_coords = current_coords
@@ -80,7 +80,7 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
         dt = time.perf_counter() - start
 
-    dronename = drone_info["id"] 
+    dronename = drone_info["id"] #det här måste fixas
     for drone in leveranser:
         if dronename == drone:
             del leveranser[drone][0]

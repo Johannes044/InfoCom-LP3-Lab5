@@ -21,12 +21,7 @@ import datetime
 import math
 
 medeciner = ["Viagra", "Antidepp", "Alvedon", "Ipren", "Zovirax", "Gaviscon", "Halstabletter"]
-leveranser = {
-    "d1": [],
-    "d2": [],
-    "d3": [],
-    "d4": []
-}
+leveranser = []
 
 x_osm_lim = (13.143390664, 13.257501336)
 y_osm_lim = (55.678138854000004, 55.734680845999996)
@@ -72,33 +67,8 @@ def svgDistance(p1, p2):
 
 
 def newLeverans(toCoords):
-    medecin = randomMedicin()
-    svg_start = translateToSVG((13.2, 55.7))
-    svg_end = translateToSVG(toCoords)
-    dist = svgDistance(svg_start, svg_end)
-    speed_x, speed_y = svgSpeed()
-    total_speed = math.sqrt(speed_x**2 + speed_y**2)  
-    flygtid = datetime.timedelta(seconds=dist / total_speed)
-    
-
-    chosen_drone = None
-    klockslagtbk = datetime.time.max
-    klockslagframme = datetime.time.max
-    for drone in leveranser.items():
-        if (not drone):
-            klockslagframmeNy = datetime.datetime.now() + flygtid           
-        else:
-            klockslagframmeNy = leveranser[drone][-1]['KlockslagTbk'] + flygtid
-        if (klockslagframmeNy < klockslagframme):
-            klockslagframme = klockslagframmeNy
-            klockslagtbk = klockslagframme + flygtid
-            chosen_drone = drone    
-    leveranser[drone].append({
-        'medecin': medecin,
-        'coordinates': toCoords,
-        'drone': chosen_drone,
-        'KlockslagFramme': klockslagframme,
-        'KlockslagTbk': klockslagtbk})
+    medecin = randomMedicin()    
+    leveranser.append([medecin, toCoords])
 
 
 # Konfigurera Flask och Redis
@@ -122,6 +92,31 @@ def send_request(drone_url, coords):
         resp = session.post(drone_url, json=coords)
         print(resp)
 
+
+@app.route('/sender', methods=['POST'])
+def sendDrone():
+    if (leveranser):
+        drones = redis_server.smembers("drones")
+        droneAvailable = None
+        for drone in drones:
+            droneData = redis_server.hgetall(drone)
+            logging.debug(f"Drone data from {droneData['id']} have been access!")
+            if droneData['status'] == 'idle':
+                droneAvailable = drone
+                coords['current'] = (droneData['longitude'], droneData['latitude'])
+                break
+        
+        if droneAvailable is None:
+            return 'No available drone, try later'
+        
+        DRONE_IP = redis_server.hget(droneAvailable, 'ip')
+        DRONE_URL = f'http://{DRONE_IP}:42069'
+        send_request(DRONE_URL, leveranser[0][1])
+        del leveranser[0]
+        logging.debug('Got address and sent request to the drone')
+        return 'Got address and sent request to the drone'
+
+
 @app.route('/planner', methods=['POST'])
 def route_planner():
     Addresses = json.loads(request.data.decode())
@@ -144,31 +139,12 @@ def route_planner():
             'to': (to_location.longitude, to_location.latitude)
         }
         leverans = newLeverans(coords)
-        for drone in leveranser:
-            if (drone == leverans["drone"]):
-                leveranser[drone].append(leverans)
+        leveranser.append(leverans)
 
 
     
    
-    drones = redis_server.smembers("drones")
-    droneAvailable = None
-    for drone in drones:
-        droneData = redis_server.hgetall(drone)
-        logging.debug(f"Drone data from {droneData['id']} have been access!")
-        if droneData['status'] == 'idle':
-            droneAvailable = drone
-            coords['current'] = (droneData['longitude'], droneData['latitude'])
-            break
     
-    if droneAvailable is None:
-        return 'No available drone, try later'
-    
-    DRONE_IP = redis_server.hget(droneAvailable, 'ip')
-    DRONE_URL = f'http://{DRONE_IP}:42069'
-    send_request(DRONE_URL, coords)
-    logging.debug('Got address and sent request to the drone')
-    return 'Got address and sent request to the drone'
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port='1339')
