@@ -18,11 +18,10 @@ NO_FLY_ZONES = [
 ]
 
 def is_in_no_fly_zone(lon, lat):
-    zones_once = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
-    zones_twice = [z for zone in zones_once for z in halve_zone(zone)]
-    for zone in zones_twice:
+    reduced_zones = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    for zone in reduced_zones:
         if zone["min_lon"] <= lon <= zone["max_lon"] and zone["min_lat"] <= lat <= zone["max_lat"]:
-            return True  # Drönaren är i en förbjuden zon
+            return True
     return False
 
 
