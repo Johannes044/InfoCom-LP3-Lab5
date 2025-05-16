@@ -76,8 +76,8 @@ def a_star(start, goal, step_size=0.0005, max_iter=100000):
     return None  # No path found
 
 
-start = (13.1800, 55.7070)   # Väster om första no-fly-zonen
-goal = (13.2330, 55.7220)    # Öster om andra no-fly-zonen
+start = (13.1800, 55.7030)   # Sydväst om zonerna
+goal = (13.2330, 55.7270)    # Nordost om zonerna
 
 path = a_star(start, goal)
 

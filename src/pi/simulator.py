@@ -7,9 +7,6 @@ from webserver.logic.algoritmen import a_star
 file = "../Logs/simulator.txt"
 import sys
 import os
-#sys.path.append(os.path.abspath(".."))
-#from webserver.logic.utilities import clearFile
-#from webserver.logic.No_fly_zone import is_in_no_fly_zone, safe_direction2
 
 # Konfigurera loggning
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -53,11 +50,11 @@ def send_coordinates(id, longitude, latitude, status, SERVER_URL):
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
 
     targets = [from_coords,to_coords]
+    final_position = current_coords
 
-    path = []
 
     for target in targets:
-        print(f"🧭 A* pathfinding from {current_coords} to {from_coords}")
+        print(f"A* pathfinding from {current_coords} to {from_coords}")
         path = a_star(current_coords, target)
 
         if path is None:
@@ -72,9 +69,11 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL):
             
             time.sleep(6)
         
-        send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL)
+        send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL) #Look so that right coordinets are saved
+        current_coords = target
+        final_position = path[-1]
     
-    return path[-1]
+    return final_position
 
 
 # def run(id, current_coords, from_coords, to_coords, SERVER_URL):
