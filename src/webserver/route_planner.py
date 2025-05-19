@@ -11,7 +11,7 @@ import json
 import requests 
 import logging
 file = "../Logs/route_planner.txt"
-from logic.utilities import clearFile, coords
+import logic.utilities 
 
 
 import random
@@ -32,12 +32,6 @@ lSpeed = 340 * 0.000009
 def randomMedicin():
     return random.choice(medeciner)
 
-def randomCords():
-    lon = random.uniform(*x_osm_lim)
-    lat = random.uniform(*y_osm_lim)
-    return (lon, lat)
-
-coords = randomCords()
 
 def translateToSVG(coords_osm):
     x_ratio = (x_svg_lim[1] - x_svg_lim[0]) / (x_osm_lim[1] - x_osm_lim[0])
@@ -115,6 +109,7 @@ def sendDrone():
         del leveranser[0]
         logging.debug('Got address and sent request to the drone')
         return 'Got address and sent request to the drone'
+    return 'empty'
 
 
 @app.route('/planner', methods=['POST'])
