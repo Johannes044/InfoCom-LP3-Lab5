@@ -1,0 +1,289 @@
+2025-05-19 14:53:45,307 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 14:53:45,307 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 14:53:45,320 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-19 14:53:45,321 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 14:53:45,324 - INFO -  * Restarting with stat
+2025-05-19 14:53:46,455 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 14:53:46,455 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 14:53:46,468 - WARNING -  * Debugger is active!
+2025-05-19 14:53:46,469 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 14:55:03,312 - INFO - 127.0.0.1 - - [19/May/2025 14:55:03] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:08,345 - INFO - 127.0.0.1 - - [19/May/2025 14:55:08] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:13,361 - INFO - 127.0.0.1 - - [19/May/2025 14:55:13] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:18,383 - INFO - 127.0.0.1 - - [19/May/2025 14:55:18] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:23,413 - INFO - 127.0.0.1 - - [19/May/2025 14:55:23] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:28,450 - INFO - 127.0.0.1 - - [19/May/2025 14:55:28] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:33,467 - INFO - 127.0.0.1 - - [19/May/2025 14:55:33] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:38,494 - INFO - 127.0.0.1 - - [19/May/2025 14:55:38] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:43,509 - INFO - 127.0.0.1 - - [19/May/2025 14:55:43] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:48,527 - INFO - 127.0.0.1 - - [19/May/2025 14:55:48] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:53,555 - INFO - 127.0.0.1 - - [19/May/2025 14:55:53] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:55:58,585 - INFO - 127.0.0.1 - - [19/May/2025 14:55:58] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:03,610 - INFO - 127.0.0.1 - - [19/May/2025 14:56:03] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:08,635 - INFO - 127.0.0.1 - - [19/May/2025 14:56:08] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:13,652 - INFO - 127.0.0.1 - - [19/May/2025 14:56:13] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:18,685 - INFO - 127.0.0.1 - - [19/May/2025 14:56:18] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:23,715 - INFO - 127.0.0.1 - - [19/May/2025 14:56:23] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:28,751 - INFO - 127.0.0.1 - - [19/May/2025 14:56:28] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:33,767 - INFO - 127.0.0.1 - - [19/May/2025 14:56:33] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:38,788 - INFO - 127.0.0.1 - - [19/May/2025 14:56:38] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:43,817 - INFO - 127.0.0.1 - - [19/May/2025 14:56:43] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:48,848 - INFO - 127.0.0.1 - - [19/May/2025 14:56:48] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:53,883 - INFO - 127.0.0.1 - - [19/May/2025 14:56:53] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:56:58,915 - INFO - 127.0.0.1 - - [19/May/2025 14:56:58] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:03,931 - INFO - 127.0.0.1 - - [19/May/2025 14:57:03] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:08,955 - INFO - 127.0.0.1 - - [19/May/2025 14:57:08] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:13,970 - INFO - 127.0.0.1 - - [19/May/2025 14:57:13] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:18,995 - INFO - 127.0.0.1 - - [19/May/2025 14:57:18] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:24,027 - INFO - 127.0.0.1 - - [19/May/2025 14:57:24] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:29,059 - INFO - 127.0.0.1 - - [19/May/2025 14:57:29] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:34,078 - INFO - 127.0.0.1 - - [19/May/2025 14:57:34] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:39,097 - INFO - 127.0.0.1 - - [19/May/2025 14:57:39] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:44,118 - INFO - 127.0.0.1 - - [19/May/2025 14:57:44] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:49,137 - INFO - 127.0.0.1 - - [19/May/2025 14:57:49] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:54,151 - INFO - 127.0.0.1 - - [19/May/2025 14:57:54] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:57:59,183 - INFO - 127.0.0.1 - - [19/May/2025 14:57:59] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:04,202 - INFO - 127.0.0.1 - - [19/May/2025 14:58:04] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:09,233 - INFO - 127.0.0.1 - - [19/May/2025 14:58:09] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:14,248 - INFO - 127.0.0.1 - - [19/May/2025 14:58:14] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:19,272 - INFO - 127.0.0.1 - - [19/May/2025 14:58:19] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:24,287 - INFO - 127.0.0.1 - - [19/May/2025 14:58:24] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:29,305 - INFO - 127.0.0.1 - - [19/May/2025 14:58:29] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:34,333 - INFO - 127.0.0.1 - - [19/May/2025 14:58:34] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:39,363 - INFO - 127.0.0.1 - - [19/May/2025 14:58:39] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:44,391 - INFO - 127.0.0.1 - - [19/May/2025 14:58:44] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:49,406 - INFO - 127.0.0.1 - - [19/May/2025 14:58:49] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:54,434 - INFO - 127.0.0.1 - - [19/May/2025 14:58:54] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:58:59,449 - INFO - 127.0.0.1 - - [19/May/2025 14:58:59] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:59:04,483 - INFO - 127.0.0.1 - - [19/May/2025 14:59:04] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:59:09,509 - INFO - 127.0.0.1 - - [19/May/2025 14:59:09] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:59:14,527 - INFO - 127.0.0.1 - - [19/May/2025 14:59:14] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:59:19,558 - INFO - 127.0.0.1 - - [19/May/2025 14:59:19] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:59:24,576 - INFO - 127.0.0.1 - - [19/May/2025 14:59:24] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:59:29,593 - INFO - 127.0.0.1 - - [19/May/2025 14:59:29] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 14:59:33,195 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-19 14:59:33,683 - INFO -  * Restarting with stat
+2025-05-19 14:59:35,324 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 14:59:35,324 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 14:59:35,339 - WARNING -  * Debugger is active!
+2025-05-19 14:59:35,340 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 14:59:35,357 - INFO - 127.0.0.1 - - [19/May/2025 14:59:35] "POST /sender HTTP/1.1" 200 -
+2025-05-19 14:59:40,365 - INFO - 127.0.0.1 - - [19/May/2025 14:59:40] "POST /sender HTTP/1.1" 200 -
+2025-05-19 14:59:45,373 - INFO - 127.0.0.1 - - [19/May/2025 14:59:45] "POST /sender HTTP/1.1" 200 -
+2025-05-19 14:59:59,085 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 14:59:59,085 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 14:59:59,098 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-19 14:59:59,098 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 14:59:59,101 - INFO -  * Restarting with stat
+2025-05-19 15:00:00,013 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:00:00,014 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:00:00,026 - WARNING -  * Debugger is active!
+2025-05-19 15:00:00,026 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 15:01:28,816 - INFO - 127.0.0.1 - - [19/May/2025 15:01:28] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:01:33,825 - INFO - 127.0.0.1 - - [19/May/2025 15:01:33] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:01:38,837 - INFO - 127.0.0.1 - - [19/May/2025 15:01:38] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:01:43,852 - INFO - 127.0.0.1 - - [19/May/2025 15:01:43] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:01:48,864 - INFO - 127.0.0.1 - - [19/May/2025 15:01:48] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:01:53,878 - INFO - 127.0.0.1 - - [19/May/2025 15:01:53] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:01:58,888 - INFO - 127.0.0.1 - - [19/May/2025 15:01:58] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:03,896 - INFO - 127.0.0.1 - - [19/May/2025 15:02:03] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:08,903 - INFO - 127.0.0.1 - - [19/May/2025 15:02:08] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:13,911 - INFO - 127.0.0.1 - - [19/May/2025 15:02:13] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:18,924 - INFO - 127.0.0.1 - - [19/May/2025 15:02:18] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:23,933 - INFO - 127.0.0.1 - - [19/May/2025 15:02:23] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:28,940 - INFO - 127.0.0.1 - - [19/May/2025 15:02:28] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:33,952 - INFO - 127.0.0.1 - - [19/May/2025 15:02:33] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:38,964 - INFO - 127.0.0.1 - - [19/May/2025 15:02:38] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:43,978 - INFO - 127.0.0.1 - - [19/May/2025 15:02:43] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:48,990 - INFO - 127.0.0.1 - - [19/May/2025 15:02:48] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:54,001 - INFO - 127.0.0.1 - - [19/May/2025 15:02:54] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:02:59,013 - INFO - 127.0.0.1 - - [19/May/2025 15:02:59] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:04,039 - INFO - 127.0.0.1 - - [19/May/2025 15:03:04] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:09,053 - INFO - 127.0.0.1 - - [19/May/2025 15:03:09] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:14,069 - INFO - 127.0.0.1 - - [19/May/2025 15:03:14] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:19,084 - INFO - 127.0.0.1 - - [19/May/2025 15:03:19] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:24,098 - INFO - 127.0.0.1 - - [19/May/2025 15:03:24] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:29,107 - INFO - 127.0.0.1 - - [19/May/2025 15:03:29] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:34,114 - INFO - 127.0.0.1 - - [19/May/2025 15:03:34] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:39,127 - INFO - 127.0.0.1 - - [19/May/2025 15:03:39] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:44,138 - INFO - 127.0.0.1 - - [19/May/2025 15:03:44] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:03:46,184 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-19 15:03:46,188 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-19 15:03:46,543 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-19 15:03:46,546 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-19 15:03:47,611 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-19 15:03:47,638 - INFO - 127.0.0.1 - - [19/May/2025 15:03:47] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-05-19 15:03:49,153 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:03:49,167 - INFO - 127.0.0.1 - - [19/May/2025 15:03:49] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:07:58,340 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:07:58,340 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:07:58,354 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-19 15:07:58,354 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 15:07:58,356 - INFO -  * Restarting with stat
+2025-05-19 15:07:59,282 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:07:59,282 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:07:59,295 - WARNING -  * Debugger is active!
+2025-05-19 15:07:59,296 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 15:08:52,996 - INFO - 127.0.0.1 - - [19/May/2025 15:08:52] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:08:58,005 - INFO - 127.0.0.1 - - [19/May/2025 15:08:58] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:09:00,914 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-19 15:09:00,917 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-19 15:09:01,263 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-19 15:09:01,265 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-19 15:09:02,353 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-19 15:09:02,373 - INFO - 127.0.0.1 - - [19/May/2025 15:09:02] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-05-19 15:09:03,019 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:03,036 - INFO - 127.0.0.1 - - [19/May/2025 15:09:03] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:08,053 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:08,068 - INFO - 127.0.0.1 - - [19/May/2025 15:09:08] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:13,084 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:13,105 - INFO - 127.0.0.1 - - [19/May/2025 15:09:13] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:18,122 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:18,139 - INFO - 127.0.0.1 - - [19/May/2025 15:09:18] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:23,159 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:23,184 - INFO - 127.0.0.1 - - [19/May/2025 15:09:23] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:28,211 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:28,238 - INFO - 127.0.0.1 - - [19/May/2025 15:09:28] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:33,253 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:33,267 - INFO - 127.0.0.1 - - [19/May/2025 15:09:33] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:38,282 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:38,297 - INFO - 127.0.0.1 - - [19/May/2025 15:09:38] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:43,308 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:43,324 - INFO - 127.0.0.1 - - [19/May/2025 15:09:43] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:48,343 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:48,362 - INFO - 127.0.0.1 - - [19/May/2025 15:09:48] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:53,375 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:53,389 - INFO - 127.0.0.1 - - [19/May/2025 15:09:53] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:09:58,413 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:09:58,427 - INFO - 127.0.0.1 - - [19/May/2025 15:09:58] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:03,440 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:03,456 - INFO - 127.0.0.1 - - [19/May/2025 15:10:03] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:08,472 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:08,490 - INFO - 127.0.0.1 - - [19/May/2025 15:10:08] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:13,505 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:13,520 - INFO - 127.0.0.1 - - [19/May/2025 15:10:13] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:18,533 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:18,553 - INFO - 127.0.0.1 - - [19/May/2025 15:10:18] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:23,575 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:23,596 - INFO - 127.0.0.1 - - [19/May/2025 15:10:23] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:28,607 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:28,620 - INFO - 127.0.0.1 - - [19/May/2025 15:10:28] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:33,630 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:33,644 - INFO - 127.0.0.1 - - [19/May/2025 15:10:33] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:38,656 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:38,668 - INFO - 127.0.0.1 - - [19/May/2025 15:10:38] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:43,682 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:43,705 - INFO - 127.0.0.1 - - [19/May/2025 15:10:43] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:48,721 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:48,738 - INFO - 127.0.0.1 - - [19/May/2025 15:10:48] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:53,751 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:53,773 - INFO - 127.0.0.1 - - [19/May/2025 15:10:53] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:10:58,789 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:10:58,806 - INFO - 127.0.0.1 - - [19/May/2025 15:10:58] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:03,821 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:03,837 - INFO - 127.0.0.1 - - [19/May/2025 15:11:03] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:08,852 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:08,867 - INFO - 127.0.0.1 - - [19/May/2025 15:11:08] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:13,880 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:13,894 - INFO - 127.0.0.1 - - [19/May/2025 15:11:13] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:18,911 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:18,931 - INFO - 127.0.0.1 - - [19/May/2025 15:11:18] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:23,957 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:23,981 - INFO - 127.0.0.1 - - [19/May/2025 15:11:23] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:28,995 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:29,026 - INFO - 127.0.0.1 - - [19/May/2025 15:11:29] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:34,042 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:34,056 - INFO - 127.0.0.1 - - [19/May/2025 15:11:34] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:39,078 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:39,092 - INFO - 127.0.0.1 - - [19/May/2025 15:11:39] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:44,103 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:44,116 - INFO - 127.0.0.1 - - [19/May/2025 15:11:44] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:49,132 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:49,149 - INFO - 127.0.0.1 - - [19/May/2025 15:11:49] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:54,168 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:54,193 - INFO - 127.0.0.1 - - [19/May/2025 15:11:54] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:11:59,205 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:11:59,218 - INFO - 127.0.0.1 - - [19/May/2025 15:11:59] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:12:04,246 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:12:04,273 - INFO - 127.0.0.1 - - [19/May/2025 15:12:04] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:12:09,296 - DEBUG - Drone data from D1 have been access!
+2025-05-19 15:12:09,325 - INFO - 127.0.0.1 - - [19/May/2025 15:12:09] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-19 15:12:10,890 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-19 15:12:11,672 - INFO -  * Restarting with stat
+2025-05-19 15:12:13,728 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:12:13,729 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:12:13,749 - WARNING -  * Debugger is active!
+2025-05-19 15:12:13,750 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 15:12:14,337 - INFO - 127.0.0.1 - - [19/May/2025 15:12:14] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:19,347 - INFO - 127.0.0.1 - - [19/May/2025 15:12:19] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:24,354 - INFO - 127.0.0.1 - - [19/May/2025 15:12:24] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:29,369 - INFO - 127.0.0.1 - - [19/May/2025 15:12:29] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:34,377 - INFO - 127.0.0.1 - - [19/May/2025 15:12:34] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:39,385 - INFO - 127.0.0.1 - - [19/May/2025 15:12:39] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:44,399 - INFO - 127.0.0.1 - - [19/May/2025 15:12:44] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:49,408 - INFO - 127.0.0.1 - - [19/May/2025 15:12:49] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:54,419 - INFO - 127.0.0.1 - - [19/May/2025 15:12:54] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:12:59,430 - INFO - 127.0.0.1 - - [19/May/2025 15:12:59] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:04,442 - INFO - 127.0.0.1 - - [19/May/2025 15:13:04] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:09,456 - INFO - 127.0.0.1 - - [19/May/2025 15:13:09] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:14,469 - INFO - 127.0.0.1 - - [19/May/2025 15:13:14] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:19,483 - INFO - 127.0.0.1 - - [19/May/2025 15:13:19] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:24,504 - INFO - 127.0.0.1 - - [19/May/2025 15:13:24] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:29,522 - INFO - 127.0.0.1 - - [19/May/2025 15:13:29] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:34,548 - INFO - 127.0.0.1 - - [19/May/2025 15:13:34] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:39,562 - INFO - 127.0.0.1 - - [19/May/2025 15:13:39] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:44,573 - INFO - 127.0.0.1 - - [19/May/2025 15:13:44] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:49,583 - INFO - 127.0.0.1 - - [19/May/2025 15:13:49] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:54,589 - INFO - 127.0.0.1 - - [19/May/2025 15:13:54] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:13:59,599 - INFO - 127.0.0.1 - - [19/May/2025 15:13:59] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:04,614 - INFO - 127.0.0.1 - - [19/May/2025 15:14:04] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:09,628 - INFO - 127.0.0.1 - - [19/May/2025 15:14:09] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:14,640 - INFO - 127.0.0.1 - - [19/May/2025 15:14:14] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:19,649 - INFO - 127.0.0.1 - - [19/May/2025 15:14:19] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:24,660 - INFO - 127.0.0.1 - - [19/May/2025 15:14:24] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:29,676 - INFO - 127.0.0.1 - - [19/May/2025 15:14:29] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:34,740 - INFO - 127.0.0.1 - - [19/May/2025 15:14:34] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:39,773 - INFO - 127.0.0.1 - - [19/May/2025 15:14:39] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:44,780 - INFO - 127.0.0.1 - - [19/May/2025 15:14:44] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:49,793 - INFO - 127.0.0.1 - - [19/May/2025 15:14:49] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:54,802 - INFO - 127.0.0.1 - - [19/May/2025 15:14:54] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:14:59,827 - INFO - 127.0.0.1 - - [19/May/2025 15:14:59] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:04,848 - INFO - 127.0.0.1 - - [19/May/2025 15:15:04] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:09,867 - INFO - 127.0.0.1 - - [19/May/2025 15:15:09] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:10,429 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-19 15:15:10,982 - INFO -  * Restarting with stat
+2025-05-19 15:15:12,227 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:15:12,228 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-19 15:15:12,243 - WARNING -  * Debugger is active!
+2025-05-19 15:15:12,244 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 15:15:14,879 - INFO - 127.0.0.1 - - [19/May/2025 15:15:14] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:19,891 - INFO - 127.0.0.1 - - [19/May/2025 15:15:19] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:24,904 - INFO - 127.0.0.1 - - [19/May/2025 15:15:24] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:29,912 - INFO - 127.0.0.1 - - [19/May/2025 15:15:29] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:34,921 - INFO - 127.0.0.1 - - [19/May/2025 15:15:34] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:39,932 - INFO - 127.0.0.1 - - [19/May/2025 15:15:39] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:44,941 - INFO - 127.0.0.1 - - [19/May/2025 15:15:44] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:49,952 - INFO - 127.0.0.1 - - [19/May/2025 15:15:49] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:54,965 - INFO - 127.0.0.1 - - [19/May/2025 15:15:54] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:15:59,980 - INFO - 127.0.0.1 - - [19/May/2025 15:15:59] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:04,994 - INFO - 127.0.0.1 - - [19/May/2025 15:16:04] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:10,006 - INFO - 127.0.0.1 - - [19/May/2025 15:16:10] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:15,016 - INFO - 127.0.0.1 - - [19/May/2025 15:16:15] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:20,029 - INFO - 127.0.0.1 - - [19/May/2025 15:16:20] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:25,041 - INFO - 127.0.0.1 - - [19/May/2025 15:16:25] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:30,052 - INFO - 127.0.0.1 - - [19/May/2025 15:16:30] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:35,064 - INFO - 127.0.0.1 - - [19/May/2025 15:16:35] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:40,078 - INFO - 127.0.0.1 - - [19/May/2025 15:16:40] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:45,091 - INFO - 127.0.0.1 - - [19/May/2025 15:16:45] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:50,103 - INFO - 127.0.0.1 - - [19/May/2025 15:16:50] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:16:55,115 - INFO - 127.0.0.1 - - [19/May/2025 15:16:55] "POST /sender HTTP/1.1" 200 -
+2025-05-19 15:17:00,123 - INFO - 127.0.0.1 - - [19/May/2025 15:17:00] "POST /sender HTTP/1.1" 200 -

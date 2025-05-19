@@ -1,0 +1,36 @@
+2025-05-19 14:53:19,574 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://10.8.97.28:1338
+2025-05-19 14:53:19,574 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 14:53:19,576 - INFO -  * Restarting with stat
+2025-05-19 14:53:20,252 - WARNING -  * Debugger is active!
+2025-05-19 14:53:20,253 - INFO -  * Debugger PIN: 130-576-534
+2025-05-19 14:54:03,807 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1338
+ * Running on http://10.8.97.28:1338
+2025-05-19 14:54:03,807 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 14:54:03,810 - INFO -  * Restarting with stat
+2025-05-19 14:54:04,516 - WARNING -  * Debugger is active!
+2025-05-19 14:54:04,517 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 14:59:33,834 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-19 14:59:34,245 - INFO -  * Restarting with stat
+2025-05-19 14:59:35,287 - WARNING -  * Debugger is active!
+2025-05-19 14:59:35,289 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 15:07:32,884 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-19 15:07:33,283 - INFO -  * Restarting with stat
+2025-05-19 15:07:34,043 - WARNING -  * Debugger is active!
+2025-05-19 15:07:34,044 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 15:12:11,816 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-19 15:12:12,683 - INFO -  * Restarting with stat
+2025-05-19 15:12:13,805 - WARNING -  * Debugger is active!
+2025-05-19 15:12:13,806 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 15:15:10,395 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-19 15:15:10,858 - INFO -  * Restarting with stat
+2025-05-19 15:15:11,915 - WARNING -  * Debugger is active!
+2025-05-19 15:15:11,916 - INFO -  * Debugger PIN: 101-127-764
+2025-05-19 15:21:20,238 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-19 15:21:20,614 - INFO -  * Restarting with stat
+2025-05-19 15:21:21,890 - WARNING -  * Debugger is active!
+2025-05-19 15:21:21,891 - INFO -  * Debugger PIN: 101-127-764
