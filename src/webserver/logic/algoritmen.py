@@ -18,7 +18,8 @@ NO_FLY_ZONES = [
 ]
 
 def is_in_no_fly_zone(lon, lat):
-    reduced_zones = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    r2 = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    reduced_zones = [z for zone in r2 for z in halve_zone(zone)]
     for zone in reduced_zones:
         if zone["min_lon"] <= lon <= zone["max_lon"] and zone["min_lat"] <= lat <= zone["max_lat"]:
             return True
