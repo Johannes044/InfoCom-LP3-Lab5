@@ -61,7 +61,7 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL): #VAR körs den,
                           'status': 'busy'
                         }
             resp = session.post(SERVER_URL, json=drone_info)
-            print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+            #print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
         dt = time.perf_counter() - start
     d_long, d_la =  getMovement(drone_coords, to_coords, 0.001)
 
@@ -76,7 +76,7 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL): #VAR körs den,
                           'status': 'busy'
                         }
             resp = session.post(SERVER_URL, json=drone_info)
-            print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+            #print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
         dt = time.perf_counter() - start
     
     with requests.Session() as session:

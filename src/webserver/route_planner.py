@@ -89,25 +89,31 @@ def send_request(drone_url, coords):
 
 @app.route('/sender', methods=['POST'])
 def sendDrone():
+    print("nu kör jag")
     if (leveranser):
+        print("det finns leveranser")
+        print(leveranser)
         drones = redis_server.smembers("drones")
         droneAvailable = None
+        go = True
+        coords = leveranser[0]['coords'].copy()
         for drone in drones:
             droneData = redis_server.hgetall(drone)
             logging.debug(f"Drone data from {droneData['id']} have been access!")
-            if droneData['status'] == 'idle':
-                droneAvailable = drone
-                coords = leveranser[0]['coords'].copy()
-                coords['current'] = (droneData['longitude'], droneData['latitude'])
-                break
+            while (go):
+                if droneData['status'] == 'idle':
+                    droneAvailable = drone                    
+                    coords['current'] = (droneData['longitude'], droneData['latitude'])
+                    go = False
+                    del leveranser[0]
         
+        print(droneAvailable)
         if droneAvailable is None:
             return 'No available drone, try later'
         
         DRONE_IP = redis_server.hget(droneAvailable, 'ip')
         DRONE_URL = f'http://{DRONE_IP}:5000'
-        send_request(DRONE_URL, leveranser[0]['coords'])
-        del leveranser[0]
+        send_request(DRONE_URL, coords)
         logging.debug('Got address and sent request to the drone')
         return 'Got address and sent request to the drone'
     return 'empty'
@@ -116,8 +122,8 @@ def sendDrone():
 @app.route('/planner', methods=['POST'])
 def route_planner():
     Addresses = json.loads(request.data.decode())
-    FromAddress = "Mårtenstorget 12" #Addresses['faddr']
-    ToAddress = Addresses['taddr']
+    FromAddress = Addresses['taddr']
+    ToAddress = "Mårtenstorget 12" #Addresses['faddr']
     print(Addresses['taddr'])
     from_location = geolocator.geocode(FromAddress + region, timeout=None)
     to_location = geolocator.geocode(ToAddress + region, timeout=None)
