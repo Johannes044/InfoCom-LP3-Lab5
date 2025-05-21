@@ -1,7 +1,5 @@
 import heapq
 
-from No_fly_zone import halve_zone
-
 NO_FLY_ZONES = [
     {
         "min_lon": 13.182460,
@@ -16,6 +14,20 @@ NO_FLY_ZONES = [
         "max_lat": 55.726623
     }
 ]
+
+def halve_zone(zone):
+    center_lon = (zone["min_lon"] + zone["max_lon"]) / 2
+    center_lat = (zone["min_lat"] + zone["max_lat"]) / 2
+
+    half_width = (zone["max_lon"] - zone["min_lon"]) / 4
+    half_height = (zone["max_lat"] - zone["min_lat"]) / 4
+
+    return [{
+        "min_lon": center_lon - half_width,
+        "max_lon": center_lon + half_width,
+        "min_lat": center_lat - half_height,
+        "max_lat": center_lat + half_height
+    }]
 
 def is_in_no_fly_zone(lon, lat):
     r2 = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]

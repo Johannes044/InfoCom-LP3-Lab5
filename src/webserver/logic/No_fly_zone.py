@@ -1,9 +1,5 @@
 ##dig project
-import logging
-file = "../Logs/NOfly.txt"
-
-# Konfigurera loggning
-logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+#! added a new zone with is mitt in long: 55.71742, lat: 13.22948;
 
 
 NO_FLY_ZONES = [
@@ -21,16 +17,33 @@ NO_FLY_ZONES = [
     }
 ]
 
+def halve_zone(zone):
+    center_lon = (zone["min_lon"] + zone["max_lon"]) / 2
+    center_lat = (zone["min_lat"] + zone["max_lat"]) / 2
+
+    half_width = (zone["max_lon"] - zone["min_lon"]) / 4
+    half_height = (zone["max_lat"] - zone["min_lat"]) / 4
+
+    return [{
+        "min_lon": center_lon - half_width,
+        "max_lon": center_lon + half_width,
+        "min_lat": center_lat - half_height,
+        "max_lat": center_lat + half_height
+    }]
+
 def is_not_in_zone(coord):
-    for zone in NO_FLY_ZONES:
+    zones_once = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    zones_twice = [z for zone in zones_once for z in halve_zone(zone)]
+    for zone in zones_twice:
         if zone["min_lon"] <=  coord[0]<= zone["max_lon"] and zone["min_lat"] <= coord[1] <= zone["max_lat"]:
             return False  # Drönaren är i en förbjuden zon
     return True
 
 def is_in_no_fly_zone(lon, lat):
-    for zone in NO_FLY_ZONES:
+    reduced_zones = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    for zone in reduced_zones:
         if zone["min_lon"] <= lon <= zone["max_lon"] and zone["min_lat"] <= lat <= zone["max_lat"]:
-            return True  # Drönaren är i en förbjuden zon
+            return True
     return False
 
 def safe_diraction(lon, lat, step_size_lon = 0.0005, step_size_lat=0.0005):
@@ -47,38 +60,33 @@ def safe_diraction(lon, lat, step_size_lon = 0.0005, step_size_lat=0.0005):
     return lon, lat
 
 def safe_direction2(lon, lat, step_size=0.0005, max_attempts=100):
-    """Försöker hitta en säker riktning att ta sig ut ur no-fly-zonen."""
     original_lon, original_lat = lon, lat
     attempts = 0
-
-    # Testa olika riktningar: (Δlon, Δlat)
     directions = [
-        (step_size, 0),     # öst
-        (-step_size, 0),    # väst
-        (0, step_size),     # norr
-        (0, -step_size),    # syd
-        (step_size, step_size),     # nordost
-        (-step_size, step_size),    # nordväst
-        (step_size, -step_size),    # sydost
-        (-step_size, -step_size),   # sydväst
+        (step_size, 0), (-step_size, 0), (0, step_size), (0, -step_size),
+        (step_size, step_size), (-step_size, step_size),
+        (step_size, -step_size), (-step_size, -step_size)
     ]
-
     while is_in_no_fly_zone(lon, lat) and attempts < max_attempts:
-        dx, dy = directions[attempts % len(directions)]
-        lon += dx
-        lat += dy
-        attempts += 1
+       dx, dy = directions[attempts % len(directions)]
+       test_lon = original_lon + dx
+       test_lat = original_lat + dy
+       if not is_in_no_fly_zone(test_lon, test_lat):
+        return test_lon, test_lat
+       attempts += 1
 
     print(f"Från ({original_lon}, {original_lat}) -> Till ({lon}, {lat}) efter {attempts} försök")
 
     if is_in_no_fly_zone(lon, lat):
-        print("Kunde inte hitta en säker position utanför no-fly-zonen.")
+        print("Kunde inte hitta en säker position.")
         return None, None
 
     return lon, lat
 
 
 
+print(safe_direction2(13.2, 55.71))  # Inuti en zon
+print(safe_direction2(13.25, 55.73))  # Utanför zonen
 print(is_in_no_fly_zone(13.197878,55.708623))
 
 
@@ -104,6 +112,17 @@ def test_your_position(lon,lat):
     return is_in_no_fly_zone(lon, lat)
     
 
+def test():
+    lon_test = 13.19
+    lat_test = 55.71
+    new_lon, new_lat = safe_direction2(lon_test, lat_test)
+
+    if new_lon and new_lat:
+        print(f"Säker position: {new_lon}, {new_lat}")
+    else:
+        print("Misslyckades med att hitta en säker position.")
+
 
 # Kör testet
-test_find_safe_position()
+#test_find_safe_position()
+test()
