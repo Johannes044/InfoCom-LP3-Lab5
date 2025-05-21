@@ -1,6 +1,6 @@
 import heapq
 
-from No_fly_zone import halve_zone
+from webserver.logic.No_fly_zone import halve_zone
 
 NO_FLY_ZONES = [
     {
