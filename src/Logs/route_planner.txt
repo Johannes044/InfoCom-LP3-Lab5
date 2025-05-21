@@ -5289,3 +5289,1157 @@
 2025-05-21 16:31:41,023 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
 2025-05-21 16:31:41,037 - INFO - 127.0.0.1 - - [21/May/2025 16:31:41] "POST /planner HTTP/1.1" 200 -
 2025-05-21 16:31:41,049 - DEBUG - Drone data from D2 have been access!
+2025-05-21 16:38:14,529 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:38:14,529 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:38:14,542 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 16:38:14,542 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 16:38:14,544 - INFO -  * Restarting with stat
+2025-05-21 16:38:15,380 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:38:15,380 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:38:15,392 - WARNING -  * Debugger is active!
+2025-05-21 16:38:15,393 - INFO -  * Debugger PIN: 130-576-534
+2025-05-21 16:38:27,211 - INFO - 127.0.0.1 - - [21/May/2025 16:38:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:28,219 - INFO - 127.0.0.1 - - [21/May/2025 16:38:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:29,227 - INFO - 127.0.0.1 - - [21/May/2025 16:38:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:30,235 - INFO - 127.0.0.1 - - [21/May/2025 16:38:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:31,251 - INFO - 127.0.0.1 - - [21/May/2025 16:38:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:32,269 - INFO - 127.0.0.1 - - [21/May/2025 16:38:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:33,287 - INFO - 127.0.0.1 - - [21/May/2025 16:38:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:34,307 - INFO - 127.0.0.1 - - [21/May/2025 16:38:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:35,324 - INFO - 127.0.0.1 - - [21/May/2025 16:38:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:36,334 - INFO - 127.0.0.1 - - [21/May/2025 16:38:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:37,341 - INFO - 127.0.0.1 - - [21/May/2025 16:38:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:38,348 - INFO - 127.0.0.1 - - [21/May/2025 16:38:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:39,355 - INFO - 127.0.0.1 - - [21/May/2025 16:38:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:40,362 - INFO - 127.0.0.1 - - [21/May/2025 16:38:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:41,372 - INFO - 127.0.0.1 - - [21/May/2025 16:38:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:42,386 - INFO - 127.0.0.1 - - [21/May/2025 16:38:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:43,403 - INFO - 127.0.0.1 - - [21/May/2025 16:38:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:44,419 - INFO - 127.0.0.1 - - [21/May/2025 16:38:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:45,429 - INFO - 127.0.0.1 - - [21/May/2025 16:38:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:46,436 - INFO - 127.0.0.1 - - [21/May/2025 16:38:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:47,443 - INFO - 127.0.0.1 - - [21/May/2025 16:38:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:48,450 - INFO - 127.0.0.1 - - [21/May/2025 16:38:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:49,461 - INFO - 127.0.0.1 - - [21/May/2025 16:38:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:50,475 - INFO - 127.0.0.1 - - [21/May/2025 16:38:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:51,488 - INFO - 127.0.0.1 - - [21/May/2025 16:38:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:52,500 - INFO - 127.0.0.1 - - [21/May/2025 16:38:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:53,513 - INFO - 127.0.0.1 - - [21/May/2025 16:38:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:54,531 - INFO - 127.0.0.1 - - [21/May/2025 16:38:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:55,551 - INFO - 127.0.0.1 - - [21/May/2025 16:38:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:56,562 - INFO - 127.0.0.1 - - [21/May/2025 16:38:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:57,577 - INFO - 127.0.0.1 - - [21/May/2025 16:38:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:58,589 - INFO - 127.0.0.1 - - [21/May/2025 16:38:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:38:59,597 - INFO - 127.0.0.1 - - [21/May/2025 16:38:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:00,609 - INFO - 127.0.0.1 - - [21/May/2025 16:39:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:01,618 - INFO - 127.0.0.1 - - [21/May/2025 16:39:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:02,625 - INFO - 127.0.0.1 - - [21/May/2025 16:39:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:03,633 - INFO - 127.0.0.1 - - [21/May/2025 16:39:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:04,645 - INFO - 127.0.0.1 - - [21/May/2025 16:39:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:05,653 - INFO - 127.0.0.1 - - [21/May/2025 16:39:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:06,661 - INFO - 127.0.0.1 - - [21/May/2025 16:39:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:07,668 - INFO - 127.0.0.1 - - [21/May/2025 16:39:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:08,675 - INFO - 127.0.0.1 - - [21/May/2025 16:39:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:09,682 - INFO - 127.0.0.1 - - [21/May/2025 16:39:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:10,693 - INFO - 127.0.0.1 - - [21/May/2025 16:39:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:11,704 - INFO - 127.0.0.1 - - [21/May/2025 16:39:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:12,716 - INFO - 127.0.0.1 - - [21/May/2025 16:39:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:13,728 - INFO - 127.0.0.1 - - [21/May/2025 16:39:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:14,746 - INFO - 127.0.0.1 - - [21/May/2025 16:39:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:15,757 - INFO - 127.0.0.1 - - [21/May/2025 16:39:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:16,764 - INFO - 127.0.0.1 - - [21/May/2025 16:39:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:17,770 - INFO - 127.0.0.1 - - [21/May/2025 16:39:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:18,777 - INFO - 127.0.0.1 - - [21/May/2025 16:39:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:19,784 - INFO - 127.0.0.1 - - [21/May/2025 16:39:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:20,799 - INFO - 127.0.0.1 - - [21/May/2025 16:39:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:21,818 - INFO - 127.0.0.1 - - [21/May/2025 16:39:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:22,833 - INFO - 127.0.0.1 - - [21/May/2025 16:39:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:23,841 - INFO - 127.0.0.1 - - [21/May/2025 16:39:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:24,848 - INFO - 127.0.0.1 - - [21/May/2025 16:39:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:25,855 - INFO - 127.0.0.1 - - [21/May/2025 16:39:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:26,862 - INFO - 127.0.0.1 - - [21/May/2025 16:39:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:27,870 - INFO - 127.0.0.1 - - [21/May/2025 16:39:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:28,886 - INFO - 127.0.0.1 - - [21/May/2025 16:39:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:29,905 - INFO - 127.0.0.1 - - [21/May/2025 16:39:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:30,923 - INFO - 127.0.0.1 - - [21/May/2025 16:39:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:31,941 - INFO - 127.0.0.1 - - [21/May/2025 16:39:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:32,956 - INFO - 127.0.0.1 - - [21/May/2025 16:39:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:33,971 - INFO - 127.0.0.1 - - [21/May/2025 16:39:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:34,988 - INFO - 127.0.0.1 - - [21/May/2025 16:39:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:39:36,004 - INFO - 127.0.0.1 - - [21/May/2025 16:39:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:42:57,411 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:42:57,411 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:42:57,427 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 16:42:57,427 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 16:42:57,430 - INFO -  * Restarting with stat
+2025-05-21 16:42:58,267 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:42:58,268 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:42:58,279 - WARNING -  * Debugger is active!
+2025-05-21 16:42:58,280 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 16:43:04,977 - INFO - 127.0.0.1 - - [21/May/2025 16:43:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:05,985 - INFO - 127.0.0.1 - - [21/May/2025 16:43:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:06,992 - INFO - 127.0.0.1 - - [21/May/2025 16:43:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:08,010 - INFO - 127.0.0.1 - - [21/May/2025 16:43:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:09,029 - INFO - 127.0.0.1 - - [21/May/2025 16:43:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:10,047 - INFO - 127.0.0.1 - - [21/May/2025 16:43:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:11,064 - INFO - 127.0.0.1 - - [21/May/2025 16:43:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:12,082 - INFO - 127.0.0.1 - - [21/May/2025 16:43:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:13,101 - INFO - 127.0.0.1 - - [21/May/2025 16:43:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:14,120 - INFO - 127.0.0.1 - - [21/May/2025 16:43:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:15,137 - INFO - 127.0.0.1 - - [21/May/2025 16:43:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:16,154 - INFO - 127.0.0.1 - - [21/May/2025 16:43:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:17,170 - INFO - 127.0.0.1 - - [21/May/2025 16:43:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:18,187 - INFO - 127.0.0.1 - - [21/May/2025 16:43:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:19,202 - INFO - 127.0.0.1 - - [21/May/2025 16:43:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:20,215 - INFO - 127.0.0.1 - - [21/May/2025 16:43:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:21,230 - INFO - 127.0.0.1 - - [21/May/2025 16:43:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:22,248 - INFO - 127.0.0.1 - - [21/May/2025 16:43:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:23,264 - INFO - 127.0.0.1 - - [21/May/2025 16:43:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:24,279 - INFO - 127.0.0.1 - - [21/May/2025 16:43:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:25,291 - INFO - 127.0.0.1 - - [21/May/2025 16:43:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:26,300 - INFO - 127.0.0.1 - - [21/May/2025 16:43:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:27,308 - INFO - 127.0.0.1 - - [21/May/2025 16:43:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:28,315 - INFO - 127.0.0.1 - - [21/May/2025 16:43:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:29,322 - INFO - 127.0.0.1 - - [21/May/2025 16:43:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:30,330 - INFO - 127.0.0.1 - - [21/May/2025 16:43:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:31,341 - INFO - 127.0.0.1 - - [21/May/2025 16:43:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:32,357 - INFO - 127.0.0.1 - - [21/May/2025 16:43:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:33,370 - INFO - 127.0.0.1 - - [21/May/2025 16:43:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:34,386 - INFO - 127.0.0.1 - - [21/May/2025 16:43:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:35,399 - INFO - 127.0.0.1 - - [21/May/2025 16:43:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:36,410 - INFO - 127.0.0.1 - - [21/May/2025 16:43:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:37,422 - INFO - 127.0.0.1 - - [21/May/2025 16:43:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:38,434 - INFO - 127.0.0.1 - - [21/May/2025 16:43:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:39,446 - INFO - 127.0.0.1 - - [21/May/2025 16:43:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:40,465 - INFO - 127.0.0.1 - - [21/May/2025 16:43:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:41,481 - INFO - 127.0.0.1 - - [21/May/2025 16:43:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:42,498 - INFO - 127.0.0.1 - - [21/May/2025 16:43:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:43,516 - INFO - 127.0.0.1 - - [21/May/2025 16:43:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:44,532 - INFO - 127.0.0.1 - - [21/May/2025 16:43:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:45,550 - INFO - 127.0.0.1 - - [21/May/2025 16:43:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:46,569 - INFO - 127.0.0.1 - - [21/May/2025 16:43:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:47,586 - INFO - 127.0.0.1 - - [21/May/2025 16:43:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:48,603 - INFO - 127.0.0.1 - - [21/May/2025 16:43:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:49,619 - INFO - 127.0.0.1 - - [21/May/2025 16:43:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:50,636 - INFO - 127.0.0.1 - - [21/May/2025 16:43:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:51,652 - INFO - 127.0.0.1 - - [21/May/2025 16:43:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:52,668 - INFO - 127.0.0.1 - - [21/May/2025 16:43:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:53,688 - INFO - 127.0.0.1 - - [21/May/2025 16:43:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:54,704 - INFO - 127.0.0.1 - - [21/May/2025 16:43:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:55,721 - INFO - 127.0.0.1 - - [21/May/2025 16:43:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:56,738 - INFO - 127.0.0.1 - - [21/May/2025 16:43:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:57,755 - INFO - 127.0.0.1 - - [21/May/2025 16:43:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:58,771 - INFO - 127.0.0.1 - - [21/May/2025 16:43:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:43:59,792 - INFO - 127.0.0.1 - - [21/May/2025 16:43:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:00,808 - INFO - 127.0.0.1 - - [21/May/2025 16:44:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:01,821 - INFO - 127.0.0.1 - - [21/May/2025 16:44:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:02,832 - INFO - 127.0.0.1 - - [21/May/2025 16:44:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:03,846 - INFO - 127.0.0.1 - - [21/May/2025 16:44:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:04,861 - INFO - 127.0.0.1 - - [21/May/2025 16:44:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:05,872 - INFO - 127.0.0.1 - - [21/May/2025 16:44:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:06,888 - INFO - 127.0.0.1 - - [21/May/2025 16:44:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:07,901 - INFO - 127.0.0.1 - - [21/May/2025 16:44:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:08,911 - INFO - 127.0.0.1 - - [21/May/2025 16:44:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:09,920 - INFO - 127.0.0.1 - - [21/May/2025 16:44:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:10,932 - INFO - 127.0.0.1 - - [21/May/2025 16:44:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:11,945 - INFO - 127.0.0.1 - - [21/May/2025 16:44:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:12,958 - INFO - 127.0.0.1 - - [21/May/2025 16:44:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:13,974 - INFO - 127.0.0.1 - - [21/May/2025 16:44:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:14,991 - INFO - 127.0.0.1 - - [21/May/2025 16:44:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:16,008 - INFO - 127.0.0.1 - - [21/May/2025 16:44:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:17,025 - INFO - 127.0.0.1 - - [21/May/2025 16:44:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:18,042 - INFO - 127.0.0.1 - - [21/May/2025 16:44:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:19,058 - INFO - 127.0.0.1 - - [21/May/2025 16:44:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:20,077 - INFO - 127.0.0.1 - - [21/May/2025 16:44:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:21,093 - INFO - 127.0.0.1 - - [21/May/2025 16:44:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:22,110 - INFO - 127.0.0.1 - - [21/May/2025 16:44:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:23,127 - INFO - 127.0.0.1 - - [21/May/2025 16:44:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:24,144 - INFO - 127.0.0.1 - - [21/May/2025 16:44:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:25,160 - INFO - 127.0.0.1 - - [21/May/2025 16:44:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:26,183 - INFO - 127.0.0.1 - - [21/May/2025 16:44:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:27,200 - INFO - 127.0.0.1 - - [21/May/2025 16:44:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:28,220 - INFO - 127.0.0.1 - - [21/May/2025 16:44:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:29,238 - INFO - 127.0.0.1 - - [21/May/2025 16:44:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:30,255 - INFO - 127.0.0.1 - - [21/May/2025 16:44:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:31,272 - INFO - 127.0.0.1 - - [21/May/2025 16:44:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:32,288 - INFO - 127.0.0.1 - - [21/May/2025 16:44:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:33,306 - INFO - 127.0.0.1 - - [21/May/2025 16:44:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:34,325 - INFO - 127.0.0.1 - - [21/May/2025 16:44:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:35,341 - INFO - 127.0.0.1 - - [21/May/2025 16:44:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:36,357 - INFO - 127.0.0.1 - - [21/May/2025 16:44:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:37,373 - INFO - 127.0.0.1 - - [21/May/2025 16:44:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:38,390 - INFO - 127.0.0.1 - - [21/May/2025 16:44:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:39,408 - INFO - 127.0.0.1 - - [21/May/2025 16:44:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:40,425 - INFO - 127.0.0.1 - - [21/May/2025 16:44:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:41,438 - INFO - 127.0.0.1 - - [21/May/2025 16:44:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:42,454 - INFO - 127.0.0.1 - - [21/May/2025 16:44:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:43,465 - INFO - 127.0.0.1 - - [21/May/2025 16:44:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:44,477 - INFO - 127.0.0.1 - - [21/May/2025 16:44:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:45,491 - INFO - 127.0.0.1 - - [21/May/2025 16:44:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:46,517 - INFO - 127.0.0.1 - - [21/May/2025 16:44:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:47,530 - INFO - 127.0.0.1 - - [21/May/2025 16:44:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:48,541 - INFO - 127.0.0.1 - - [21/May/2025 16:44:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:49,553 - INFO - 127.0.0.1 - - [21/May/2025 16:44:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:44:50,565 - INFO - 127.0.0.1 - - [21/May/2025 16:44:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:34,543 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:45:34,543 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:45:34,556 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 16:45:34,556 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 16:45:34,559 - INFO -  * Restarting with stat
+2025-05-21 16:45:35,397 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:45:35,397 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:45:35,409 - WARNING -  * Debugger is active!
+2025-05-21 16:45:35,410 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 16:45:42,488 - INFO - 127.0.0.1 - - [21/May/2025 16:45:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:43,496 - INFO - 127.0.0.1 - - [21/May/2025 16:45:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:44,504 - INFO - 127.0.0.1 - - [21/May/2025 16:45:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:45,512 - INFO - 127.0.0.1 - - [21/May/2025 16:45:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:46,528 - INFO - 127.0.0.1 - - [21/May/2025 16:45:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:47,545 - INFO - 127.0.0.1 - - [21/May/2025 16:45:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:48,563 - INFO - 127.0.0.1 - - [21/May/2025 16:45:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:49,582 - INFO - 127.0.0.1 - - [21/May/2025 16:45:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:50,598 - INFO - 127.0.0.1 - - [21/May/2025 16:45:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:51,617 - INFO - 127.0.0.1 - - [21/May/2025 16:45:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:52,633 - INFO - 127.0.0.1 - - [21/May/2025 16:45:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:53,651 - INFO - 127.0.0.1 - - [21/May/2025 16:45:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:54,667 - INFO - 127.0.0.1 - - [21/May/2025 16:45:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:55,684 - INFO - 127.0.0.1 - - [21/May/2025 16:45:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:56,701 - INFO - 127.0.0.1 - - [21/May/2025 16:45:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:57,716 - INFO - 127.0.0.1 - - [21/May/2025 16:45:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:58,728 - INFO - 127.0.0.1 - - [21/May/2025 16:45:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:45:59,740 - INFO - 127.0.0.1 - - [21/May/2025 16:45:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:00,752 - INFO - 127.0.0.1 - - [21/May/2025 16:46:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:01,764 - INFO - 127.0.0.1 - - [21/May/2025 16:46:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:02,780 - INFO - 127.0.0.1 - - [21/May/2025 16:46:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:03,792 - INFO - 127.0.0.1 - - [21/May/2025 16:46:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:04,805 - INFO - 127.0.0.1 - - [21/May/2025 16:46:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:05,817 - INFO - 127.0.0.1 - - [21/May/2025 16:46:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:06,829 - INFO - 127.0.0.1 - - [21/May/2025 16:46:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:07,848 - INFO - 127.0.0.1 - - [21/May/2025 16:46:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:08,868 - INFO - 127.0.0.1 - - [21/May/2025 16:46:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:09,885 - INFO - 127.0.0.1 - - [21/May/2025 16:46:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:10,904 - INFO - 127.0.0.1 - - [21/May/2025 16:46:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:11,921 - INFO - 127.0.0.1 - - [21/May/2025 16:46:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:12,938 - INFO - 127.0.0.1 - - [21/May/2025 16:46:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:13,954 - INFO - 127.0.0.1 - - [21/May/2025 16:46:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:14,970 - INFO - 127.0.0.1 - - [21/May/2025 16:46:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:15,987 - INFO - 127.0.0.1 - - [21/May/2025 16:46:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:17,003 - INFO - 127.0.0.1 - - [21/May/2025 16:46:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:18,021 - INFO - 127.0.0.1 - - [21/May/2025 16:46:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:19,037 - INFO - 127.0.0.1 - - [21/May/2025 16:46:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:20,053 - INFO - 127.0.0.1 - - [21/May/2025 16:46:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:21,071 - INFO - 127.0.0.1 - - [21/May/2025 16:46:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:22,087 - INFO - 127.0.0.1 - - [21/May/2025 16:46:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:23,104 - INFO - 127.0.0.1 - - [21/May/2025 16:46:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:24,122 - INFO - 127.0.0.1 - - [21/May/2025 16:46:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:25,139 - INFO - 127.0.0.1 - - [21/May/2025 16:46:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:26,155 - INFO - 127.0.0.1 - - [21/May/2025 16:46:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:27,164 - INFO - 127.0.0.1 - - [21/May/2025 16:46:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:28,175 - INFO - 127.0.0.1 - - [21/May/2025 16:46:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:29,183 - INFO - 127.0.0.1 - - [21/May/2025 16:46:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:30,189 - INFO - 127.0.0.1 - - [21/May/2025 16:46:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:31,202 - INFO - 127.0.0.1 - - [21/May/2025 16:46:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:32,218 - INFO - 127.0.0.1 - - [21/May/2025 16:46:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:33,241 - INFO - 127.0.0.1 - - [21/May/2025 16:46:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:34,257 - INFO - 127.0.0.1 - - [21/May/2025 16:46:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:35,265 - INFO - 127.0.0.1 - - [21/May/2025 16:46:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:36,272 - INFO - 127.0.0.1 - - [21/May/2025 16:46:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:37,281 - INFO - 127.0.0.1 - - [21/May/2025 16:46:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:38,294 - INFO - 127.0.0.1 - - [21/May/2025 16:46:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:39,310 - INFO - 127.0.0.1 - - [21/May/2025 16:46:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:40,323 - INFO - 127.0.0.1 - - [21/May/2025 16:46:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:41,339 - INFO - 127.0.0.1 - - [21/May/2025 16:46:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:42,355 - INFO - 127.0.0.1 - - [21/May/2025 16:46:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:43,364 - INFO - 127.0.0.1 - - [21/May/2025 16:46:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:44,372 - INFO - 127.0.0.1 - - [21/May/2025 16:46:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:45,379 - INFO - 127.0.0.1 - - [21/May/2025 16:46:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:46,387 - INFO - 127.0.0.1 - - [21/May/2025 16:46:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:47,394 - INFO - 127.0.0.1 - - [21/May/2025 16:46:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:48,410 - INFO - 127.0.0.1 - - [21/May/2025 16:46:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:49,419 - INFO - 127.0.0.1 - - [21/May/2025 16:46:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:50,427 - INFO - 127.0.0.1 - - [21/May/2025 16:46:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:51,434 - INFO - 127.0.0.1 - - [21/May/2025 16:46:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:52,441 - INFO - 127.0.0.1 - - [21/May/2025 16:46:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:53,447 - INFO - 127.0.0.1 - - [21/May/2025 16:46:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:54,462 - INFO - 127.0.0.1 - - [21/May/2025 16:46:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:55,478 - INFO - 127.0.0.1 - - [21/May/2025 16:46:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:56,492 - INFO - 127.0.0.1 - - [21/May/2025 16:46:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:57,503 - INFO - 127.0.0.1 - - [21/May/2025 16:46:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:58,510 - INFO - 127.0.0.1 - - [21/May/2025 16:46:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:46:59,516 - INFO - 127.0.0.1 - - [21/May/2025 16:46:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:47:00,523 - INFO - 127.0.0.1 - - [21/May/2025 16:47:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:47:01,530 - INFO - 127.0.0.1 - - [21/May/2025 16:47:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:47:02,545 - INFO - 127.0.0.1 - - [21/May/2025 16:47:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:47:03,564 - INFO - 127.0.0.1 - - [21/May/2025 16:47:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:47:04,580 - INFO - 127.0.0.1 - - [21/May/2025 16:47:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:47:05,596 - INFO - 127.0.0.1 - - [21/May/2025 16:47:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:47:06,610 - INFO - 127.0.0.1 - - [21/May/2025 16:47:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:47:07,619 - INFO - 127.0.0.1 - - [21/May/2025 16:47:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:32,425 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:49:32,425 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:49:32,437 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 16:49:32,438 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 16:49:32,440 - INFO -  * Restarting with stat
+2025-05-21 16:49:33,326 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:49:33,326 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:49:33,338 - WARNING -  * Debugger is active!
+2025-05-21 16:49:33,339 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 16:49:42,582 - INFO - 127.0.0.1 - - [21/May/2025 16:49:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:43,606 - INFO - 127.0.0.1 - - [21/May/2025 16:49:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:44,618 - INFO - 127.0.0.1 - - [21/May/2025 16:49:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:45,626 - INFO - 127.0.0.1 - - [21/May/2025 16:49:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:46,633 - INFO - 127.0.0.1 - - [21/May/2025 16:49:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:47,676 - INFO - 127.0.0.1 - - [21/May/2025 16:49:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:48,697 - INFO - 127.0.0.1 - - [21/May/2025 16:49:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:49,712 - INFO - 127.0.0.1 - - [21/May/2025 16:49:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:50,720 - INFO - 127.0.0.1 - - [21/May/2025 16:49:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:51,729 - INFO - 127.0.0.1 - - [21/May/2025 16:49:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:52,738 - INFO - 127.0.0.1 - - [21/May/2025 16:49:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:53,746 - INFO - 127.0.0.1 - - [21/May/2025 16:49:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:54,761 - INFO - 127.0.0.1 - - [21/May/2025 16:49:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:55,772 - INFO - 127.0.0.1 - - [21/May/2025 16:49:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:56,794 - INFO - 127.0.0.1 - - [21/May/2025 16:49:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:57,812 - INFO - 127.0.0.1 - - [21/May/2025 16:49:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:58,823 - INFO - 127.0.0.1 - - [21/May/2025 16:49:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:49:59,834 - INFO - 127.0.0.1 - - [21/May/2025 16:49:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:00,851 - INFO - 127.0.0.1 - - [21/May/2025 16:50:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:01,193 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:50:01,201 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-21 16:50:01,688 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 16:50:01,690 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:50:01,867 - INFO - 127.0.0.1 - - [21/May/2025 16:50:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:02,640 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 16:50:02,644 - INFO - 127.0.0.1 - - [21/May/2025 16:50:02] "POST /planner HTTP/1.1" 200 -
+2025-05-21 16:50:02,880 - DEBUG - Drone data from D2 have been access!
+2025-05-21 16:50:02,889 - DEBUG - Starting new HTTP connection (1): 192.168.0.3:5000
+2025-05-21 16:50:02,963 - INFO - 127.0.0.1 - - [21/May/2025 16:50:02] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 16:50:03,976 - INFO - 127.0.0.1 - - [21/May/2025 16:50:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:04,999 - INFO - 127.0.0.1 - - [21/May/2025 16:50:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:06,010 - INFO - 127.0.0.1 - - [21/May/2025 16:50:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:07,022 - INFO - 127.0.0.1 - - [21/May/2025 16:50:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:08,044 - INFO - 127.0.0.1 - - [21/May/2025 16:50:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:09,056 - INFO - 127.0.0.1 - - [21/May/2025 16:50:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:10,074 - INFO - 127.0.0.1 - - [21/May/2025 16:50:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:11,088 - INFO - 127.0.0.1 - - [21/May/2025 16:50:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:12,096 - INFO - 127.0.0.1 - - [21/May/2025 16:50:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:13,102 - INFO - 127.0.0.1 - - [21/May/2025 16:50:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:14,109 - INFO - 127.0.0.1 - - [21/May/2025 16:50:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:15,124 - INFO - 127.0.0.1 - - [21/May/2025 16:50:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:16,139 - INFO - 127.0.0.1 - - [21/May/2025 16:50:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:17,153 - INFO - 127.0.0.1 - - [21/May/2025 16:50:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:18,168 - INFO - 127.0.0.1 - - [21/May/2025 16:50:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:19,178 - INFO - 127.0.0.1 - - [21/May/2025 16:50:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:20,185 - INFO - 127.0.0.1 - - [21/May/2025 16:50:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:21,198 - INFO - 127.0.0.1 - - [21/May/2025 16:50:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:22,214 - INFO - 127.0.0.1 - - [21/May/2025 16:50:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:23,227 - INFO - 127.0.0.1 - - [21/May/2025 16:50:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:24,244 - INFO - 127.0.0.1 - - [21/May/2025 16:50:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:24,931 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:50:24,933 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-05-21 16:50:25,277 - INFO - 127.0.0.1 - - [21/May/2025 16:50:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:25,334 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 16:50:25,335 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:50:26,285 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 16:50:26,288 - INFO - 127.0.0.1 - - [21/May/2025 16:50:26] "POST /planner HTTP/1.1" 200 -
+2025-05-21 16:50:26,308 - DEBUG - Drone data from D2 have been access!
+2025-05-21 16:50:26,314 - DEBUG - Starting new HTTP connection (1): 192.168.0.3:5000
+2025-05-21 16:50:26,332 - DEBUG - http://192.168.0.3:5000 "POST / HTTP/1.1" 200 18
+2025-05-21 16:50:26,334 - DEBUG - Got address and sent request to the drone
+2025-05-21 16:50:26,335 - INFO - 127.0.0.1 - - [21/May/2025 16:50:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:27,352 - INFO - 127.0.0.1 - - [21/May/2025 16:50:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:28,370 - INFO - 127.0.0.1 - - [21/May/2025 16:50:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:29,387 - INFO - 127.0.0.1 - - [21/May/2025 16:50:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:30,399 - INFO - 127.0.0.1 - - [21/May/2025 16:50:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:31,416 - INFO - 127.0.0.1 - - [21/May/2025 16:50:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:32,428 - INFO - 127.0.0.1 - - [21/May/2025 16:50:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:33,449 - INFO - 127.0.0.1 - - [21/May/2025 16:50:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:34,468 - INFO - 127.0.0.1 - - [21/May/2025 16:50:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:35,479 - INFO - 127.0.0.1 - - [21/May/2025 16:50:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:36,489 - INFO - 127.0.0.1 - - [21/May/2025 16:50:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:37,503 - INFO - 127.0.0.1 - - [21/May/2025 16:50:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:38,521 - INFO - 127.0.0.1 - - [21/May/2025 16:50:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:39,545 - INFO - 127.0.0.1 - - [21/May/2025 16:50:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:40,573 - INFO - 127.0.0.1 - - [21/May/2025 16:50:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:41,594 - INFO - 127.0.0.1 - - [21/May/2025 16:50:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:42,606 - INFO - 127.0.0.1 - - [21/May/2025 16:50:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:43,620 - INFO - 127.0.0.1 - - [21/May/2025 16:50:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:44,635 - INFO - 127.0.0.1 - - [21/May/2025 16:50:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:45,653 - INFO - 127.0.0.1 - - [21/May/2025 16:50:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:45,978 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Trollebergsv%C3%A4gen+41%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:50:46,067 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Trollebergsv%C3%A4gen+41%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 499
+2025-05-21 16:50:46,068 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:50:46,663 - INFO - 127.0.0.1 - - [21/May/2025 16:50:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:50:47,080 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 16:50:47,083 - INFO - 127.0.0.1 - - [21/May/2025 16:50:47] "POST /planner HTTP/1.1" 200 -
+2025-05-21 16:50:47,678 - DEBUG - Drone data from D2 have been access!
+2025-05-21 16:51:55,450 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:51:55,450 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:51:55,463 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 16:51:55,463 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 16:51:55,465 - INFO -  * Restarting with stat
+2025-05-21 16:51:56,392 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:51:56,393 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 16:51:56,409 - WARNING -  * Debugger is active!
+2025-05-21 16:51:56,410 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 16:52:00,286 - INFO - 127.0.0.1 - - [21/May/2025 16:52:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:01,301 - INFO - 127.0.0.1 - - [21/May/2025 16:52:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:02,316 - INFO - 127.0.0.1 - - [21/May/2025 16:52:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:03,340 - INFO - 127.0.0.1 - - [21/May/2025 16:52:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:04,369 - INFO - 127.0.0.1 - - [21/May/2025 16:52:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:05,388 - INFO - 127.0.0.1 - - [21/May/2025 16:52:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:06,407 - INFO - 127.0.0.1 - - [21/May/2025 16:52:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:07,428 - INFO - 127.0.0.1 - - [21/May/2025 16:52:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:08,445 - INFO - 127.0.0.1 - - [21/May/2025 16:52:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:09,460 - INFO - 127.0.0.1 - - [21/May/2025 16:52:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:10,471 - INFO - 127.0.0.1 - - [21/May/2025 16:52:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:11,478 - INFO - 127.0.0.1 - - [21/May/2025 16:52:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:12,498 - INFO - 127.0.0.1 - - [21/May/2025 16:52:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:13,520 - INFO - 127.0.0.1 - - [21/May/2025 16:52:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:14,541 - INFO - 127.0.0.1 - - [21/May/2025 16:52:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:15,559 - INFO - 127.0.0.1 - - [21/May/2025 16:52:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:16,569 - INFO - 127.0.0.1 - - [21/May/2025 16:52:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:17,265 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Trollebergsv%C3%A4gen+41%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:52:17,269 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-21 16:52:17,587 - INFO - 127.0.0.1 - - [21/May/2025 16:52:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:17,628 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Trollebergsv%C3%A4gen+41%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 499
+2025-05-21 16:52:17,632 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:52:18,596 - INFO - 127.0.0.1 - - [21/May/2025 16:52:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:18,629 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 16:52:18,636 - INFO - 127.0.0.1 - - [21/May/2025 16:52:18] "POST /planner HTTP/1.1" 200 -
+2025-05-21 16:52:19,609 - DEBUG - Drone data from D2 have been access!
+2025-05-21 16:52:19,617 - DEBUG - Starting new HTTP connection (1): 192.168.0.3:5000
+2025-05-21 16:52:19,636 - DEBUG - http://192.168.0.3:5000 "POST / HTTP/1.1" 200 18
+2025-05-21 16:52:19,637 - DEBUG - Got address and sent request to the drone
+2025-05-21 16:52:19,639 - INFO - 127.0.0.1 - - [21/May/2025 16:52:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:20,655 - INFO - 127.0.0.1 - - [21/May/2025 16:52:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:21,670 - INFO - 127.0.0.1 - - [21/May/2025 16:52:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:22,691 - INFO - 127.0.0.1 - - [21/May/2025 16:52:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:23,708 - INFO - 127.0.0.1 - - [21/May/2025 16:52:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:24,727 - INFO - 127.0.0.1 - - [21/May/2025 16:52:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:25,747 - INFO - 127.0.0.1 - - [21/May/2025 16:52:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:26,764 - INFO - 127.0.0.1 - - [21/May/2025 16:52:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:27,778 - INFO - 127.0.0.1 - - [21/May/2025 16:52:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:28,791 - INFO - 127.0.0.1 - - [21/May/2025 16:52:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:29,805 - INFO - 127.0.0.1 - - [21/May/2025 16:52:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:30,816 - INFO - 127.0.0.1 - - [21/May/2025 16:52:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:31,829 - INFO - 127.0.0.1 - - [21/May/2025 16:52:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:32,841 - INFO - 127.0.0.1 - - [21/May/2025 16:52:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:33,852 - INFO - 127.0.0.1 - - [21/May/2025 16:52:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:34,863 - INFO - 127.0.0.1 - - [21/May/2025 16:52:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:35,877 - INFO - 127.0.0.1 - - [21/May/2025 16:52:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:36,894 - INFO - 127.0.0.1 - - [21/May/2025 16:52:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:37,906 - INFO - 127.0.0.1 - - [21/May/2025 16:52:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:38,918 - INFO - 127.0.0.1 - - [21/May/2025 16:52:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:39,928 - INFO - 127.0.0.1 - - [21/May/2025 16:52:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:40,956 - INFO - 127.0.0.1 - - [21/May/2025 16:52:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:41,974 - INFO - 127.0.0.1 - - [21/May/2025 16:52:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:42,984 - INFO - 127.0.0.1 - - [21/May/2025 16:52:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:43,996 - INFO - 127.0.0.1 - - [21/May/2025 16:52:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:45,012 - INFO - 127.0.0.1 - - [21/May/2025 16:52:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:46,026 - INFO - 127.0.0.1 - - [21/May/2025 16:52:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:47,042 - INFO - 127.0.0.1 - - [21/May/2025 16:52:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:48,062 - INFO - 127.0.0.1 - - [21/May/2025 16:52:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:49,078 - INFO - 127.0.0.1 - - [21/May/2025 16:52:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:50,091 - INFO - 127.0.0.1 - - [21/May/2025 16:52:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:51,105 - INFO - 127.0.0.1 - - [21/May/2025 16:52:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:52,125 - INFO - 127.0.0.1 - - [21/May/2025 16:52:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:53,138 - INFO - 127.0.0.1 - - [21/May/2025 16:52:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:54,150 - INFO - 127.0.0.1 - - [21/May/2025 16:52:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:55,172 - INFO - 127.0.0.1 - - [21/May/2025 16:52:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:56,184 - INFO - 127.0.0.1 - - [21/May/2025 16:52:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:57,196 - INFO - 127.0.0.1 - - [21/May/2025 16:52:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:58,210 - INFO - 127.0.0.1 - - [21/May/2025 16:52:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:52:59,234 - INFO - 127.0.0.1 - - [21/May/2025 16:52:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:00,244 - INFO - 127.0.0.1 - - [21/May/2025 16:53:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:01,253 - INFO - 127.0.0.1 - - [21/May/2025 16:53:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:02,266 - INFO - 127.0.0.1 - - [21/May/2025 16:53:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:03,279 - INFO - 127.0.0.1 - - [21/May/2025 16:53:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:04,292 - INFO - 127.0.0.1 - - [21/May/2025 16:53:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:05,305 - INFO - 127.0.0.1 - - [21/May/2025 16:53:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:06,318 - INFO - 127.0.0.1 - - [21/May/2025 16:53:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:06,556 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:53:06,558 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-05-21 16:53:07,007 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 16:53:07,010 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 16:53:07,330 - INFO - 127.0.0.1 - - [21/May/2025 16:53:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:07,913 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 16:53:07,916 - INFO - 127.0.0.1 - - [21/May/2025 16:53:07] "POST /planner HTTP/1.1" 200 -
+2025-05-21 16:53:08,351 - DEBUG - Drone data from D2 have been access!
+2025-05-21 16:53:08,356 - DEBUG - Starting new HTTP connection (1): 192.168.0.3:5000
+2025-05-21 16:53:08,370 - DEBUG - http://192.168.0.3:5000 "POST / HTTP/1.1" 200 18
+2025-05-21 16:53:08,372 - DEBUG - Got address and sent request to the drone
+2025-05-21 16:53:08,373 - INFO - 127.0.0.1 - - [21/May/2025 16:53:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:09,385 - INFO - 127.0.0.1 - - [21/May/2025 16:53:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:10,406 - INFO - 127.0.0.1 - - [21/May/2025 16:53:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:11,427 - INFO - 127.0.0.1 - - [21/May/2025 16:53:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:12,440 - INFO - 127.0.0.1 - - [21/May/2025 16:53:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:13,464 - INFO - 127.0.0.1 - - [21/May/2025 16:53:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:14,474 - INFO - 127.0.0.1 - - [21/May/2025 16:53:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:15,491 - INFO - 127.0.0.1 - - [21/May/2025 16:53:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:16,506 - INFO - 127.0.0.1 - - [21/May/2025 16:53:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:17,519 - INFO - 127.0.0.1 - - [21/May/2025 16:53:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:18,540 - INFO - 127.0.0.1 - - [21/May/2025 16:53:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:19,551 - INFO - 127.0.0.1 - - [21/May/2025 16:53:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:20,561 - INFO - 127.0.0.1 - - [21/May/2025 16:53:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:21,581 - INFO - 127.0.0.1 - - [21/May/2025 16:53:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:22,593 - INFO - 127.0.0.1 - - [21/May/2025 16:53:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:23,618 - INFO - 127.0.0.1 - - [21/May/2025 16:53:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:24,632 - INFO - 127.0.0.1 - - [21/May/2025 16:53:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:25,646 - INFO - 127.0.0.1 - - [21/May/2025 16:53:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:26,671 - INFO - 127.0.0.1 - - [21/May/2025 16:53:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:27,687 - INFO - 127.0.0.1 - - [21/May/2025 16:53:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:28,707 - INFO - 127.0.0.1 - - [21/May/2025 16:53:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:29,724 - INFO - 127.0.0.1 - - [21/May/2025 16:53:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:30,738 - INFO - 127.0.0.1 - - [21/May/2025 16:53:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:31,757 - INFO - 127.0.0.1 - - [21/May/2025 16:53:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:32,777 - INFO - 127.0.0.1 - - [21/May/2025 16:53:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:33,796 - INFO - 127.0.0.1 - - [21/May/2025 16:53:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:34,809 - INFO - 127.0.0.1 - - [21/May/2025 16:53:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:35,817 - INFO - 127.0.0.1 - - [21/May/2025 16:53:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:36,826 - INFO - 127.0.0.1 - - [21/May/2025 16:53:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:37,836 - INFO - 127.0.0.1 - - [21/May/2025 16:53:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:38,846 - INFO - 127.0.0.1 - - [21/May/2025 16:53:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:39,855 - INFO - 127.0.0.1 - - [21/May/2025 16:53:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:40,862 - INFO - 127.0.0.1 - - [21/May/2025 16:53:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:41,871 - INFO - 127.0.0.1 - - [21/May/2025 16:53:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:42,882 - INFO - 127.0.0.1 - - [21/May/2025 16:53:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:43,891 - INFO - 127.0.0.1 - - [21/May/2025 16:53:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:44,900 - INFO - 127.0.0.1 - - [21/May/2025 16:53:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:45,907 - INFO - 127.0.0.1 - - [21/May/2025 16:53:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:46,915 - INFO - 127.0.0.1 - - [21/May/2025 16:53:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:47,924 - INFO - 127.0.0.1 - - [21/May/2025 16:53:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:48,932 - INFO - 127.0.0.1 - - [21/May/2025 16:53:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:49,939 - INFO - 127.0.0.1 - - [21/May/2025 16:53:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:50,947 - INFO - 127.0.0.1 - - [21/May/2025 16:53:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:52,012 - INFO - 127.0.0.1 - - [21/May/2025 16:53:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:53,036 - INFO - 127.0.0.1 - - [21/May/2025 16:53:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:54,055 - INFO - 127.0.0.1 - - [21/May/2025 16:53:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:55,070 - INFO - 127.0.0.1 - - [21/May/2025 16:53:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:56,079 - INFO - 127.0.0.1 - - [21/May/2025 16:53:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:57,095 - INFO - 127.0.0.1 - - [21/May/2025 16:53:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:58,107 - INFO - 127.0.0.1 - - [21/May/2025 16:53:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:53:59,114 - INFO - 127.0.0.1 - - [21/May/2025 16:53:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:00,122 - INFO - 127.0.0.1 - - [21/May/2025 16:54:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:01,130 - INFO - 127.0.0.1 - - [21/May/2025 16:54:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:02,137 - INFO - 127.0.0.1 - - [21/May/2025 16:54:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:03,144 - INFO - 127.0.0.1 - - [21/May/2025 16:54:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:04,157 - INFO - 127.0.0.1 - - [21/May/2025 16:54:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:05,182 - INFO - 127.0.0.1 - - [21/May/2025 16:54:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:06,198 - INFO - 127.0.0.1 - - [21/May/2025 16:54:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:07,214 - INFO - 127.0.0.1 - - [21/May/2025 16:54:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:08,229 - INFO - 127.0.0.1 - - [21/May/2025 16:54:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:09,240 - INFO - 127.0.0.1 - - [21/May/2025 16:54:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:10,249 - INFO - 127.0.0.1 - - [21/May/2025 16:54:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:11,258 - INFO - 127.0.0.1 - - [21/May/2025 16:54:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:12,267 - INFO - 127.0.0.1 - - [21/May/2025 16:54:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:13,282 - INFO - 127.0.0.1 - - [21/May/2025 16:54:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:14,296 - INFO - 127.0.0.1 - - [21/May/2025 16:54:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:15,308 - INFO - 127.0.0.1 - - [21/May/2025 16:54:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:16,321 - INFO - 127.0.0.1 - - [21/May/2025 16:54:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:17,335 - INFO - 127.0.0.1 - - [21/May/2025 16:54:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:18,353 - INFO - 127.0.0.1 - - [21/May/2025 16:54:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:19,365 - INFO - 127.0.0.1 - - [21/May/2025 16:54:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:20,384 - INFO - 127.0.0.1 - - [21/May/2025 16:54:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:21,397 - INFO - 127.0.0.1 - - [21/May/2025 16:54:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:22,406 - INFO - 127.0.0.1 - - [21/May/2025 16:54:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:23,427 - INFO - 127.0.0.1 - - [21/May/2025 16:54:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:24,437 - INFO - 127.0.0.1 - - [21/May/2025 16:54:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:25,456 - INFO - 127.0.0.1 - - [21/May/2025 16:54:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:26,469 - INFO - 127.0.0.1 - - [21/May/2025 16:54:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:27,477 - INFO - 127.0.0.1 - - [21/May/2025 16:54:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:28,491 - INFO - 127.0.0.1 - - [21/May/2025 16:54:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:29,506 - INFO - 127.0.0.1 - - [21/May/2025 16:54:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:30,522 - INFO - 127.0.0.1 - - [21/May/2025 16:54:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:31,535 - INFO - 127.0.0.1 - - [21/May/2025 16:54:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:32,546 - INFO - 127.0.0.1 - - [21/May/2025 16:54:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:33,557 - INFO - 127.0.0.1 - - [21/May/2025 16:54:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:34,568 - INFO - 127.0.0.1 - - [21/May/2025 16:54:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:35,577 - INFO - 127.0.0.1 - - [21/May/2025 16:54:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:36,584 - INFO - 127.0.0.1 - - [21/May/2025 16:54:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:37,593 - INFO - 127.0.0.1 - - [21/May/2025 16:54:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:38,600 - INFO - 127.0.0.1 - - [21/May/2025 16:54:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:39,617 - INFO - 127.0.0.1 - - [21/May/2025 16:54:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:40,632 - INFO - 127.0.0.1 - - [21/May/2025 16:54:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:41,642 - INFO - 127.0.0.1 - - [21/May/2025 16:54:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:42,658 - INFO - 127.0.0.1 - - [21/May/2025 16:54:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:43,668 - INFO - 127.0.0.1 - - [21/May/2025 16:54:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:44,679 - INFO - 127.0.0.1 - - [21/May/2025 16:54:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:45,689 - INFO - 127.0.0.1 - - [21/May/2025 16:54:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:46,699 - INFO - 127.0.0.1 - - [21/May/2025 16:54:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:47,713 - INFO - 127.0.0.1 - - [21/May/2025 16:54:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:48,721 - INFO - 127.0.0.1 - - [21/May/2025 16:54:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:49,753 - INFO - 127.0.0.1 - - [21/May/2025 16:54:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:50,767 - INFO - 127.0.0.1 - - [21/May/2025 16:54:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:51,773 - INFO - 127.0.0.1 - - [21/May/2025 16:54:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:52,785 - INFO - 127.0.0.1 - - [21/May/2025 16:54:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:53,804 - INFO - 127.0.0.1 - - [21/May/2025 16:54:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:54,818 - INFO - 127.0.0.1 - - [21/May/2025 16:54:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:55,831 - INFO - 127.0.0.1 - - [21/May/2025 16:54:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:56,845 - INFO - 127.0.0.1 - - [21/May/2025 16:54:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:57,877 - INFO - 127.0.0.1 - - [21/May/2025 16:54:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:58,892 - INFO - 127.0.0.1 - - [21/May/2025 16:54:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:54:59,901 - INFO - 127.0.0.1 - - [21/May/2025 16:54:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:00,911 - INFO - 127.0.0.1 - - [21/May/2025 16:55:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:01,918 - INFO - 127.0.0.1 - - [21/May/2025 16:55:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:02,925 - INFO - 127.0.0.1 - - [21/May/2025 16:55:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:03,938 - INFO - 127.0.0.1 - - [21/May/2025 16:55:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:04,950 - INFO - 127.0.0.1 - - [21/May/2025 16:55:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:05,963 - INFO - 127.0.0.1 - - [21/May/2025 16:55:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:06,975 - INFO - 127.0.0.1 - - [21/May/2025 16:55:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:07,988 - INFO - 127.0.0.1 - - [21/May/2025 16:55:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:08,996 - INFO - 127.0.0.1 - - [21/May/2025 16:55:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:10,003 - INFO - 127.0.0.1 - - [21/May/2025 16:55:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:11,010 - INFO - 127.0.0.1 - - [21/May/2025 16:55:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:12,017 - INFO - 127.0.0.1 - - [21/May/2025 16:55:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:13,029 - INFO - 127.0.0.1 - - [21/May/2025 16:55:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:14,047 - INFO - 127.0.0.1 - - [21/May/2025 16:55:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:15,063 - INFO - 127.0.0.1 - - [21/May/2025 16:55:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:16,076 - INFO - 127.0.0.1 - - [21/May/2025 16:55:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:17,088 - INFO - 127.0.0.1 - - [21/May/2025 16:55:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:18,112 - INFO - 127.0.0.1 - - [21/May/2025 16:55:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:19,127 - INFO - 127.0.0.1 - - [21/May/2025 16:55:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:20,140 - INFO - 127.0.0.1 - - [21/May/2025 16:55:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:21,154 - INFO - 127.0.0.1 - - [21/May/2025 16:55:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:22,166 - INFO - 127.0.0.1 - - [21/May/2025 16:55:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:23,178 - INFO - 127.0.0.1 - - [21/May/2025 16:55:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:24,200 - INFO - 127.0.0.1 - - [21/May/2025 16:55:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:25,219 - INFO - 127.0.0.1 - - [21/May/2025 16:55:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:26,231 - INFO - 127.0.0.1 - - [21/May/2025 16:55:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:27,238 - INFO - 127.0.0.1 - - [21/May/2025 16:55:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:28,246 - INFO - 127.0.0.1 - - [21/May/2025 16:55:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:29,256 - INFO - 127.0.0.1 - - [21/May/2025 16:55:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:30,266 - INFO - 127.0.0.1 - - [21/May/2025 16:55:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:31,277 - INFO - 127.0.0.1 - - [21/May/2025 16:55:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:32,295 - INFO - 127.0.0.1 - - [21/May/2025 16:55:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:33,310 - INFO - 127.0.0.1 - - [21/May/2025 16:55:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:34,324 - INFO - 127.0.0.1 - - [21/May/2025 16:55:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:35,336 - INFO - 127.0.0.1 - - [21/May/2025 16:55:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:36,349 - INFO - 127.0.0.1 - - [21/May/2025 16:55:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:37,363 - INFO - 127.0.0.1 - - [21/May/2025 16:55:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:38,378 - INFO - 127.0.0.1 - - [21/May/2025 16:55:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:39,390 - INFO - 127.0.0.1 - - [21/May/2025 16:55:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:40,400 - INFO - 127.0.0.1 - - [21/May/2025 16:55:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:41,414 - INFO - 127.0.0.1 - - [21/May/2025 16:55:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:42,426 - INFO - 127.0.0.1 - - [21/May/2025 16:55:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:43,433 - INFO - 127.0.0.1 - - [21/May/2025 16:55:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:44,440 - INFO - 127.0.0.1 - - [21/May/2025 16:55:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:45,452 - INFO - 127.0.0.1 - - [21/May/2025 16:55:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:46,467 - INFO - 127.0.0.1 - - [21/May/2025 16:55:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:47,480 - INFO - 127.0.0.1 - - [21/May/2025 16:55:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:48,493 - INFO - 127.0.0.1 - - [21/May/2025 16:55:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:49,505 - INFO - 127.0.0.1 - - [21/May/2025 16:55:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:50,520 - INFO - 127.0.0.1 - - [21/May/2025 16:55:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:51,534 - INFO - 127.0.0.1 - - [21/May/2025 16:55:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:52,546 - INFO - 127.0.0.1 - - [21/May/2025 16:55:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:53,559 - INFO - 127.0.0.1 - - [21/May/2025 16:55:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:54,574 - INFO - 127.0.0.1 - - [21/May/2025 16:55:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:55,589 - INFO - 127.0.0.1 - - [21/May/2025 16:55:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:56,601 - INFO - 127.0.0.1 - - [21/May/2025 16:55:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:57,612 - INFO - 127.0.0.1 - - [21/May/2025 16:55:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:58,624 - INFO - 127.0.0.1 - - [21/May/2025 16:55:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:55:59,633 - INFO - 127.0.0.1 - - [21/May/2025 16:55:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:00,641 - INFO - 127.0.0.1 - - [21/May/2025 16:56:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:01,670 - INFO - 127.0.0.1 - - [21/May/2025 16:56:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:02,683 - INFO - 127.0.0.1 - - [21/May/2025 16:56:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:03,690 - INFO - 127.0.0.1 - - [21/May/2025 16:56:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:04,700 - INFO - 127.0.0.1 - - [21/May/2025 16:56:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:05,711 - INFO - 127.0.0.1 - - [21/May/2025 16:56:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:06,725 - INFO - 127.0.0.1 - - [21/May/2025 16:56:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:07,741 - INFO - 127.0.0.1 - - [21/May/2025 16:56:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:08,756 - INFO - 127.0.0.1 - - [21/May/2025 16:56:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:09,768 - INFO - 127.0.0.1 - - [21/May/2025 16:56:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:10,787 - INFO - 127.0.0.1 - - [21/May/2025 16:56:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:11,800 - INFO - 127.0.0.1 - - [21/May/2025 16:56:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:12,811 - INFO - 127.0.0.1 - - [21/May/2025 16:56:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:13,828 - INFO - 127.0.0.1 - - [21/May/2025 16:56:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:14,853 - INFO - 127.0.0.1 - - [21/May/2025 16:56:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:15,866 - INFO - 127.0.0.1 - - [21/May/2025 16:56:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:16,878 - INFO - 127.0.0.1 - - [21/May/2025 16:56:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:17,894 - INFO - 127.0.0.1 - - [21/May/2025 16:56:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:18,912 - INFO - 127.0.0.1 - - [21/May/2025 16:56:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:19,929 - INFO - 127.0.0.1 - - [21/May/2025 16:56:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:20,941 - INFO - 127.0.0.1 - - [21/May/2025 16:56:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:21,954 - INFO - 127.0.0.1 - - [21/May/2025 16:56:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:22,966 - INFO - 127.0.0.1 - - [21/May/2025 16:56:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:23,978 - INFO - 127.0.0.1 - - [21/May/2025 16:56:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:24,989 - INFO - 127.0.0.1 - - [21/May/2025 16:56:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:25,999 - INFO - 127.0.0.1 - - [21/May/2025 16:56:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:27,006 - INFO - 127.0.0.1 - - [21/May/2025 16:56:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:28,022 - INFO - 127.0.0.1 - - [21/May/2025 16:56:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:29,041 - INFO - 127.0.0.1 - - [21/May/2025 16:56:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:30,052 - INFO - 127.0.0.1 - - [21/May/2025 16:56:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:31,080 - INFO - 127.0.0.1 - - [21/May/2025 16:56:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:32,098 - INFO - 127.0.0.1 - - [21/May/2025 16:56:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:33,106 - INFO - 127.0.0.1 - - [21/May/2025 16:56:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:34,113 - INFO - 127.0.0.1 - - [21/May/2025 16:56:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:35,128 - INFO - 127.0.0.1 - - [21/May/2025 16:56:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:36,143 - INFO - 127.0.0.1 - - [21/May/2025 16:56:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:37,166 - INFO - 127.0.0.1 - - [21/May/2025 16:56:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:38,177 - INFO - 127.0.0.1 - - [21/May/2025 16:56:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:39,188 - INFO - 127.0.0.1 - - [21/May/2025 16:56:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:40,203 - INFO - 127.0.0.1 - - [21/May/2025 16:56:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:41,222 - INFO - 127.0.0.1 - - [21/May/2025 16:56:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:42,237 - INFO - 127.0.0.1 - - [21/May/2025 16:56:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:43,249 - INFO - 127.0.0.1 - - [21/May/2025 16:56:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:44,267 - INFO - 127.0.0.1 - - [21/May/2025 16:56:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:45,281 - INFO - 127.0.0.1 - - [21/May/2025 16:56:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:46,290 - INFO - 127.0.0.1 - - [21/May/2025 16:56:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:47,298 - INFO - 127.0.0.1 - - [21/May/2025 16:56:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:48,314 - INFO - 127.0.0.1 - - [21/May/2025 16:56:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:49,322 - INFO - 127.0.0.1 - - [21/May/2025 16:56:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:50,329 - INFO - 127.0.0.1 - - [21/May/2025 16:56:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:51,336 - INFO - 127.0.0.1 - - [21/May/2025 16:56:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:52,344 - INFO - 127.0.0.1 - - [21/May/2025 16:56:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:53,352 - INFO - 127.0.0.1 - - [21/May/2025 16:56:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:54,359 - INFO - 127.0.0.1 - - [21/May/2025 16:56:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:55,371 - INFO - 127.0.0.1 - - [21/May/2025 16:56:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:56,377 - INFO - 127.0.0.1 - - [21/May/2025 16:56:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:57,389 - INFO - 127.0.0.1 - - [21/May/2025 16:56:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:58,398 - INFO - 127.0.0.1 - - [21/May/2025 16:56:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:56:59,414 - INFO - 127.0.0.1 - - [21/May/2025 16:56:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:00,424 - INFO - 127.0.0.1 - - [21/May/2025 16:57:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:01,433 - INFO - 127.0.0.1 - - [21/May/2025 16:57:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:02,440 - INFO - 127.0.0.1 - - [21/May/2025 16:57:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:03,448 - INFO - 127.0.0.1 - - [21/May/2025 16:57:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:04,460 - INFO - 127.0.0.1 - - [21/May/2025 16:57:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:05,473 - INFO - 127.0.0.1 - - [21/May/2025 16:57:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:06,491 - INFO - 127.0.0.1 - - [21/May/2025 16:57:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:07,500 - INFO - 127.0.0.1 - - [21/May/2025 16:57:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:08,508 - INFO - 127.0.0.1 - - [21/May/2025 16:57:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:09,515 - INFO - 127.0.0.1 - - [21/May/2025 16:57:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:10,521 - INFO - 127.0.0.1 - - [21/May/2025 16:57:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:11,535 - INFO - 127.0.0.1 - - [21/May/2025 16:57:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:12,553 - INFO - 127.0.0.1 - - [21/May/2025 16:57:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:13,570 - INFO - 127.0.0.1 - - [21/May/2025 16:57:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:14,577 - INFO - 127.0.0.1 - - [21/May/2025 16:57:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:15,584 - INFO - 127.0.0.1 - - [21/May/2025 16:57:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:16,591 - INFO - 127.0.0.1 - - [21/May/2025 16:57:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:17,603 - INFO - 127.0.0.1 - - [21/May/2025 16:57:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:18,620 - INFO - 127.0.0.1 - - [21/May/2025 16:57:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:19,634 - INFO - 127.0.0.1 - - [21/May/2025 16:57:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:20,645 - INFO - 127.0.0.1 - - [21/May/2025 16:57:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:21,653 - INFO - 127.0.0.1 - - [21/May/2025 16:57:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:22,660 - INFO - 127.0.0.1 - - [21/May/2025 16:57:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:23,670 - INFO - 127.0.0.1 - - [21/May/2025 16:57:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:24,683 - INFO - 127.0.0.1 - - [21/May/2025 16:57:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:25,700 - INFO - 127.0.0.1 - - [21/May/2025 16:57:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:26,713 - INFO - 127.0.0.1 - - [21/May/2025 16:57:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:27,722 - INFO - 127.0.0.1 - - [21/May/2025 16:57:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:28,729 - INFO - 127.0.0.1 - - [21/May/2025 16:57:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:29,736 - INFO - 127.0.0.1 - - [21/May/2025 16:57:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:30,742 - INFO - 127.0.0.1 - - [21/May/2025 16:57:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:31,750 - INFO - 127.0.0.1 - - [21/May/2025 16:57:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:32,762 - INFO - 127.0.0.1 - - [21/May/2025 16:57:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:33,775 - INFO - 127.0.0.1 - - [21/May/2025 16:57:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:34,788 - INFO - 127.0.0.1 - - [21/May/2025 16:57:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:35,800 - INFO - 127.0.0.1 - - [21/May/2025 16:57:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:36,811 - INFO - 127.0.0.1 - - [21/May/2025 16:57:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:37,822 - INFO - 127.0.0.1 - - [21/May/2025 16:57:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:38,831 - INFO - 127.0.0.1 - - [21/May/2025 16:57:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:39,839 - INFO - 127.0.0.1 - - [21/May/2025 16:57:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:40,846 - INFO - 127.0.0.1 - - [21/May/2025 16:57:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:41,854 - INFO - 127.0.0.1 - - [21/May/2025 16:57:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:42,862 - INFO - 127.0.0.1 - - [21/May/2025 16:57:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:43,874 - INFO - 127.0.0.1 - - [21/May/2025 16:57:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:44,887 - INFO - 127.0.0.1 - - [21/May/2025 16:57:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:45,899 - INFO - 127.0.0.1 - - [21/May/2025 16:57:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:46,912 - INFO - 127.0.0.1 - - [21/May/2025 16:57:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:47,924 - INFO - 127.0.0.1 - - [21/May/2025 16:57:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:48,935 - INFO - 127.0.0.1 - - [21/May/2025 16:57:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:49,945 - INFO - 127.0.0.1 - - [21/May/2025 16:57:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:50,958 - INFO - 127.0.0.1 - - [21/May/2025 16:57:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:51,972 - INFO - 127.0.0.1 - - [21/May/2025 16:57:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:52,983 - INFO - 127.0.0.1 - - [21/May/2025 16:57:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:53,995 - INFO - 127.0.0.1 - - [21/May/2025 16:57:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:55,007 - INFO - 127.0.0.1 - - [21/May/2025 16:57:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:56,024 - INFO - 127.0.0.1 - - [21/May/2025 16:57:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:57,037 - INFO - 127.0.0.1 - - [21/May/2025 16:57:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:58,045 - INFO - 127.0.0.1 - - [21/May/2025 16:57:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:57:59,053 - INFO - 127.0.0.1 - - [21/May/2025 16:57:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:00,061 - INFO - 127.0.0.1 - - [21/May/2025 16:58:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:01,075 - INFO - 127.0.0.1 - - [21/May/2025 16:58:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:02,088 - INFO - 127.0.0.1 - - [21/May/2025 16:58:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:03,101 - INFO - 127.0.0.1 - - [21/May/2025 16:58:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:04,115 - INFO - 127.0.0.1 - - [21/May/2025 16:58:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:05,135 - INFO - 127.0.0.1 - - [21/May/2025 16:58:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:06,144 - INFO - 127.0.0.1 - - [21/May/2025 16:58:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:07,162 - INFO - 127.0.0.1 - - [21/May/2025 16:58:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:08,174 - INFO - 127.0.0.1 - - [21/May/2025 16:58:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:09,182 - INFO - 127.0.0.1 - - [21/May/2025 16:58:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:10,190 - INFO - 127.0.0.1 - - [21/May/2025 16:58:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:11,200 - INFO - 127.0.0.1 - - [21/May/2025 16:58:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:12,208 - INFO - 127.0.0.1 - - [21/May/2025 16:58:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:13,216 - INFO - 127.0.0.1 - - [21/May/2025 16:58:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:14,224 - INFO - 127.0.0.1 - - [21/May/2025 16:58:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:15,236 - INFO - 127.0.0.1 - - [21/May/2025 16:58:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:16,250 - INFO - 127.0.0.1 - - [21/May/2025 16:58:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:17,262 - INFO - 127.0.0.1 - - [21/May/2025 16:58:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:18,276 - INFO - 127.0.0.1 - - [21/May/2025 16:58:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:19,298 - INFO - 127.0.0.1 - - [21/May/2025 16:58:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:20,309 - INFO - 127.0.0.1 - - [21/May/2025 16:58:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:21,321 - INFO - 127.0.0.1 - - [21/May/2025 16:58:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:22,329 - INFO - 127.0.0.1 - - [21/May/2025 16:58:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:23,337 - INFO - 127.0.0.1 - - [21/May/2025 16:58:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:24,352 - INFO - 127.0.0.1 - - [21/May/2025 16:58:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:25,362 - INFO - 127.0.0.1 - - [21/May/2025 16:58:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:26,374 - INFO - 127.0.0.1 - - [21/May/2025 16:58:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:27,384 - INFO - 127.0.0.1 - - [21/May/2025 16:58:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:28,396 - INFO - 127.0.0.1 - - [21/May/2025 16:58:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:29,418 - INFO - 127.0.0.1 - - [21/May/2025 16:58:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:30,429 - INFO - 127.0.0.1 - - [21/May/2025 16:58:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:31,436 - INFO - 127.0.0.1 - - [21/May/2025 16:58:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:32,444 - INFO - 127.0.0.1 - - [21/May/2025 16:58:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:33,450 - INFO - 127.0.0.1 - - [21/May/2025 16:58:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:34,457 - INFO - 127.0.0.1 - - [21/May/2025 16:58:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:35,468 - INFO - 127.0.0.1 - - [21/May/2025 16:58:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:36,479 - INFO - 127.0.0.1 - - [21/May/2025 16:58:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:37,491 - INFO - 127.0.0.1 - - [21/May/2025 16:58:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:38,503 - INFO - 127.0.0.1 - - [21/May/2025 16:58:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:39,513 - INFO - 127.0.0.1 - - [21/May/2025 16:58:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:40,526 - INFO - 127.0.0.1 - - [21/May/2025 16:58:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:41,536 - INFO - 127.0.0.1 - - [21/May/2025 16:58:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:42,543 - INFO - 127.0.0.1 - - [21/May/2025 16:58:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:43,550 - INFO - 127.0.0.1 - - [21/May/2025 16:58:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:44,565 - INFO - 127.0.0.1 - - [21/May/2025 16:58:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:45,574 - INFO - 127.0.0.1 - - [21/May/2025 16:58:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:46,584 - INFO - 127.0.0.1 - - [21/May/2025 16:58:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:47,593 - INFO - 127.0.0.1 - - [21/May/2025 16:58:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:48,601 - INFO - 127.0.0.1 - - [21/May/2025 16:58:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:49,618 - INFO - 127.0.0.1 - - [21/May/2025 16:58:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:50,629 - INFO - 127.0.0.1 - - [21/May/2025 16:58:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:51,641 - INFO - 127.0.0.1 - - [21/May/2025 16:58:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:52,660 - INFO - 127.0.0.1 - - [21/May/2025 16:58:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:53,692 - INFO - 127.0.0.1 - - [21/May/2025 16:58:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:54,704 - INFO - 127.0.0.1 - - [21/May/2025 16:58:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:55,723 - INFO - 127.0.0.1 - - [21/May/2025 16:58:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:56,745 - INFO - 127.0.0.1 - - [21/May/2025 16:58:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:57,775 - INFO - 127.0.0.1 - - [21/May/2025 16:58:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:58,791 - INFO - 127.0.0.1 - - [21/May/2025 16:58:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:58:59,804 - INFO - 127.0.0.1 - - [21/May/2025 16:58:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:00,814 - INFO - 127.0.0.1 - - [21/May/2025 16:59:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:01,827 - INFO - 127.0.0.1 - - [21/May/2025 16:59:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:02,834 - INFO - 127.0.0.1 - - [21/May/2025 16:59:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:03,842 - INFO - 127.0.0.1 - - [21/May/2025 16:59:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:04,849 - INFO - 127.0.0.1 - - [21/May/2025 16:59:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:05,860 - INFO - 127.0.0.1 - - [21/May/2025 16:59:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:06,878 - INFO - 127.0.0.1 - - [21/May/2025 16:59:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:07,894 - INFO - 127.0.0.1 - - [21/May/2025 16:59:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:08,911 - INFO - 127.0.0.1 - - [21/May/2025 16:59:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:09,932 - INFO - 127.0.0.1 - - [21/May/2025 16:59:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:10,956 - INFO - 127.0.0.1 - - [21/May/2025 16:59:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:11,969 - INFO - 127.0.0.1 - - [21/May/2025 16:59:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:12,986 - INFO - 127.0.0.1 - - [21/May/2025 16:59:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:13,996 - INFO - 127.0.0.1 - - [21/May/2025 16:59:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:15,005 - INFO - 127.0.0.1 - - [21/May/2025 16:59:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 16:59:15,084 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-21 16:59:15,867 - INFO -  * Restarting with stat
+2025-05-21 17:11:20,850 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 17:11:20,850 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 17:11:20,863 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 17:11:20,863 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 17:11:20,866 - INFO -  * Restarting with stat
+2025-05-21 17:11:21,736 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 17:11:21,736 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 17:11:21,748 - WARNING -  * Debugger is active!
+2025-05-21 17:11:21,749 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 17:11:32,686 - INFO - 127.0.0.1 - - [21/May/2025 17:11:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:33,697 - INFO - 127.0.0.1 - - [21/May/2025 17:11:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:34,705 - INFO - 127.0.0.1 - - [21/May/2025 17:11:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:35,713 - INFO - 127.0.0.1 - - [21/May/2025 17:11:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:36,725 - INFO - 127.0.0.1 - - [21/May/2025 17:11:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:37,737 - INFO - 127.0.0.1 - - [21/May/2025 17:11:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:38,750 - INFO - 127.0.0.1 - - [21/May/2025 17:11:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:39,763 - INFO - 127.0.0.1 - - [21/May/2025 17:11:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:40,784 - INFO - 127.0.0.1 - - [21/May/2025 17:11:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:41,795 - INFO - 127.0.0.1 - - [21/May/2025 17:11:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:42,802 - INFO - 127.0.0.1 - - [21/May/2025 17:11:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:43,817 - INFO - 127.0.0.1 - - [21/May/2025 17:11:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:44,825 - INFO - 127.0.0.1 - - [21/May/2025 17:11:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:45,837 - INFO - 127.0.0.1 - - [21/May/2025 17:11:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:46,846 - INFO - 127.0.0.1 - - [21/May/2025 17:11:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:47,860 - INFO - 127.0.0.1 - - [21/May/2025 17:11:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:48,870 - INFO - 127.0.0.1 - - [21/May/2025 17:11:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:49,879 - INFO - 127.0.0.1 - - [21/May/2025 17:11:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:50,893 - INFO - 127.0.0.1 - - [21/May/2025 17:11:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:51,907 - INFO - 127.0.0.1 - - [21/May/2025 17:11:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:52,921 - INFO - 127.0.0.1 - - [21/May/2025 17:11:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:53,937 - INFO - 127.0.0.1 - - [21/May/2025 17:11:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:54,948 - INFO - 127.0.0.1 - - [21/May/2025 17:11:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:55,972 - INFO - 127.0.0.1 - - [21/May/2025 17:11:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:56,988 - INFO - 127.0.0.1 - - [21/May/2025 17:11:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:57,995 - INFO - 127.0.0.1 - - [21/May/2025 17:11:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:11:59,002 - INFO - 127.0.0.1 - - [21/May/2025 17:11:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:00,016 - INFO - 127.0.0.1 - - [21/May/2025 17:12:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:01,033 - INFO - 127.0.0.1 - - [21/May/2025 17:12:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:02,050 - INFO - 127.0.0.1 - - [21/May/2025 17:12:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:03,061 - INFO - 127.0.0.1 - - [21/May/2025 17:12:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:03,554 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 17:12:03,562 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-21 17:12:04,003 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 17:12:04,009 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 17:12:04,084 - INFO - 127.0.0.1 - - [21/May/2025 17:12:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:04,943 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 17:12:04,946 - INFO - 127.0.0.1 - - [21/May/2025 17:12:04] "POST /planner HTTP/1.1" 200 -
+2025-05-21 17:12:05,107 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:05,118 - DEBUG - Starting new HTTP connection (1): 192.168.0.3:5000
+2025-05-21 17:12:05,142 - DEBUG - http://192.168.0.3:5000 "POST / HTTP/1.1" 200 18
+2025-05-21 17:12:05,145 - DEBUG - Got address and sent request to the drone
+2025-05-21 17:12:05,146 - INFO - 127.0.0.1 - - [21/May/2025 17:12:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:06,157 - INFO - 127.0.0.1 - - [21/May/2025 17:12:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:07,170 - INFO - 127.0.0.1 - - [21/May/2025 17:12:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:08,189 - INFO - 127.0.0.1 - - [21/May/2025 17:12:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:09,202 - INFO - 127.0.0.1 - - [21/May/2025 17:12:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:10,213 - INFO - 127.0.0.1 - - [21/May/2025 17:12:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:11,227 - INFO - 127.0.0.1 - - [21/May/2025 17:12:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:11,890 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Trollebergsv%C3%A4gen+41%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 17:12:11,990 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Trollebergsv%C3%A4gen+41%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 499
+2025-05-21 17:12:11,991 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 17:12:12,239 - INFO - 127.0.0.1 - - [21/May/2025 17:12:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:13,013 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 17:12:13,018 - INFO - 127.0.0.1 - - [21/May/2025 17:12:13] "POST /planner HTTP/1.1" 200 -
+2025-05-21 17:12:13,251 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:13,253 - INFO - 127.0.0.1 - - [21/May/2025 17:12:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:14,269 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:14,271 - INFO - 127.0.0.1 - - [21/May/2025 17:12:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:15,289 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:15,290 - INFO - 127.0.0.1 - - [21/May/2025 17:12:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:16,308 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:16,310 - INFO - 127.0.0.1 - - [21/May/2025 17:12:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:17,327 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:17,328 - INFO - 127.0.0.1 - - [21/May/2025 17:12:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:18,347 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:18,350 - INFO - 127.0.0.1 - - [21/May/2025 17:12:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:19,363 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:19,364 - INFO - 127.0.0.1 - - [21/May/2025 17:12:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:20,379 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:20,380 - INFO - 127.0.0.1 - - [21/May/2025 17:12:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:21,397 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:21,398 - INFO - 127.0.0.1 - - [21/May/2025 17:12:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:22,410 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:22,412 - INFO - 127.0.0.1 - - [21/May/2025 17:12:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:23,428 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:23,430 - INFO - 127.0.0.1 - - [21/May/2025 17:12:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:24,443 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:24,447 - INFO - 127.0.0.1 - - [21/May/2025 17:12:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:25,466 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:25,467 - INFO - 127.0.0.1 - - [21/May/2025 17:12:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:26,492 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:26,496 - INFO - 127.0.0.1 - - [21/May/2025 17:12:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:27,528 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:27,530 - INFO - 127.0.0.1 - - [21/May/2025 17:12:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:28,543 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:28,544 - INFO - 127.0.0.1 - - [21/May/2025 17:12:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:29,556 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:29,557 - INFO - 127.0.0.1 - - [21/May/2025 17:12:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:30,566 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:30,567 - INFO - 127.0.0.1 - - [21/May/2025 17:12:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:31,580 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:31,582 - INFO - 127.0.0.1 - - [21/May/2025 17:12:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:32,596 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:32,598 - INFO - 127.0.0.1 - - [21/May/2025 17:12:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:33,613 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:33,615 - INFO - 127.0.0.1 - - [21/May/2025 17:12:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:34,627 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:34,628 - INFO - 127.0.0.1 - - [21/May/2025 17:12:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:35,643 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:35,644 - INFO - 127.0.0.1 - - [21/May/2025 17:12:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:36,655 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:36,657 - INFO - 127.0.0.1 - - [21/May/2025 17:12:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:37,675 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:37,677 - INFO - 127.0.0.1 - - [21/May/2025 17:12:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:38,691 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:38,693 - INFO - 127.0.0.1 - - [21/May/2025 17:12:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:39,721 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:39,724 - INFO - 127.0.0.1 - - [21/May/2025 17:12:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:40,738 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:40,739 - INFO - 127.0.0.1 - - [21/May/2025 17:12:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:41,761 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:41,762 - INFO - 127.0.0.1 - - [21/May/2025 17:12:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:42,777 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:42,778 - INFO - 127.0.0.1 - - [21/May/2025 17:12:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:43,792 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:43,793 - INFO - 127.0.0.1 - - [21/May/2025 17:12:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:44,807 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:44,809 - INFO - 127.0.0.1 - - [21/May/2025 17:12:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:45,822 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:45,824 - INFO - 127.0.0.1 - - [21/May/2025 17:12:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:46,837 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:46,838 - INFO - 127.0.0.1 - - [21/May/2025 17:12:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:47,855 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:47,856 - INFO - 127.0.0.1 - - [21/May/2025 17:12:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:48,873 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:48,877 - INFO - 127.0.0.1 - - [21/May/2025 17:12:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:49,901 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:49,902 - INFO - 127.0.0.1 - - [21/May/2025 17:12:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:50,916 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:50,920 - INFO - 127.0.0.1 - - [21/May/2025 17:12:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:51,940 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:51,945 - INFO - 127.0.0.1 - - [21/May/2025 17:12:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:52,966 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:52,968 - INFO - 127.0.0.1 - - [21/May/2025 17:12:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:53,985 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:53,986 - INFO - 127.0.0.1 - - [21/May/2025 17:12:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:55,001 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:55,003 - INFO - 127.0.0.1 - - [21/May/2025 17:12:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:56,020 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:56,022 - INFO - 127.0.0.1 - - [21/May/2025 17:12:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:57,034 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:57,036 - INFO - 127.0.0.1 - - [21/May/2025 17:12:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:58,050 - DEBUG - Drone data from D2 have been access!
+2025-05-21 17:12:58,063 - DEBUG - Starting new HTTP connection (1): 192.168.0.3:5000
+2025-05-21 17:12:58,072 - DEBUG - http://192.168.0.3:5000 "POST / HTTP/1.1" 200 18
+2025-05-21 17:12:58,074 - DEBUG - Got address and sent request to the drone
+2025-05-21 17:12:58,076 - INFO - 127.0.0.1 - - [21/May/2025 17:12:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:12:59,086 - INFO - 127.0.0.1 - - [21/May/2025 17:12:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:00,101 - INFO - 127.0.0.1 - - [21/May/2025 17:13:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:01,115 - INFO - 127.0.0.1 - - [21/May/2025 17:13:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:02,127 - INFO - 127.0.0.1 - - [21/May/2025 17:13:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:03,140 - INFO - 127.0.0.1 - - [21/May/2025 17:13:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:04,163 - INFO - 127.0.0.1 - - [21/May/2025 17:13:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:05,176 - INFO - 127.0.0.1 - - [21/May/2025 17:13:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:06,199 - INFO - 127.0.0.1 - - [21/May/2025 17:13:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:07,211 - INFO - 127.0.0.1 - - [21/May/2025 17:13:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:08,223 - INFO - 127.0.0.1 - - [21/May/2025 17:13:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:09,238 - INFO - 127.0.0.1 - - [21/May/2025 17:13:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:10,261 - INFO - 127.0.0.1 - - [21/May/2025 17:13:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:11,272 - INFO - 127.0.0.1 - - [21/May/2025 17:13:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:12,292 - INFO - 127.0.0.1 - - [21/May/2025 17:13:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:13,302 - INFO - 127.0.0.1 - - [21/May/2025 17:13:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:14,316 - INFO - 127.0.0.1 - - [21/May/2025 17:13:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:15,329 - INFO - 127.0.0.1 - - [21/May/2025 17:13:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:16,344 - INFO - 127.0.0.1 - - [21/May/2025 17:13:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:17,357 - INFO - 127.0.0.1 - - [21/May/2025 17:13:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:18,378 - INFO - 127.0.0.1 - - [21/May/2025 17:13:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:19,403 - INFO - 127.0.0.1 - - [21/May/2025 17:13:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:20,417 - INFO - 127.0.0.1 - - [21/May/2025 17:13:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:21,430 - INFO - 127.0.0.1 - - [21/May/2025 17:13:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:22,443 - INFO - 127.0.0.1 - - [21/May/2025 17:13:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:23,450 - INFO - 127.0.0.1 - - [21/May/2025 17:13:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:24,457 - INFO - 127.0.0.1 - - [21/May/2025 17:13:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:25,475 - INFO - 127.0.0.1 - - [21/May/2025 17:13:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:26,505 - INFO - 127.0.0.1 - - [21/May/2025 17:13:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:27,525 - INFO - 127.0.0.1 - - [21/May/2025 17:13:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:28,534 - INFO - 127.0.0.1 - - [21/May/2025 17:13:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:29,542 - INFO - 127.0.0.1 - - [21/May/2025 17:13:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:30,549 - INFO - 127.0.0.1 - - [21/May/2025 17:13:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:31,561 - INFO - 127.0.0.1 - - [21/May/2025 17:13:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:32,575 - INFO - 127.0.0.1 - - [21/May/2025 17:13:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:33,585 - INFO - 127.0.0.1 - - [21/May/2025 17:13:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:34,593 - INFO - 127.0.0.1 - - [21/May/2025 17:13:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:35,601 - INFO - 127.0.0.1 - - [21/May/2025 17:13:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:36,614 - INFO - 127.0.0.1 - - [21/May/2025 17:13:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:37,621 - INFO - 127.0.0.1 - - [21/May/2025 17:13:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:38,632 - INFO - 127.0.0.1 - - [21/May/2025 17:13:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:39,643 - INFO - 127.0.0.1 - - [21/May/2025 17:13:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:40,656 - INFO - 127.0.0.1 - - [21/May/2025 17:13:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:41,667 - INFO - 127.0.0.1 - - [21/May/2025 17:13:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:42,678 - INFO - 127.0.0.1 - - [21/May/2025 17:13:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:43,688 - INFO - 127.0.0.1 - - [21/May/2025 17:13:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:44,700 - INFO - 127.0.0.1 - - [21/May/2025 17:13:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:45,716 - INFO - 127.0.0.1 - - [21/May/2025 17:13:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:46,729 - INFO - 127.0.0.1 - - [21/May/2025 17:13:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:47,736 - INFO - 127.0.0.1 - - [21/May/2025 17:13:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:48,745 - INFO - 127.0.0.1 - - [21/May/2025 17:13:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:49,752 - INFO - 127.0.0.1 - - [21/May/2025 17:13:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:50,762 - INFO - 127.0.0.1 - - [21/May/2025 17:13:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:51,775 - INFO - 127.0.0.1 - - [21/May/2025 17:13:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:52,787 - INFO - 127.0.0.1 - - [21/May/2025 17:13:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:53,801 - INFO - 127.0.0.1 - - [21/May/2025 17:13:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:54,814 - INFO - 127.0.0.1 - - [21/May/2025 17:13:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:55,826 - INFO - 127.0.0.1 - - [21/May/2025 17:13:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:56,837 - INFO - 127.0.0.1 - - [21/May/2025 17:13:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:57,845 - INFO - 127.0.0.1 - - [21/May/2025 17:13:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:58,854 - INFO - 127.0.0.1 - - [21/May/2025 17:13:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:13:59,862 - INFO - 127.0.0.1 - - [21/May/2025 17:13:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:00,869 - INFO - 127.0.0.1 - - [21/May/2025 17:14:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:01,880 - INFO - 127.0.0.1 - - [21/May/2025 17:14:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:02,891 - INFO - 127.0.0.1 - - [21/May/2025 17:14:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:03,904 - INFO - 127.0.0.1 - - [21/May/2025 17:14:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:04,913 - INFO - 127.0.0.1 - - [21/May/2025 17:14:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:05,921 - INFO - 127.0.0.1 - - [21/May/2025 17:14:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:06,931 - INFO - 127.0.0.1 - - [21/May/2025 17:14:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:07,939 - INFO - 127.0.0.1 - - [21/May/2025 17:14:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:08,946 - INFO - 127.0.0.1 - - [21/May/2025 17:14:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:09,962 - INFO - 127.0.0.1 - - [21/May/2025 17:14:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:10,974 - INFO - 127.0.0.1 - - [21/May/2025 17:14:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:11,992 - INFO - 127.0.0.1 - - [21/May/2025 17:14:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:13,008 - INFO - 127.0.0.1 - - [21/May/2025 17:14:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:14,023 - INFO - 127.0.0.1 - - [21/May/2025 17:14:14] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:15,038 - INFO - 127.0.0.1 - - [21/May/2025 17:14:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:16,051 - INFO - 127.0.0.1 - - [21/May/2025 17:14:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:17,062 - INFO - 127.0.0.1 - - [21/May/2025 17:14:17] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:18,071 - INFO - 127.0.0.1 - - [21/May/2025 17:14:18] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:19,078 - INFO - 127.0.0.1 - - [21/May/2025 17:14:19] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:20,096 - INFO - 127.0.0.1 - - [21/May/2025 17:14:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:21,103 - INFO - 127.0.0.1 - - [21/May/2025 17:14:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:22,110 - INFO - 127.0.0.1 - - [21/May/2025 17:14:22] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:23,125 - INFO - 127.0.0.1 - - [21/May/2025 17:14:23] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:24,136 - INFO - 127.0.0.1 - - [21/May/2025 17:14:24] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:25,148 - INFO - 127.0.0.1 - - [21/May/2025 17:14:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:26,164 - INFO - 127.0.0.1 - - [21/May/2025 17:14:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:27,180 - INFO - 127.0.0.1 - - [21/May/2025 17:14:27] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:28,200 - INFO - 127.0.0.1 - - [21/May/2025 17:14:28] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:29,215 - INFO - 127.0.0.1 - - [21/May/2025 17:14:29] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:30,233 - INFO - 127.0.0.1 - - [21/May/2025 17:14:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:31,244 - INFO - 127.0.0.1 - - [21/May/2025 17:14:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:32,254 - INFO - 127.0.0.1 - - [21/May/2025 17:14:32] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:33,261 - INFO - 127.0.0.1 - - [21/May/2025 17:14:33] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:34,268 - INFO - 127.0.0.1 - - [21/May/2025 17:14:34] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:35,279 - INFO - 127.0.0.1 - - [21/May/2025 17:14:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:36,292 - INFO - 127.0.0.1 - - [21/May/2025 17:14:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:37,304 - INFO - 127.0.0.1 - - [21/May/2025 17:14:37] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:38,317 - INFO - 127.0.0.1 - - [21/May/2025 17:14:38] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:39,331 - INFO - 127.0.0.1 - - [21/May/2025 17:14:39] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:40,342 - INFO - 127.0.0.1 - - [21/May/2025 17:14:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:41,354 - INFO - 127.0.0.1 - - [21/May/2025 17:14:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:42,365 - INFO - 127.0.0.1 - - [21/May/2025 17:14:42] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:43,380 - INFO - 127.0.0.1 - - [21/May/2025 17:14:43] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:44,394 - INFO - 127.0.0.1 - - [21/May/2025 17:14:44] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:45,408 - INFO - 127.0.0.1 - - [21/May/2025 17:14:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:46,427 - INFO - 127.0.0.1 - - [21/May/2025 17:14:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:47,443 - INFO - 127.0.0.1 - - [21/May/2025 17:14:47] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:48,459 - INFO - 127.0.0.1 - - [21/May/2025 17:14:48] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:49,473 - INFO - 127.0.0.1 - - [21/May/2025 17:14:49] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:50,487 - INFO - 127.0.0.1 - - [21/May/2025 17:14:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:51,500 - INFO - 127.0.0.1 - - [21/May/2025 17:14:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:52,514 - INFO - 127.0.0.1 - - [21/May/2025 17:14:52] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:53,533 - INFO - 127.0.0.1 - - [21/May/2025 17:14:53] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:54,548 - INFO - 127.0.0.1 - - [21/May/2025 17:14:54] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:55,562 - INFO - 127.0.0.1 - - [21/May/2025 17:14:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:56,571 - INFO - 127.0.0.1 - - [21/May/2025 17:14:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:57,578 - INFO - 127.0.0.1 - - [21/May/2025 17:14:57] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:58,584 - INFO - 127.0.0.1 - - [21/May/2025 17:14:58] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:14:59,595 - INFO - 127.0.0.1 - - [21/May/2025 17:14:59] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:00,615 - INFO - 127.0.0.1 - - [21/May/2025 17:15:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:01,636 - INFO - 127.0.0.1 - - [21/May/2025 17:15:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:02,656 - INFO - 127.0.0.1 - - [21/May/2025 17:15:02] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:03,668 - INFO - 127.0.0.1 - - [21/May/2025 17:15:03] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:04,676 - INFO - 127.0.0.1 - - [21/May/2025 17:15:04] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:05,686 - INFO - 127.0.0.1 - - [21/May/2025 17:15:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:06,698 - INFO - 127.0.0.1 - - [21/May/2025 17:15:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:07,712 - INFO - 127.0.0.1 - - [21/May/2025 17:15:07] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:08,726 - INFO - 127.0.0.1 - - [21/May/2025 17:15:08] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:09,738 - INFO - 127.0.0.1 - - [21/May/2025 17:15:09] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:10,758 - INFO - 127.0.0.1 - - [21/May/2025 17:15:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:11,774 - INFO - 127.0.0.1 - - [21/May/2025 17:15:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:12,789 - INFO - 127.0.0.1 - - [21/May/2025 17:15:12] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:13,806 - INFO - 127.0.0.1 - - [21/May/2025 17:15:13] "POST /sender HTTP/1.1" 200 -
+2025-05-21 17:15:14,815 - INFO - 127.0.0.1 - - [21/May/2025 17:15:14] "POST /sender HTTP/1.1" 200 -

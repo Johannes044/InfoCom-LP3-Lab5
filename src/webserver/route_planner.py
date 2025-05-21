@@ -100,12 +100,13 @@ def sendDrone():
         for drone in drones:
             droneData = redis_server.hgetall(drone)
             logging.debug(f"Drone data from {droneData['id']} have been access!")
-            while (go):
-                if droneData['status'] == 'idle':
-                    droneAvailable = drone                    
-                    coords['current'] = (droneData['longitude'], droneData['latitude'])
-                    go = False
-                    del leveranser[0]
+            if droneData['status'] == 'idle':
+                droneAvailable = drone                    
+                coords['current'] = (droneData['longitude'], droneData['latitude'])
+                go = False
+                del leveranser[0]
+            if not go:
+                break
         
         print(droneAvailable)
         if droneAvailable is None:
