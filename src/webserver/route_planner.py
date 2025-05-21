@@ -86,7 +86,7 @@ def send_request(drone_url, coords):
         resp = session.post(drone_url, json=coords)
         print(resp)
 
-
+#hej
 @app.route('/sender', methods=['POST'])
 def sendDrone():
     if (leveranser):
