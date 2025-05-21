@@ -24,12 +24,25 @@ def is_in_no_fly_zone(lon, lat):
             return True
     return False
 
+def interpolate_path(path, steps_per_segment=10):
+    smooth_path = []
+    for i in range(len(path) - 1):
+        x1, y1 = path[i]
+        x2, y2 = path[i+1]
+        for s in range(steps_per_segment):
+            t = s / steps_per_segment
+            x = x1 + t * (x2 - x1)
+            y = y1 + t * (y2 - y1)
+            smooth_path.append((x, y))
+    smooth_path.append(path[-1])  # include final point
+    return smooth_path
+
 
 def heuristic(a, b):
     # Manhattan distance works for grid-based movement
     return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
-def a_star(start, goal, step_size=0.0005, max_iter=100000):
+def a_star(start, goal, step_size=0.0005, max_iter=100000):#0.0001 är cirka 11 meter steg if to jumping.
     open_set = []
     heapq.heappush(open_set, (0, start))
     came_from = {}
@@ -80,7 +93,9 @@ goal = (13.2330, 55.7270)    # Nordost om zonerna
 
 path = a_star(start, goal)
 
-if path:
+newpath = interpolate_path(p)
+
+if newpath:
     for p in path:
         print(p)
 else:
