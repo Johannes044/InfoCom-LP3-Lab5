@@ -121,8 +121,8 @@ def save_final_coordinates(filename, longitude,latitude):
 
 if __name__ == "__main__":
     # The IP address of server, in order to location of the drone to the SERVER
-    # SERVER_URL = "http://192.168.0.1:1338/drone"
-    SERVER_URL = "http://127.0.0.1:1338/drone"
+    SERVER_URL = "http://192.168.0.1:1338/drone"
+    #SERVER_URL = "http://127.0.0.1:1338/drone"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--clong", help='current longitude of drone location' ,type=float)

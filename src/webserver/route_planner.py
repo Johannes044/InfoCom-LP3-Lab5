@@ -61,8 +61,9 @@ def svgDistance(p1, p2):
 
 
 def newLeverans(toCoords):
-    medecin = randomMedicin()    
-    leveranser.append([medecin, toCoords])
+    medecin = randomMedicin()
+    return {'medicin': medecin, 'coords': toCoords}
+
 
 
 # Konfigurera Flask och Redis
@@ -86,7 +87,6 @@ def send_request(drone_url, coords):
         resp = session.post(drone_url, json=coords)
         print(resp)
 
-#hej
 @app.route('/sender', methods=['POST'])
 def sendDrone():
     if (leveranser):
@@ -97,7 +97,9 @@ def sendDrone():
             logging.debug(f"Drone data from {droneData['id']} have been access!")
             if droneData['status'] == 'idle':
                 droneAvailable = drone
+                coords = leveranser[0]['coords'].copy()
                 coords['current'] = (droneData['longitude'], droneData['latitude'])
+                send_request(DRONE_URL, coords)
                 break
         
         if droneAvailable is None:

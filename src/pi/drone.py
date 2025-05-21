@@ -20,7 +20,7 @@ logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(l
 #ßclearFile(file)
 
 # Assign a unique ID to the drone
-myID = "D69"
+myID = "D2"
 
 
 # Store the initial drone position
