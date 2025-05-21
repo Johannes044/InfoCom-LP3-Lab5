@@ -82,7 +82,7 @@ geolocator = Nominatim(user_agent="my_request")
 region = ", Lund, Skåne, Sweden"
 
 def send_request(drone_url, coords):
-    print(coords)
+    print(f"{drone_url} med{coords}")
     with requests.Session() as session:
         resp = session.post(drone_url, json=coords)
         print(resp)
@@ -105,7 +105,7 @@ def sendDrone():
             return 'No available drone, try later'
         
         DRONE_IP = redis_server.hget(droneAvailable, 'ip')
-        DRONE_URL = f'http://{DRONE_IP}:42069'
+        DRONE_URL = f'http://{DRONE_IP}:5000'
         send_request(DRONE_URL, leveranser[0]['coords'])
         del leveranser[0]
         logging.debug('Got address and sent request to the drone')

@@ -9,7 +9,6 @@ import os
 sys.path.append(os.path.abspath(".."))
 delay = 50/1000
 from webserver.logic.utilities import clearFile
-from webserver.route_planner import leveranser, newLeverans
 
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -79,11 +78,6 @@ def run(id, current_coords, from_coords, to_coords, SERVER_URL): #VAR körs den,
             resp = session.post(SERVER_URL, json=drone_info)
             print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
         dt = time.perf_counter() - start
-
-    dronename = drone_info["id"] #det här måste fixas
-    for drone in leveranser:
-        if dronename == drone:
-            del leveranser[drone][0]
     
     with requests.Session() as session:
             drone_info = {'id': id,

@@ -99,3 +99,53 @@
 2025-05-21 14:00:50,077 - INFO -  * Restarting with stat
 2025-05-21 14:00:51,032 - WARNING -  * Debugger is active!
 2025-05-21 14:00:51,033 - INFO -  * Debugger PIN: 130-576-534
+2025-05-21 14:09:27,115 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-21 14:09:27,595 - INFO -  * Restarting with stat
+2025-05-21 14:09:28,372 - WARNING -  * Debugger is active!
+2025-05-21 14:09:28,373 - INFO -  * Debugger PIN: 130-576-534
+2025-05-21 14:17:27,134 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:17:27,137 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:17:27,139 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:17:27,141 - INFO - 192.168.0.2 - - [21/May/2025 14:17:27] "POST /drone HTTP/1.1" 200 -
+2025-05-21 14:17:27,903 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:17:27,904 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:17:27,908 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:17:27,910 - INFO - 192.168.0.2 - - [21/May/2025 14:17:27] "POST /drone HTTP/1.1" 200 -
+2025-05-21 14:19:14,914 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:19:14,916 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:19:14,917 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:19:14,919 - INFO - 192.168.0.2 - - [21/May/2025 14:19:14] "POST /drone HTTP/1.1" 200 -
+2025-05-21 14:19:15,666 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:19:15,668 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:19:15,669 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:19:15,670 - INFO - 192.168.0.2 - - [21/May/2025 14:19:15] "POST /drone HTTP/1.1" 200 -
+2025-05-21 14:31:48,006 - INFO - 192.168.0.2 - - [21/May/2025 14:31:48] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-21 14:31:53,328 - INFO - 192.168.0.2 - - [21/May/2025 14:31:53] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-21 14:45:03,726 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/timetrigger.py', reloading
+2025-05-21 14:45:04,016 - INFO -  * Restarting with stat
+2025-05-21 14:45:04,797 - WARNING -  * Debugger is active!
+2025-05-21 14:45:04,798 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 14:45:44,870 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:45:44,873 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:45:44,874 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:45:44,876 - INFO - 192.168.0.2 - - [21/May/2025 14:45:44] "POST /drone HTTP/1.1" 200 -
+2025-05-21 14:45:45,542 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:45:45,543 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:45:45,544 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:45:45,545 - INFO - 192.168.0.2 - - [21/May/2025 14:45:45] "POST /drone HTTP/1.1" 200 -
+2025-05-21 14:58:13,500 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:58:13,504 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:58:13,504 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:58:13,506 - INFO - 192.168.0.2 - - [21/May/2025 14:58:13] "POST /drone HTTP/1.1" 200 -
+2025-05-21 14:58:52,892 - INFO -  * Detected change in '/home/edvin/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-21 14:58:53,417 - INFO -  * Restarting with stat
+2025-05-21 14:58:54,860 - WARNING -  * Debugger is active!
+2025-05-21 14:58:54,864 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 14:59:13,011 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:59:13,014 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:59:13,015 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:59:13,018 - INFO - 192.168.0.2 - - [21/May/2025 14:59:13] "POST /drone HTTP/1.1" 200 -
+2025-05-21 14:59:13,685 - DEBUG - Incoming data: {'id': 'D2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:59:13,686 - INFO - Drone D2 report from 192.168.0.2
+2025-05-21 14:59:13,687 - DEBUG - Data save for D2: {'id': 'D2', 'ip': '192.168.0.2', 'longitude': 13.188172689993708, 'latitude': 55.70547137847168, 'status': 'idle'}
+2025-05-21 14:59:13,689 - INFO - 192.168.0.2 - - [21/May/2025 14:59:13] "POST /drone HTTP/1.1" 200 -
