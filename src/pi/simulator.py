@@ -45,35 +45,44 @@ def send_coordinates(id, longitude, latitude, status, SERVER_URL):
             logging.error(f"Error sending coordinates: {longitude}, {latitude}, status: {status}. Error: {e}")
 
 #=====================================================================================================================
-
+def interpolate(a, b, steps=10):
+    dx = (b[0] - a[0]) / steps
+    dy = (b[1] - a[1]) / steps
+    return [(a[0] + i * dx, a[1] + i * dy) for i in range(1, steps + 1)]
 
 def run(id, current_coords, from_coords, to_coords, SERVER_URL):
-
-    targets = [from_coords,to_coords]
+    targets = [from_coords, to_coords]
     final_position = current_coords
 
-
     for target in targets:
-        print(f"A* pathfinding from {current_coords} to {from_coords}")
+        print(f" Planning path from {current_coords} to {target}")
         path = a_star(current_coords, target)
 
-        if path is None:
-            print("No valid path found!")
-            return current_coords
-        
-        for waypoint in path:
-            longitude, latitude = waypoint
-            print(f"📍 Moving to waypoint: {waypoint}")
-            
-            send_coordinates(id, longitude, latitude, 'busy', SERVER_URL)
-            
-            time.sleep(6)
-        
-        send_coordinates(id, path[-1][0], path[-1][1], 'idle', SERVER_URL) #Look so that right coordinets are saved
-        current_coords = target
-        final_position = path[-1]
-    
-    return final_position
+        if not path:
+            print(f" No valid path found from {current_coords} to {target}")
+            return current_coords[0], current_coords[1]
+
+        # Smooth start if needed
+        if path[0] != current_coords:
+            for point in interpolate(current_coords, path[0], steps=10):
+                send_coordinates(id, point[0], point[1], 'busy', SERVER_URL)
+                time.sleep(0.1)
+            current_coords = path[0]
+
+        # Interpolate each segment
+        for i in range(len(path) - 1):
+            for point in interpolate(path[i], path[i + 1], steps=5):
+                send_coordinates(id, point[0], point[1], 'busy', SERVER_URL)
+                time.sleep(0.1)
+            current_coords = path[i + 1]
+
+        # Mark arrival
+        send_coordinates(id, current_coords[0], current_coords[1], 'idle', SERVER_URL)
+        final_position = current_coords
+
+    print(f" Final destination reached: {final_position}")
+    return final_position[0], final_position[1]
+
 
 
 # def run(id, current_coords, from_coords, to_coords, SERVER_URL):
