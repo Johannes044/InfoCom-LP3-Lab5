@@ -287,3 +287,200 @@
 2025-05-19 15:16:50,103 - INFO - 127.0.0.1 - - [19/May/2025 15:16:50] "POST /sender HTTP/1.1" 200 -
 2025-05-19 15:16:55,115 - INFO - 127.0.0.1 - - [19/May/2025 15:16:55] "POST /sender HTTP/1.1" 200 -
 2025-05-19 15:17:00,123 - INFO - 127.0.0.1 - - [19/May/2025 15:17:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:29:57,588 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:29:57,590 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:29:57,602 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 13:29:57,603 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:29:57,605 - INFO -  * Restarting with stat
+2025-05-21 13:29:58,428 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:29:58,428 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:29:58,440 - WARNING -  * Debugger is active!
+2025-05-21 13:29:58,441 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 13:31:30,762 - INFO - 127.0.0.1 - - [21/May/2025 13:31:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:31:35,774 - INFO - 127.0.0.1 - - [21/May/2025 13:31:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:31:40,786 - INFO - 127.0.0.1 - - [21/May/2025 13:31:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:31:45,795 - INFO - 127.0.0.1 - - [21/May/2025 13:31:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:31:50,803 - INFO - 127.0.0.1 - - [21/May/2025 13:31:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:31:55,816 - INFO - 127.0.0.1 - - [21/May/2025 13:31:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:00,832 - INFO - 127.0.0.1 - - [21/May/2025 13:32:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:05,845 - INFO - 127.0.0.1 - - [21/May/2025 13:32:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:10,859 - INFO - 127.0.0.1 - - [21/May/2025 13:32:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:15,869 - INFO - 127.0.0.1 - - [21/May/2025 13:32:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:20,876 - INFO - 127.0.0.1 - - [21/May/2025 13:32:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:25,889 - INFO - 127.0.0.1 - - [21/May/2025 13:32:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:30,898 - INFO - 127.0.0.1 - - [21/May/2025 13:32:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:35,905 - INFO - 127.0.0.1 - - [21/May/2025 13:32:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:40,918 - INFO - 127.0.0.1 - - [21/May/2025 13:32:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:45,932 - INFO - 127.0.0.1 - - [21/May/2025 13:32:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:50,947 - INFO - 127.0.0.1 - - [21/May/2025 13:32:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:32:55,956 - INFO - 127.0.0.1 - - [21/May/2025 13:32:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:00,970 - INFO - 127.0.0.1 - - [21/May/2025 13:33:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:05,986 - INFO - 127.0.0.1 - - [21/May/2025 13:33:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:10,995 - INFO - 127.0.0.1 - - [21/May/2025 13:33:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:16,001 - INFO - 127.0.0.1 - - [21/May/2025 13:33:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:21,016 - INFO - 127.0.0.1 - - [21/May/2025 13:33:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:26,028 - INFO - 127.0.0.1 - - [21/May/2025 13:33:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:31,044 - INFO - 127.0.0.1 - - [21/May/2025 13:33:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:36,060 - INFO - 127.0.0.1 - - [21/May/2025 13:33:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:41,072 - INFO - 127.0.0.1 - - [21/May/2025 13:33:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:46,087 - INFO - 127.0.0.1 - - [21/May/2025 13:33:46] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:51,106 - INFO - 127.0.0.1 - - [21/May/2025 13:33:51] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:33:56,114 - INFO - 127.0.0.1 - - [21/May/2025 13:33:56] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:34:01,129 - INFO - 127.0.0.1 - - [21/May/2025 13:34:01] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:34:06,144 - INFO - 127.0.0.1 - - [21/May/2025 13:34:06] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:34:11,157 - INFO - 127.0.0.1 - - [21/May/2025 13:34:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:34:16,180 - INFO - 127.0.0.1 - - [21/May/2025 13:34:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:34:21,199 - INFO - 127.0.0.1 - - [21/May/2025 13:34:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:34:26,225 - INFO - 127.0.0.1 - - [21/May/2025 13:34:26] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:34:27,758 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 13:34:27,761 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-21 13:34:28,389 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 13:34:28,391 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 13:34:29,516 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 13:34:29,540 - INFO - 127.0.0.1 - - [21/May/2025 13:34:29] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-05-21 13:34:31,249 - DEBUG - Drone data from D1 have been access!
+2025-05-21 13:34:31,291 - INFO - 127.0.0.1 - - [21/May/2025 13:34:31] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:34:36,304 - DEBUG - Drone data from D1 have been access!
+2025-05-21 13:34:36,316 - INFO - 127.0.0.1 - - [21/May/2025 13:34:36] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:43:00,183 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:43:00,184 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:43:00,196 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 13:43:00,197 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:43:00,199 - INFO -  * Restarting with stat
+2025-05-21 13:43:32,216 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:43:32,217 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:43:32,229 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 13:43:32,229 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:43:32,231 - INFO -  * Restarting with stat
+2025-05-21 13:49:34,194 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:49:34,195 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:49:34,208 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 13:49:34,208 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:49:34,210 - INFO -  * Restarting with stat
+2025-05-21 13:49:35,118 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:49:35,118 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:49:35,130 - WARNING -  * Debugger is active!
+2025-05-21 13:49:35,131 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 13:49:50,779 - INFO - 127.0.0.1 - - [21/May/2025 13:49:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:49:55,798 - INFO - 127.0.0.1 - - [21/May/2025 13:49:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:00,810 - INFO - 127.0.0.1 - - [21/May/2025 13:50:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:05,818 - INFO - 127.0.0.1 - - [21/May/2025 13:50:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:10,831 - INFO - 127.0.0.1 - - [21/May/2025 13:50:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:15,839 - INFO - 127.0.0.1 - - [21/May/2025 13:50:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:20,846 - INFO - 127.0.0.1 - - [21/May/2025 13:50:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:25,854 - INFO - 127.0.0.1 - - [21/May/2025 13:50:25] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:30,864 - INFO - 127.0.0.1 - - [21/May/2025 13:50:30] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:35,878 - INFO - 127.0.0.1 - - [21/May/2025 13:50:35] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:40,885 - INFO - 127.0.0.1 - - [21/May/2025 13:50:40] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:45,892 - INFO - 127.0.0.1 - - [21/May/2025 13:50:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:50,899 - INFO - 127.0.0.1 - - [21/May/2025 13:50:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:50:55,912 - INFO - 127.0.0.1 - - [21/May/2025 13:50:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:51:00,925 - INFO - 127.0.0.1 - - [21/May/2025 13:51:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:51:05,938 - INFO - 127.0.0.1 - - [21/May/2025 13:51:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:51:10,959 - INFO - 127.0.0.1 - - [21/May/2025 13:51:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:51:15,968 - INFO - 127.0.0.1 - - [21/May/2025 13:51:15] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:51:20,977 - INFO - 127.0.0.1 - - [21/May/2025 13:51:20] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:51:22,206 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 13:51:22,210 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-21 13:51:23,203 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 13:51:23,205 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 13:51:25,694 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 13:51:25,709 - INFO - 127.0.0.1 - - [21/May/2025 13:51:25] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-05-21 13:51:25,993 - DEBUG - Drone data from D2 have been access!
+2025-05-21 13:51:26,008 - INFO - 127.0.0.1 - - [21/May/2025 13:51:26] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:51:31,023 - DEBUG - Drone data from D2 have been access!
+2025-05-21 13:51:31,040 - INFO - 127.0.0.1 - - [21/May/2025 13:51:31] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:53:32,327 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:53:32,327 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:53:32,343 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 13:53:32,344 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:53:32,346 - INFO -  * Restarting with stat
+2025-05-21 13:53:33,247 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:53:33,248 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:53:33,260 - WARNING -  * Debugger is active!
+2025-05-21 13:53:33,261 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 13:53:45,443 - INFO - 127.0.0.1 - - [21/May/2025 13:53:45] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:53:50,457 - INFO - 127.0.0.1 - - [21/May/2025 13:53:50] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:53:55,472 - INFO - 127.0.0.1 - - [21/May/2025 13:53:55] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:54:00,487 - INFO - 127.0.0.1 - - [21/May/2025 13:54:00] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:54:05,496 - INFO - 127.0.0.1 - - [21/May/2025 13:54:05] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:54:10,507 - INFO - 127.0.0.1 - - [21/May/2025 13:54:10] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:54:13,475 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 13:54:13,480 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-21 13:54:13,920 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 13:54:13,923 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 13:54:15,443 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 13:54:15,466 - INFO - 127.0.0.1 - - [21/May/2025 13:54:15] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-05-21 13:54:15,529 - DEBUG - Drone data from D2 have been access!
+2025-05-21 13:54:15,549 - INFO - 127.0.0.1 - - [21/May/2025 13:54:15] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:54:20,572 - DEBUG - Drone data from D2 have been access!
+2025-05-21 13:54:20,590 - INFO - 127.0.0.1 - - [21/May/2025 13:54:20] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:54:25,610 - DEBUG - Drone data from D2 have been access!
+2025-05-21 13:54:25,625 - INFO - 127.0.0.1 - - [21/May/2025 13:54:25] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:54:30,642 - DEBUG - Drone data from D2 have been access!
+2025-05-21 13:54:30,658 - INFO - 127.0.0.1 - - [21/May/2025 13:54:30] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:54:35,674 - DEBUG - Drone data from D2 have been access!
+2025-05-21 13:54:35,695 - INFO - 127.0.0.1 - - [21/May/2025 13:54:35] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 13:55:21,307 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:55:21,307 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:55:21,320 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 13:55:21,320 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 13:55:21,322 - INFO -  * Restarting with stat
+2025-05-21 13:55:22,236 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:55:22,236 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 13:55:22,248 - WARNING -  * Debugger is active!
+2025-05-21 13:55:22,249 - INFO -  * Debugger PIN: 101-127-764
+2025-05-21 13:55:31,866 - INFO - 127.0.0.1 - - [21/May/2025 13:55:31] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:55:36,882 - INFO - 127.0.0.1 - - [21/May/2025 13:55:36] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:55:40,559 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 13:55:40,563 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-21 13:55:41,072 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 13:55:41,073 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 13:55:41,899 - INFO - 127.0.0.1 - - [21/May/2025 13:55:41] "POST /sender HTTP/1.1" 200 -
+2025-05-21 13:55:42,056 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 13:55:42,081 - INFO - 127.0.0.1 - - [21/May/2025 13:55:42] "[35m[1mPOST /planner HTTP/1.1[0m" 500 -
+2025-05-21 13:55:46,916 - DEBUG - Drone data from D1 have been access!
+2025-05-21 13:55:46,927 - DEBUG - Starting new HTTP connection (1): 192.168.0.2:42069
+2025-05-21 13:55:46,989 - INFO - 127.0.0.1 - - [21/May/2025 13:55:46] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -
+2025-05-21 14:01:01,455 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 14:01:01,456 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 14:01:01,473 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.97.28:1339
+2025-05-21 14:01:01,473 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-21 14:01:01,476 - INFO -  * Restarting with stat
+2025-05-21 14:01:02,376 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 14:01:02,376 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-21 14:01:02,388 - WARNING -  * Debugger is active!
+2025-05-21 14:01:02,389 - INFO -  * Debugger PIN: 130-576-534
+2025-05-21 14:01:11,461 - INFO - 127.0.0.1 - - [21/May/2025 14:01:11] "POST /sender HTTP/1.1" 200 -
+2025-05-21 14:01:16,490 - INFO - 127.0.0.1 - - [21/May/2025 14:01:16] "POST /sender HTTP/1.1" 200 -
+2025-05-21 14:01:19,850 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 14:01:19,853 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-21 14:01:20,416 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-21 14:01:20,420 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-21 14:01:21,507 - INFO - 127.0.0.1 - - [21/May/2025 14:01:21] "POST /sender HTTP/1.1" 200 -
+2025-05-21 14:01:21,575 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=Magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-21 14:01:21,582 - INFO - 127.0.0.1 - - [21/May/2025 14:01:21] "POST /planner HTTP/1.1" 200 -
+2025-05-21 14:01:26,522 - DEBUG - Drone data from D1 have been access!
+2025-05-21 14:01:26,531 - DEBUG - Starting new HTTP connection (1): 192.168.0.2:42069
+2025-05-21 14:01:26,597 - INFO - 127.0.0.1 - - [21/May/2025 14:01:26] "[35m[1mPOST /sender HTTP/1.1[0m" 500 -

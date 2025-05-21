@@ -4,29 +4,6 @@ import random
 import datetime
 import math
 
-medeciner = ["Viagra", "Antidepp", "Alvedon", "Ipren", "Zovirax", "Gaviscon", "Halstabletter"]
-leveranser = {
-    "d1": [],
-    "d2": [],
-    "d3": [],
-    "d4": []
-}
-
-x_osm_lim = (13.143390664, 13.257501336)
-y_osm_lim = (55.678138854000004, 55.734680845999996)
-x_svg_lim = (212.155699, 968.644301)
-y_svg_lim = (103.68, 768.96)
-lSpeed = 340 * 0.000009 
-
-def randomMedicin():
-    return random.choice(medeciner)
-
-def randomCords():
-    lon = random.uniform(*x_osm_lim)
-    lat = random.uniform(*y_osm_lim)
-    return (lon, lat)
-
-coords = randomCords()
 
 def translateToSVG(coords_osm):
     x_ratio = (x_svg_lim[1] - x_svg_lim[0]) / (x_osm_lim[1] - x_osm_lim[0])
@@ -54,13 +31,8 @@ def svgSpeed():
 def svgDistance(p1, p2):
     return math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
 
-def isDelivery():
-    return random.random() < 0.1
 
-def getTime(fromCoords, toCoords):
-    return
-
-def newLeverans(toCoords):
+def oldLeverans(toCoords):
     medecin = randomMedicin()
     svg_start = translateToSVG((13.2, 55.7))
     svg_end = translateToSVG(toCoords)
@@ -89,24 +61,7 @@ def newLeverans(toCoords):
         'KlockslagFramme': klockslagframme,
         'KlockslagTbk': klockslagtbk})
     
-    """
-    droneName = findLeastBusyDrone()
 
-    now = datetime.datetime.now()
-    leverans = {
-        'medecin': medecin,
-        'coordinates': toCoords,
-        'drone': droneName,
-        'KlockslagFramme': now + flygtid,
-        'KlockslagTbk': now + flygtid * 2
-    }
-    leveranser[droneName].append(leverans)
-    
-    print(f"Ny leverans till {droneName}: {leverans}")
-    """
-
-if isDelivery():
-    newLeverans()
 
 
 

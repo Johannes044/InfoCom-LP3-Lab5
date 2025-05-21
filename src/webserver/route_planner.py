@@ -99,7 +99,6 @@ def sendDrone():
                 droneAvailable = drone
                 coords = leveranser[0]['coords'].copy()
                 coords['current'] = (droneData['longitude'], droneData['latitude'])
-                send_request(DRONE_URL, coords)
                 break
         
         if droneAvailable is None:
@@ -107,7 +106,7 @@ def sendDrone():
         
         DRONE_IP = redis_server.hget(droneAvailable, 'ip')
         DRONE_URL = f'http://{DRONE_IP}:42069'
-        send_request(DRONE_URL, leveranser[0][1])
+        send_request(DRONE_URL, leveranser[0]['coords'])
         del leveranser[0]
         logging.debug('Got address and sent request to the drone')
         return 'Got address and sent request to the drone'
@@ -137,6 +136,7 @@ def route_planner():
         }
         leverans = newLeverans(coords)
         leveranser.append(leverans)
+        return 'vi har kordinator'
 
 
     
