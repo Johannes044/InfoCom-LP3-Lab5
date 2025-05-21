@@ -69,12 +69,12 @@ def about():
 
 @app.route('/admin', methods=['GET'])
 def admin():
-    drone_ids = redis_server.smembers("drones")
-    drones = []
-    for drone_id in drone_ids:
-        packages = redis_server.lrange(f"packages:{drone_id}", 0, -1)  # Redis list
-        drones.append({"id": drone_id, "packages": packages})
-    return render_template("admin.html", drones=drones)
+    #drone_ids = redis_server.smembers("drones")
+    #drones = []
+    #for drone_id in drone_ids:
+        #packages = redis_server.lrange(f"packages:{drone_id}", 0, -1)  # Redis list
+        #drones.append({"id": drone_id, "packages": packages})
+    return render_template("admin.html")
 
 # @app.route("/get_no_fly_zones", methods=["GET"])
 # def get_no_fly_zones():
@@ -88,26 +88,26 @@ def admin():
 #     logging.debug(f"Sent {zones_svg} to draw the no fly zone.")
 #     return jsonify(zones_svg)
 
-@app.route("/get_package", methods=["GET"])
-def get_package():
-    medeciner = ["Viagra", "Antidepp", "Alvedon", "Ipren", "Zovirax", "Gaviscon", "Halstabletter"]
-    drones = redis_server.smembers("drones")
+#@app.route("/get_package", methods=["GET"])
+#def get_package():
+    #medeciner = ["Viagra", "Antidepp", "Alvedon", "Ipren", "Zovirax", "Gaviscon", "Halstabletter"]
+    #drones = redis_server.smembers("drones")
 
-    deliveries = {}
-    for drone_id in drones:
-        package = random.choice(medeciner)
-        redis_server.set(f"delivery:{drone_id}", package)
-        deliveries[drone_id] = package
+    #deliveries = {}
+    #for drone_id in drones:
+        #package = random.choice(medeciner)
+        #redis_server.set(f"delivery:{drone_id}", package)
+        #deliveries[drone_id] = package
 
-    return jsonify(deliveries)
+    #return jsonify(deliveries)
 
-@app.route("/get_package/<drone_id>", methods=["GET"])
-def get_package_for_drone(drone_id):
-    package = redis_server.get(f"delivery:{drone_id}")
-    if package:
-        return jsonify({"drone_id": drone_id, "package": package})
-    else:
-        return jsonify({"error": "No package found"}), 404
+#@app.route("/get_package/<drone_id>", methods=["GET"])
+#def get_package_for_drone(drone_id):
+    #package = redis_server.get(f"delivery:{drone_id}")
+    #if package:
+        #return jsonify({"drone_id": drone_id, "package": package})
+    #else:
+        #return jsonify({"error": "No package found"}), 404
 
 #=================================================================================================
 
