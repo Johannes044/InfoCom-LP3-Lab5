@@ -18,7 +18,8 @@ NO_FLY_ZONES = [
 ]
 
 def is_in_no_fly_zone(lon, lat):
-    reduced_zones = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    r2 = [z for zone in NO_FLY_ZONES for z in halve_zone(zone)]
+    reduced_zones = [z for zone in r2 for z in halve_zone(zone)]
     for zone in reduced_zones:
         if zone["min_lon"] <= lon <= zone["max_lon"] and zone["min_lat"] <= lat <= zone["max_lat"]:
             return True
@@ -40,7 +41,7 @@ def interpolate_path(path, steps_per_segment=10):
 
 def heuristic(a, b):
     # Manhattan distance works for grid-based movement
-    return abs(a[0] - b[0]) + abs(a[1] - b[1])
+    return ((a[0] - b[0])**2 + (a[1] - b[1])**2)**0.5
 
 def a_star(start, goal, step_size=0.0005, max_iter=100000):#0.0001 är cirka 11 meter steg if to jumping.
     open_set = []
