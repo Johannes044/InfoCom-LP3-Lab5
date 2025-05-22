@@ -11,7 +11,8 @@ import json
 import requests 
 import logging
 file = "../Logs/route_planner.txt"
-import logic.utilities 
+import logic.utilities
+from logic.No_fly_zone import is_in_no_fly_zone
 
 
 import random
