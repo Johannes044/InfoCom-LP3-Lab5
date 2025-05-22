@@ -122,9 +122,10 @@
         });
     }
 
-    document.getElementById("map").addEventListener("load", function () {
-      drawAllZones();
-    });
+   document.getElementById("map").addEventListener("load", function () {
+     console.log("SVG loaded");
+     setTimeout(drawAllNoFlyZones, 100); // Försäkra att allt är redo
+   });
 
     $(document).ready(callout);
   </script>
