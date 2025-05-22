@@ -1,7 +1,5 @@
 import heapq
 
-from No_fly_zone import halve_zone
-
 NO_FLY_ZONES = [
     {
         "min_lon": 13.182460,
@@ -24,6 +22,20 @@ def is_in_no_fly_zone(lon, lat):
         if zone["min_lon"] <= lon <= zone["max_lon"] and zone["min_lat"] <= lat <= zone["max_lat"]:
             return True
     return False
+
+def halve_zone(zone):
+    center_lon = (zone["min_lon"] + zone["max_lon"]) / 2
+    center_lat = (zone["min_lat"] + zone["max_lat"]) / 2
+
+    half_width = (zone["max_lon"] - zone["min_lon"]) / 4
+    half_height = (zone["max_lat"] - zone["min_lat"]) / 4
+
+    return [{
+        "min_lon": center_lon - half_width,
+        "max_lon": center_lon + half_width,
+        "min_lat": center_lat - half_height,
+        "max_lat": center_lat + half_height
+    }]
 
 def interpolate_path(path, steps_per_segment=10):
     smooth_path = []
@@ -89,15 +101,15 @@ def a_star(start, goal, step_size=0.0005, max_iter=100000):#0.0001 är cirka 11 
     return None  # No path found
 
 
-start = (13.1800, 55.7030)   # Sydväst om zonerna
-goal = (13.2330, 55.7270)    # Nordost om zonerna
+#start = (13.1800, 55.7030)   # Sydväst om zonerna
+#goal = (13.2330, 55.7270)    # Nordost om zonerna
 
-path = a_star(start, goal)
+#path = a_star(start, goal)
 
-newpath = interpolate_path(p)
+#newpath = interpolate_path(p)
 
-if newpath:
-    for p in path:
-        print(p)
-else:
-    print("Ingen väg hittades!")
+#if newpath:
+   # for p in path:
+        #print(p)
+#else:
+    #print("Ingen väg hittades!")
