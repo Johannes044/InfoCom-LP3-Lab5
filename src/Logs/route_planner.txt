@@ -6443,3 +6443,45 @@
 2025-05-21 17:15:12,789 - INFO - 127.0.0.1 - - [21/May/2025 17:15:12] "POST /sender HTTP/1.1" 200 -
 2025-05-21 17:15:13,806 - INFO - 127.0.0.1 - - [21/May/2025 17:15:13] "POST /sender HTTP/1.1" 200 -
 2025-05-21 17:15:14,815 - INFO - 127.0.0.1 - - [21/May/2025 17:15:14] "POST /sender HTTP/1.1" 200 -
+2025-05-23 13:51:14,725 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-23 13:51:14,725 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-23 13:51:14,804 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1339
+ * Running on http://10.8.110.157:1339
+2025-05-23 13:51:14,804 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 13:51:14,805 - INFO -  * Restarting with stat
+2025-05-23 13:51:14,975 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-23 13:51:14,975 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-23 13:51:14,992 - WARNING -  * Debugger is active!
+2025-05-23 13:51:14,999 - INFO -  * Debugger PIN: 896-077-013
+2025-05-23 14:20:15,628 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-23 14:20:15,630 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-23 14:20:15,952 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-23 14:20:15,956 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-23 14:20:16,814 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-23 14:20:16,819 - INFO - 127.0.0.1 - - [23/May/2025 14:20:16] "POST /planner HTTP/1.1" 200 -
+2025-05-23 14:21:22,863 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/webserver/route_planner.py', reloading
+2025-05-23 14:21:22,928 - INFO -  * Restarting with stat
+2025-05-23 14:21:23,200 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-23 14:21:23,200 - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-05-23 14:21:23,216 - WARNING -  * Debugger is active!
+2025-05-23 14:21:23,221 - INFO -  * Debugger PIN: 896-077-013
+2025-05-23 14:22:32,976 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-23 14:22:32,978 - DEBUG - Starting new HTTPS connection (1): nominatim.openstreetmap.org:443
+2025-05-23 14:22:33,180 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-23 14:22:33,181 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-23 14:22:33,188 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-23 14:22:33,188 - DEBUG - Starting new HTTPS connection (2): nominatim.openstreetmap.org:443
+2025-05-23 14:22:34,179 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-23 14:22:34,182 - INFO - 127.0.0.1 - - [23/May/2025 14:22:34] "POST /planner HTTP/1.1" 200 -
+2025-05-23 14:22:35,201 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-23 14:22:35,201 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-23 14:22:36,222 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-23 14:22:36,224 - INFO - 127.0.0.1 - - [23/May/2025 14:22:36] "POST /planner HTTP/1.1" 200 -
+2025-05-23 14:23:58,161 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-23 14:23:58,163 - DEBUG - Resetting dropped connection: nominatim.openstreetmap.org
+2025-05-23 14:23:58,426 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=magistratsv%C3%A4gen+55%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 477
+2025-05-23 14:23:58,426 - DEBUG - Nominatim.geocode: https://nominatim.openstreetmap.org/search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1
+2025-05-23 14:23:59,473 - DEBUG - https://nominatim.openstreetmap.org:443 "GET /search?q=M%C3%A5rtenstorget+12%2C+Lund%2C+Sk%C3%A5ne%2C+Sweden&format=json&limit=1 HTTP/1.1" 200 498
+2025-05-23 14:23:59,474 - INFO - 127.0.0.1 - - [23/May/2025 14:23:59] "POST /planner HTTP/1.1" 200 -

@@ -1,0 +1,48 @@
+2025-05-23 14:19:14,018 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-23 14:19:14,031 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-23 14:19:14,031 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:19:14,031 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:19:14,104 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.110.157:42069
+2025-05-23 14:19:14,104 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 14:19:14,104 - INFO -  * Restarting with stat
+2025-05-23 14:19:14,221 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-23 14:19:14,223 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-23 14:19:14,223 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:19:14,223 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:19:14,238 - WARNING -  * Debugger is active!
+2025-05-23 14:19:14,244 - INFO -  * Debugger PIN: 896-077-013
+2025-05-23 14:22:17,676 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/drone.py', reloading
+2025-05-23 14:22:17,718 - INFO -  * Restarting with stat
+2025-05-23 14:22:17,908 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-23 14:22:17,914 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-23 14:22:17,914 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:22:17,914 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:22:17,933 - WARNING -  * Debugger is active!
+2025-05-23 14:22:17,940 - INFO -  * Debugger PIN: 896-077-013
+2025-05-23 14:23:36,410 - INFO -  * Detected change in '/Users/ellasvensson/diggen/InfoCom-LP3-Lab5/src/pi/simulator.py', reloading
+2025-05-23 14:23:36,448 - INFO -  * Restarting with stat
+2025-05-23 14:23:36,642 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-23 14:23:36,645 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-23 14:23:36,645 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:23:36,645 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:23:36,666 - WARNING -  * Debugger is active!
+2025-05-23 14:23:36,671 - INFO -  * Debugger PIN: 896-077-013
+2025-05-23 14:23:40,968 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-23 14:23:40,970 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-23 14:23:40,970 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:23:40,970 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:23:41,037 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:42069
+ * Running on http://10.8.110.157:42069
+2025-05-23 14:23:41,037 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-23 14:23:41,037 - INFO -  * Restarting with stat
+2025-05-23 14:23:41,160 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:1338
+2025-05-23 14:23:41,162 - DEBUG - http://127.0.0.1:1338 "POST /drone HTTP/1.1" 200 50
+2025-05-23 14:23:41,162 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:23:41,162 - INFO - Successfully sent initial drone location to server.
+2025-05-23 14:23:41,175 - WARNING -  * Debugger is active!
+2025-05-23 14:23:41,179 - INFO -  * Debugger PIN: 896-077-013

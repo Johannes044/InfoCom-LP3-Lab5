@@ -6,10 +6,11 @@
 
 .welcome-card {
     background: var(--color-navbar);
-    padding: 40px 60px;
+    padding: 40px 60px; 
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+    margin-bottom: 40px;
 }
 
 label {
@@ -20,7 +21,6 @@ label {
 
 h1 {
     margin-top: 20px;
-    margin-bottom: 20px;
     color: var(--color-text-dark);
 }
 

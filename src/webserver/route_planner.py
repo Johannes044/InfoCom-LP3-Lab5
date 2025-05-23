@@ -147,7 +147,7 @@ def route_planner():
         }
         leverans = newLeverans(coords)
         leveranser.append(leverans)
-        return 'vi har kordinator'
+        return 'Vi har kordinater, drönaren är påväg!'
 
 
     
