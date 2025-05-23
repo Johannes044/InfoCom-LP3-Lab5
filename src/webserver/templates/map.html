@@ -7,69 +7,11 @@
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
   <script type="text/javascript">
-    const NO_FLY_ZONES = [
-      { min_lon: 13.182460, max_lon: 13.214460, min_lat: 55.702952, max_lat: 55.720952 },
-      { min_lon: 13.197878, max_lon: 13.229878, min_lat: 55.708623, max_lat: 55.726623 }
-    ];
-
-    function mapToSVGCoords(lon, lat) {
-      const x_osm_lim = [13.143390664, 13.257501336];
-      const y_osm_lim = [55.678138854000004, 55.734680845999996];
-
-      const x_svg_lim = [212.155699, 968.644301];
-      const y_svg_lim = [103.68, 768.96];
-
-      const x_ratio = (x_svg_lim[1] - x_svg_lim[0]) / (x_osm_lim[1] - x_osm_lim[0]);
-      const y_ratio = (y_svg_lim[1] - y_svg_lim[0]) / (y_osm_lim[1] - y_osm_lim[0]);
-
-      const x = x_ratio * (lon - x_osm_lim[0]) + x_svg_lim[0];
-      const y = y_ratio * (y_osm_lim[1] - lat) + y_svg_lim[0];
-      return { x, y };
-    }
-
-    function halve_zone(zone) {
-      const center_lon = (zone.min_lon + zone.max_lon) / 2;
-      const center_lat = (zone.min_lat + zone.max_lat) / 2;
-      const half_width = (zone.max_lon - zone.min_lon) / 4;
-      const half_height = (zone.max_lat - zone.min_lat) / 4;
-      return {
-        min_lon: center_lon - half_width,
-        max_lon: center_lon + half_width,
-        min_lat: center_lat - half_height,
-        max_lat: center_lat + half_height
-      };
-    }
-
-    function drawAllNoFlyZones() {
-      const doc = document.getElementById("map");
-      const doc_svg = doc.getSVGDocument();
-      const svg = doc_svg.getElementById("map-svg");
-
-      NO_FLY_ZONES.forEach(zone => {
-        const small_zone = halve_zone(halve_zone(zone));  // shrink twice (1/4 size)
-        const topLeft = mapToSVGCoords(small_zone.min_lon, small_zone.max_lat);
-        const bottomRight = mapToSVGCoords(small_zone.max_lon, small_zone.min_lat);
-
-        const width = bottomRight.x - topLeft.x;
-        const height = bottomRight.y - topLeft.y;
-
-        const rect = doc_svg.createElementNS("http://www.w3.org/2000/svg", "rect");
-        rect.setAttribute("x", topLeft.x);
-        rect.setAttribute("y", topLeft.y);
-        rect.setAttribute("width", width);
-        rect.setAttribute("height", height);
-        rect.setAttribute("fill", "orange");
-        rect.setAttribute("opacity", "0.5");
-        rect.setAttribute("stroke", "red");
-        rect.setAttribute("stroke-width", "1");
-        svg.appendChild(rect);
-      });
-    }
-
     function Submit() {
-      const to_addr = document.getElementById('taddr').value;
-      const data = { "taddr": to_addr };
-      const xhttp = new XMLHttpRequest();
+      // var from_addr = document.getElementById('faddr').value;
+      var to_addr = document.getElementById('taddr').value;
+      var data = {"taddr": to_addr }; //"faddr": from_addr, 
+      var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           try {
@@ -85,65 +27,72 @@
     }
 
     function LoadDrone(droneID, x, y, status) {
-      const doc = document.getElementById("map");
-      const doc_svg = doc.getSVGDocument();
-      const svg = doc_svg.getElementById("map-svg");
-      const color = status === 'idle' ? 'green' : 'red';
-      let circleNode = svg.getElementById(droneID);
-
-      if (circleNode == null) {
-        circleNode = doc_svg.createElementNS("http://www.w3.org/2000/svg", "circle");
-        circleNode.setAttributeNS(null, 'cx', x);
-        circleNode.setAttributeNS(null, 'cy', y);
-        circleNode.setAttributeNS(null, 'r', '5');
-        circleNode.setAttributeNS(null, 'fill', color);
-        circleNode.setAttributeNS(null, 'id', droneID);
-        svg.appendChild(circleNode);
-      } else {
-        circleNode.setAttributeNS(null, 'cx', x);
-        circleNode.setAttributeNS(null, 'cy', y);
-        circleNode.setAttributeNS(null, 'fill', color);
-      }
+      var doc = document.getElementById("map");
+      $(doc).ready(function() {
+        var doc_svg = doc.getSVGDocument();
+        var svg = doc_svg.getElementById("map-svg");
+        var circleNode = svg.getElementById(droneID);
+        var color = status === 'idle' ? 'green' : 'red';
+        if (circleNode == null) {
+          circleNode = doc_svg.createElementNS("http://www.w3.org/2000/svg", "circle");
+          circleNode.setAttributeNS(null, 'cx', x);
+          circleNode.setAttributeNS(null, 'cy', y);
+          circleNode.setAttributeNS(null, 'r', '5');
+          circleNode.setAttributeNS(null, 'fill', color);
+          circleNode.setAttributeNS(null, 'id', droneID);
+          svg.appendChild(circleNode);
+        } else {
+          circleNode.setAttributeNS(null, 'cx', x);
+          circleNode.setAttributeNS(null, 'cy', y);
+          circleNode.setAttributeNS(null, 'fill', color);
+        }
+      });
     }
 
     function callout() {
       $.ajax({ url: 'http://127.0.0.1:1337/get_drones' })
         .done(function(server_response) {
+          /*var available_drones = Object.keys(server_response);
+          for (const droneID of available_drones) {
+            var x = server_response[droneID].longitude;
+            var y = server_response[droneID].latitude;
+            var status = server_response[droneID].status;
+            LoadDrone(droneID, x, y, status);
+          }*/
           const droneId = document.querySelector('#drone-id').value;
           const drone = server_response[droneId];
-          if (!drone) return;
-          const coords = mapToSVGCoords(drone.longitude, drone.latitude);
-          LoadDrone(droneId, coords.x, coords.y, drone.status);
+          const x = drone.longitude;
+          const y = drone.latitude;
+          const status = drone.status;
+
+          LoadDrone(droneId, x, y, status);
         })
-        .always(function () {
-          setTimeout(callout, 1000);
+        .always(function() {
+          setTimeout(callout, 50);
         });
     }
+    
+    $(document).ready(callout);
 
-    // Wait until DOM is ready before attaching anything
-    $(document).ready(function () {
-      const map = document.getElementById("map");
-      if (map) {
-        map.addEventListener("load", function () {
-          drawAllNoFlyZones();
-          callout();
-        });
-      }
-    });
-  </script>
+  </script> 
 {% endblock %}
 
 {% block content %}
-  <input type="hidden" id="drone-id" value="{{ drone_id }}">
-  <div class="content">
-    <h1>Följ din drönarleverans här!</h1>
-    <div id="txt">Current Position: </div>
-    <form action="javascript:Submit()">
-      <label for="taddr">Till address:</label>
-      <input type="text" id="taddr" name="taddr">
-      <input class="btn" type="submit" value="Leta adresser">
-    </form>
-    <object id="map" type="image/svg+xml" data="{{ url_for('static', filename='images/lund-map.svg') }}"></object>
-  </div>
-{% endblock %}
+    <input type="hidden"  id="drone-id" value="{{ drone_id }}">
 
+    <div class="content">
+      <h1>Följ din drönarleverans här!</h1>
+      <div id="txt">Current Position: </div>
+      <form action="javascript:Submit()">
+        <!-- <label for="faddr">Från address:</label> -->
+        <!-- <input type="text" id="faddr" name="faddr"> -->
+        
+        <label for="taddr">Till address:</label>
+        <input type="text" id="taddr" name="taddr">
+        
+        <input class="btn" type="submit" value="Leta adresser">
+      </form>
+      <object id="map" type="image/svg+xml" data="static/images/lund-map.svg"></object>
+       <script src="src/webserver/static/js/noFly.js"></script> 
+    </div>
+{% endblock %}
