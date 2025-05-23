@@ -92,7 +92,7 @@
         
         <input class="btn" type="submit" value="Leta adresser">
       </form>
-      <object id="map" type="image/svg+xml" data="static/images/lund-map.svg"></object>
+      <object id="map" type="image/svg+xml" data="static/images/lund-map.svg" onload="drawAllNoFlyZones()" ></object>
        <script src="src/webserver/static/js/noFly.js">
          const NO_FLY_ZONES = [
            { min_lon: 13.182460, max_lon: 13.214460, min_lat: 55.702952, max_lat: 55.720952 },
@@ -136,7 +136,7 @@
            const svg = doc_svg.getElementById("map-svg");
            
            NO_FLY_ZONES.forEach(zones => {
-             const zone = halve_zone(zones);
+             const zone = halve_zone(halve_zone(zones));
              const topLeft = mapToSVGCoords(zone.min_lon, zone.max_lat);
              const bottomRight = mapToSVGCoords(zone.max_lon, zone.min_lat);
              
@@ -155,9 +155,7 @@
              svg.appendChild(rect);
            });
          }
-         document.getElementById("map").addEventListener("load", () => {
-           drawAllNoFlyZones();
-         });
+         
        </script> 
     </div>
 {% endblock %}
