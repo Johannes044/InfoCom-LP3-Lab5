@@ -40,6 +40,32 @@
       };
     }
 
+    function drawAllNoFlyZones() {
+      const doc = document.getElementById("map");
+      const doc_svg = doc.getSVGDocument();
+      const svg = doc_svg.getElementById("map-svg");
+
+      NO_FLY_ZONES.forEach(zone => {
+        const small_zone = halve_zone(halve_zone(zone));  // shrink twice (1/4 size)
+        const topLeft = mapToSVGCoords(small_zone.min_lon, small_zone.max_lat);
+        const bottomRight = mapToSVGCoords(small_zone.max_lon, small_zone.min_lat);
+
+        const width = bottomRight.x - topLeft.x;
+        const height = bottomRight.y - topLeft.y;
+
+        const rect = doc_svg.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("x", topLeft.x);
+        rect.setAttribute("y", topLeft.y);
+        rect.setAttribute("width", width);
+        rect.setAttribute("height", height);
+        rect.setAttribute("fill", "orange");
+        rect.setAttribute("opacity", "0.5");
+        rect.setAttribute("stroke", "red");
+        rect.setAttribute("stroke-width", "1");
+        svg.appendChild(rect);
+      });
+    }
+
     function Submit() {
       const to_addr = document.getElementById('taddr').value;
       const data = { "taddr": to_addr };
@@ -94,7 +120,16 @@
         });
     }
 
-    $(document).ready(callout);
+    // Wait until DOM is ready before attaching anything
+    $(document).ready(function () {
+      const map = document.getElementById("map");
+      if (map) {
+        map.addEventListener("load", function () {
+          drawAllNoFlyZones();
+          callout();
+        });
+      }
+    });
   </script>
 {% endblock %}
 
@@ -110,37 +145,5 @@
     </form>
     <object id="map" type="image/svg+xml" data="{{ url_for('static', filename='images/lund-map.svg') }}"></object>
   </div>
-
-  <script type="text/javascript">
-    function drawAllNoFlyZones() {
-      const doc = document.getElementById("map");
-      const doc_svg = doc.getSVGDocument();
-      const svg = doc_svg.getElementById("map-svg");
-
-      NO_FLY_ZONES.forEach(zone => {
-        const small_zone = halve_zone(halve_zone(zone));  // shrink twice (1/4 size)
-        const topLeft = mapToSVGCoords(small_zone.min_lon, small_zone.max_lat);
-        const bottomRight = mapToSVGCoords(small_zone.max_lon, small_zone.min_lat);
-
-        const width = bottomRight.x - topLeft.x;
-        const height = bottomRight.y - topLeft.y;
-
-        const rect = doc_svg.createElementNS("http://www.w3.org/2000/svg", "rect");
-        rect.setAttribute("x", topLeft.x);
-        rect.setAttribute("y", topLeft.y);
-        rect.setAttribute("width", width);
-        rect.setAttribute("height", height);
-        rect.setAttribute("fill", "orange");
-        rect.setAttribute("opacity", "0.5");
-        rect.setAttribute("stroke", "red");
-        rect.setAttribute("stroke-width", "1");
-        svg.appendChild(rect);
-      });
-    }
-
-    // Attach event after SVG has loaded
-    document.getElementById("map").addEventListener("load", function () {
-      drawAllNoFlyZones();
-    });
-  </script>
 {% endblock %}
+
