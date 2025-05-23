@@ -99,7 +99,6 @@ def sendDrone():
         coords = leveranser[0]['coords'].copy()
         for drone in drones:
             droneData = redis_server.hgetall(drone)
-            logging.debug(f"Drone data from {droneData['id']} have been access!")
             if droneData['status'] == 'idle':
                 droneAvailable = drone                    
                 coords['current'] = (droneData['longitude'], droneData['latitude'])
