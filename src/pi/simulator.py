@@ -9,6 +9,7 @@ import os
 sys.path.append(os.path.abspath(".."))
 delay = 50/1000
 from webserver.logic.utilities import clearFile
+from algoritmen import a_star
 
 logging.basicConfig(filename=file,level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 
