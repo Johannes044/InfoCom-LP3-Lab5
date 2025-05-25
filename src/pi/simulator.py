@@ -44,49 +44,104 @@ def moveDrone(src, d_long, d_la, dt):
 
 
 
-def run(id, current_coords, from_coords, to_coords, SERVER_URL): #VAR körs den, måste koppla till lista o kösystem
-    print("RUN() called")  # Lägg till denna rad
-    print(f"drone_coords: {current_coords}, from: {from_coords}, to: {to_coords}")  # Lägg till denna rad
-    drone_coords = current_coords
-    d_long, d_la =  getMovement(drone_coords, from_coords, 0.001)
-    dt = 1
-    
-    while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
-        start = time.perf_counter()
-        drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
-        with requests.Session() as session:
-            drone_info = {'id': id,
-                          'longitude': drone_coords[0],
-                          'latitude': drone_coords[1],
-                          'status': 'busy'
-                        }
-            resp = session.post(SERVER_URL, json=drone_info)
-            #print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
-        dt = time.perf_counter() - start
-    d_long, d_la =  getMovement(drone_coords, to_coords, 0.001)
-
-
-    while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
-        start = time.perf_counter()
-        drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
-        with requests.Session() as session:
-            drone_info = {'id': id,
-                          'longitude': drone_coords[0],
-                          'latitude': drone_coords[1],
-                          'status': 'busy'
-                        }
-            resp = session.post(SERVER_URL, json=drone_info)
-            #print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
-        dt = time.perf_counter() - start
-    
+# Helper function to send coordinates to server
+def send_coordinates(id, longitude, latitude, status, SERVER_URL):
     with requests.Session() as session:
-            drone_info = {'id': id,
-                          'longitude': drone_coords[0],
-                          'latitude': drone_coords[1],
-                          'status': 'idle'
-                         }
+        drone_info = {
+            'id': id,
+            'longitude': longitude,
+            'latitude': latitude,
+            'status': status
+        }
+        try:
             resp = session.post(SERVER_URL, json=drone_info)
-    return drone_coords[0], drone_coords[1]
+            resp.raise_for_status()  # This will raise an exception for bad responses
+            logging.info(f"Sent coordinates: {longitude}, {latitude}, status: {status}")
+        except requests.exceptions.RequestException as e:
+            logging.error(f"Error sending coordinates: {longitude}, {latitude}, status: {status}. Error: {e}")
+
+#=====================================================================================================================
+def interpolate(a, b, steps=10):
+    dx = (b[0] - a[0]) / steps
+    dy = (b[1] - a[1]) / steps
+    return [(a[0] + i * dx, a[1] + i * dy) for i in range(1, steps + 1)]
+
+def run(id, current_coords, from_coords, to_coords, SERVER_URL):
+    targets = [from_coords, to_coords]
+    final_position = current_coords
+
+    for target in targets:
+        print(f" Planning path from {current_coords} to {target}")
+        path = a_star(current_coords, target)
+
+        if not path:
+            print(f" No valid path found from {current_coords} to {target}")
+            return current_coords[0], current_coords[1]
+
+        # Smooth start if needed
+        if path[0] != current_coords:
+            for point in interpolate(current_coords, path[0], steps=10):
+                send_coordinates(id, point[0], point[1], 'busy', SERVER_URL)
+                time.sleep(0.1)
+            current_coords = path[0]
+
+        # Interpolate each segment
+        for i in range(len(path) - 1):
+            for point in interpolate(path[i], path[i + 1], steps=5):
+                send_coordinates(id, point[0], point[1], 'busy', SERVER_URL)
+                time.sleep(0.1)
+            current_coords = path[i + 1]
+
+        # Mark arrival
+        send_coordinates(id, current_coords[0], current_coords[1], 'idle', SERVER_URL)
+        final_position = current_coords
+
+    print(f" Final destination reached: {final_position}")
+    return final_position[0], final_position[1]
+
+#def run(id, current_coords, from_coords, to_coords, SERVER_URL): #VAR körs den, måste koppla till lista o kösystem
+    #print("RUN() called")  # Lägg till denna rad
+    #print(f"drone_coords: {current_coords}, from: {from_coords}, to: {to_coords}")  # Lägg till denna rad
+    #drone_coords = current_coords
+    #d_long, d_la =  getMovement(drone_coords, from_coords, 0.001)
+    #dt = 1
+    
+    #while ((from_coords[0] - drone_coords[0])**2 + (from_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
+        #start = time.perf_counter()
+        #drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
+        #with requests.Session() as session:
+            #drone_info = {'id': id,
+                          #'longitude': drone_coords[0],
+                          #'latitude': drone_coords[1],
+                          #'status': 'busy'
+                        #}
+            #resp = session.post(SERVER_URL, json=drone_info)
+            #print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+       # dt = time.perf_counter() - start
+    #d_long, d_la =  getMovement(drone_coords, to_coords, 0.001)
+
+
+    #while ((to_coords[0] - drone_coords[0])**2 + (to_coords[1] - drone_coords[1])**2)*10**6 > 0.002:
+        #start = time.perf_counter()
+        #drone_coords = moveDrone(drone_coords, d_long, d_la, dt)
+        #with requests.Session() as session:
+            #drone_info = {'id': id,
+                          #'longitude': drone_coords[0],
+                         # 'latitude': drone_coords[1],
+                         # 'status': 'busy'
+                       # }
+            #resp = session.post(SERVER_URL, json=drone_info)
+            #print(f"Sending coordinates: {drone_coords[0]}, {drone_coords[1]}")
+        #dt = time.perf_counter() - start
+    
+    #with requests.Session() as session:
+            #drone_info = {'id': id,
+                         # 'longitude': drone_coords[0],
+                         #'latitude': drone_coords[1],
+                         # 'status': 'idle'
+                        # }
+            #resp = session.post(SERVER_URL, json=drone_info)
+    #return drone_coords[0], drone_coords[1]
 
 
 
